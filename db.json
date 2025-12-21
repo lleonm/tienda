@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@tienda.com",
+      "role": "admin",
+      "password": "admin123",
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Cliente Ejemplo",
+      "email": "cliente@example.com",
+      "phone": "+1234567890",
+      "address": "Calle Principal 123",
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Camiseta Básica",
+      "description": "Camiseta de algodón 100%",
+      "category": "ropa",
+      "price": 19.99,
+      "stock": 50,
+      "sku": "CAM-001",
+      "imageUrl": "",
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Gorra Deportiva",
+      "description": "Gorra ajustable para deportes",
+      "category": "accesorios",
+      "price": 14.99,
+      "stock": 30,
+      "sku": "ACC-001",
+      "imageUrl": "",
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 2,
+          "price": 19.99
+        }
+      ],
+      "total": 39.98,
+      "status": "completed",
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "customerId": 1,
+      "invoiceNumber": "INV-001",
+      "subtotal": 39.98,
+      "tax": 7.20,
+      "total": 47.18,
+      "status": "paid",
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    }
+  ]
+}
