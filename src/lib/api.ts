@@ -73,3 +73,20 @@ export const invoicesAPI = {
     body: JSON.stringify(data),
   }),
 };
+
+// Variant Configs API
+export const variantConfigsAPI = {
+  getAll: () => fetchAPI<any[]>('/variantConfigs'),
+  getById: (id: number) => fetchAPI<any>(`/variantConfigs/${id}`),
+  create: (data: any) => fetchAPI<any>('/variantConfigs', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  update: (id: number, data: any) => fetchAPI<any>(`/variantConfigs/${id}`, {
+    method: 'PUT',
+    body: JSON.stringify(data),
+  }),
+  delete: (id: number) => fetchAPI<void>(`/variantConfigs/${id}`, {
+    method: 'DELETE',
+  }),
+};
