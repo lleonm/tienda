@@ -1,79 +1,58 @@
-# Script para detener todos los servidores de la aplicacion
-Write-Host "Deteniendo servidores de la Tienda Online..." -ForegroundColor Red
-Write-Host ""
+# Script para parar todos los servidores de desarrollo y cerrar ventanas PowerShell
 
-# Detener procesos de Node que estan usando los puertos 3000 y 3001
-$stoppedProcesses = 0
-$consolesToClose = @()
+Write-Host "Parando servidores de desarrollo y cerrando ventanas..." -ForegroundColor Red
 
-# Buscar y detener proceso en puerto 3001 (JSON Server)
-Write-Host "Buscando JSON Server (Puerto 3001)..." -ForegroundColor Cyan
-$jsonServerProcess = Get-NetTCPConnection -LocalPort 3001 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique
-if ($jsonServerProcess) {
-    foreach ($pid in $jsonServerProcess) {
-        $process = Get-Process -Id $pid -ErrorAction SilentlyContinue
-        if ($process) {
-            # Obtener el proceso padre (consola PowerShell)
-            $parentId = (Get-CimInstance Win32_Process -Filter "ProcessId=$pid" -ErrorAction SilentlyContinue).ParentProcessId
-            if ($parentId) {
-                $parentProcess = Get-Process -Id $parentId -ErrorAction SilentlyContinue
-                if ($parentProcess -and $parentProcess.ProcessName -eq "powershell") {
-                    $consolesToClose += $parentId
-                }
-            }
-            
-            Stop-Process -Id $pid -Force
-            Write-Host "  JSON Server detenido (PID: $pid)" -ForegroundColor Green
-            $stoppedProcesses++
-        }
-    }
-} else {
-    Write-Host "  JSON Server no esta ejecutandose" -ForegroundColor Gray
-}
+$windowsClosed = 0
 
-# Buscar y detener proceso en puerto 3000 (Next.js)
-Write-Host "Buscando Next.js Server (Puerto 3000)..." -ForegroundColor Cyan
-$nextProcess = Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique
-if ($nextProcess) {
-    foreach ($pid in $nextProcess) {
-        $process = Get-Process -Id $pid -ErrorAction SilentlyContinue
-        if ($process) {
-            # Obtener el proceso padre (consola PowerShell)
-            $parentId = (Get-CimInstance Win32_Process -Filter "ProcessId=$pid" -ErrorAction SilentlyContinue).ParentProcessId
-            if ($parentId) {
-                $parentProcess = Get-Process -Id $parentId -ErrorAction SilentlyContinue
-                if ($parentProcess -and $parentProcess.ProcessName -eq "powershell") {
-                    $consolesToClose += $parentId
-                }
-            }
-            
-            Stop-Process -Id $pid -Force
-            Write-Host "  Next.js Server detenido (PID: $pid)" -ForegroundColor Green
-            $stoppedProcesses++
-        }
-    }
-} else {
-    Write-Host "  Next.js Server no esta ejecutandose" -ForegroundColor Gray
-}
+# Buscar procesos Node.js en los puertos 3000 y 3001 y cerrar sus ventanas PowerShell padres
+Write-Host "Buscando servidores y sus ventanas..." -ForegroundColor Yellow
 
-# Cerrar las consolas de PowerShell
-if ($consolesToClose.Count -gt 0) {
-    Write-Host ""
-    Write-Host "Cerrando ventanas de consola..." -ForegroundColor Cyan
-    $consolesToClose = $consolesToClose | Select-Object -Unique
-    foreach ($consoleId in $consolesToClose) {
+$processes = netstat -ano | Select-String ":300[01]\s"
+foreach ($line in $processes) {
+    if ($line -match '\s+(\d+)\s*$') {
+        $nodeProcessId = $matches[1]
         try {
-            Stop-Process -Id $consoleId -Force -ErrorAction SilentlyContinue
-            Write-Host "  Consola cerrada (PID: $consoleId)" -ForegroundColor Green
-        } catch {
-            Write-Host "  No se pudo cerrar consola (PID: $consoleId)" -ForegroundColor Yellow
+            # Obtener el proceso padre (PowerShell)
+            $parentId = (Get-CimInstance Win32_Process -Filter "ProcessId=$nodeProcessId" -ErrorAction SilentlyContinue).ParentProcessId
+            if ($parentId) {
+                $parentProcess = Get-Process -Id $parentId -ErrorAction SilentlyContinue
+                if ($parentProcess -and $parentProcess.ProcessName -eq "powershell") {
+                    Write-Host "   Cerrando ventana PowerShell (PID: $parentId)" -ForegroundColor Cyan
+                    Stop-Process -Id $parentId -Force -ErrorAction SilentlyContinue
+                    $windowsClosed++
+                }
+            }
+            # También matar el proceso node
+            Stop-Process -Id $nodeProcessId -Force -ErrorAction SilentlyContinue
+        }
+        catch {
+            # Continuar
         }
     }
 }
 
-Write-Host ""
-if ($stoppedProcesses -gt 0) {
-    Write-Host "Se detuvieron $stoppedProcesses proceso(s)" -ForegroundColor Green
+if ($windowsClosed -eq 0) {
+    Write-Host "   No se encontraron ventanas de servidores" -ForegroundColor Gray
 } else {
-    Write-Host "No habia servidores ejecutandose" -ForegroundColor Yellow
+    Write-Host "   $windowsClosed ventana(s) cerrada(s)" -ForegroundColor Green
 }
+
+# Asegurar que los puertos estén libres
+Write-Host "`nLiberando puertos..." -ForegroundColor Yellow
+$port3000 = netstat -ano | Select-String ":3000\s"
+foreach ($line in $port3000) {
+    if ($line -match '\s+(\d+)\s*$') {
+        Stop-Process -Id $matches[1] -Force -ErrorAction SilentlyContinue
+    }
+}
+
+$port3001 = netstat -ano | Select-String ":3001\s"
+foreach ($line in $port3001) {
+    if ($line -match '\s+(\d+)\s*$') {
+        Stop-Process -Id $matches[1] -Force -ErrorAction SilentlyContinue
+    }
+}
+Write-Host "   Puertos liberados" -ForegroundColor Green
+
+Write-Host "`nTodos los servidores y ventanas han sido cerrados" -ForegroundColor Green
+Write-Host "Para iniciar nuevamente usa: npm run start-servers" -ForegroundColor Cyan

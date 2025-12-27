@@ -25,7 +25,7 @@ export const usersAPI = {
     body: JSON.stringify(data),
   }),
   update: (id: number, data: any) => fetchAPI<any>(`/users/${id}`, {
-    method: 'PUT',
+    method: 'PATCH',
     body: JSON.stringify(data),
   }),
   delete: (id: number) => fetchAPI<void>(`/users/${id}`, {
@@ -42,7 +42,7 @@ export const productsAPI = {
     body: JSON.stringify(data),
   }),
   update: (id: number, data: any) => fetchAPI<any>(`/products/${id}`, {
-    method: 'PUT',
+    method: 'PATCH',
     body: JSON.stringify(data),
   }),
   delete: (id: number) => fetchAPI<void>(`/products/${id}`, {
@@ -59,7 +59,7 @@ export const ordersAPI = {
     body: JSON.stringify(data),
   }),
   update: (id: number, data: any) => fetchAPI<any>(`/orders/${id}`, {
-    method: 'PUT',
+    method: 'PATCH',
     body: JSON.stringify(data),
   }),
 };
@@ -83,10 +83,27 @@ export const variantConfigsAPI = {
     body: JSON.stringify(data),
   }),
   update: (id: number, data: any) => fetchAPI<any>(`/variantConfigs/${id}`, {
-    method: 'PUT',
+    method: 'PATCH',
     body: JSON.stringify(data),
   }),
   delete: (id: number) => fetchAPI<void>(`/variantConfigs/${id}`, {
+    method: 'DELETE',
+  }),
+};
+
+// Catalog Nodes API
+export const catalogAPI = {
+  getAll: () => fetchAPI<any[]>('/catalogNodes'),
+  getById: (id: number) => fetchAPI<any>(`/catalogNodes/${id}`),
+  create: (data: any) => fetchAPI<any>('/catalogNodes', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  update: (id: number, data: any) => fetchAPI<any>(`/catalogNodes/${id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(data),
+  }),
+  delete: (id: number) => fetchAPI<void>(`/catalogNodes/${id}`, {
     method: 'DELETE',
   }),
 };

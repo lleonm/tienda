@@ -1,0 +1,145 @@
+{
+    "products":  [
+
+                 ],
+    "customers":  [
+
+                  ],
+    "invoices":  [
+
+                 ],
+    "orders":  [
+
+               ],
+    "catalogNodes":  {
+                         "value":  [
+                                       {
+                                           "id":  1,
+                                           "name":  "Ropa",
+                                           "description":  "Prendas de vestir",
+                                           "parentId":  null,
+                                           "level":  0,
+                                           "order":  0,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  2,
+                                           "name":  "Hombre",
+                                           "description":  "Ropa para hombre",
+                                           "parentId":  1,
+                                           "level":  1,
+                                           "order":  0,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  3,
+                                           "name":  "Mujer",
+                                           "description":  "Ropa para mujer",
+                                           "parentId":  1,
+                                           "level":  1,
+                                           "order":  1,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  4,
+                                           "name":  "Camisetas",
+                                           "description":  "Camisetas casuales y deportivas",
+                                           "parentId":  2,
+                                           "level":  2,
+                                           "order":  0,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  5,
+                                           "name":  "Pantalones",
+                                           "description":  "Pantalones para hombre",
+                                           "parentId":  2,
+                                           "level":  2,
+                                           "order":  1,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  6,
+                                           "name":  "Blusas",
+                                           "description":  "Blusas y camisas",
+                                           "parentId":  3,
+                                           "level":  2,
+                                           "order":  0,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  7,
+                                           "name":  "Faldas",
+                                           "description":  "Faldas para mujer",
+                                           "parentId":  3,
+                                           "level":  2,
+                                           "order":  1,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  8,
+                                           "name":  "Accesorios",
+                                           "description":  "Accesorios de moda",
+                                           "parentId":  null,
+                                           "level":  0,
+                                           "order":  1,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  9,
+                                           "name":  "Bolsos",
+                                           "description":  "Bolsos y carteras",
+                                           "parentId":  8,
+                                           "level":  1,
+                                           "order":  0,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  10,
+                                           "name":  "Joyas",
+                                           "description":  "Joyería y bisutería",
+                                           "parentId":  8,
+                                           "level":  1,
+                                           "order":  1,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  11,
+                                           "name":  "Aretes",
+                                           "description":  "Aretes y pendientes",
+                                           "parentId":  10,
+                                           "level":  2,
+                                           "order":  0,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       },
+                                       {
+                                           "id":  12,
+                                           "name":  "Collares",
+                                           "description":  "Collares y cadenas",
+                                           "parentId":  10,
+                                           "level":  2,
+                                           "order":  1,
+                                           "isActive":  true,
+                                           "createdAt":  "2024-01-01T00:00:00.000Z"
+                                       }
+                                   ],
+                         "Count":  12
+                     },
+    "users":  [
+
+              ],
+    "variantConfigs":  [
+
+                       ]
+}

@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Tienda Online - Ropa y Accesorios",
   description: "Tienda de productos con gestión de inventario y facturación",
+  charset: "UTF-8",
 };
 
 export default function RootLayout({

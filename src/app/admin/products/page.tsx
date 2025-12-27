@@ -260,9 +260,9 @@ export default function ProductsPage() {
       name: product.name,
       description: product.description,
       category: product.category,
-      price: product.price.toString(),
-      stock: product.stock.toString(),
-      sku: product.sku,
+      price: (product.price || 0).toString(),
+      stock: (product.stock || 0).toString(),
+      sku: product.sku || '',
       imageUrl: product.imageUrl || "",
       hasVariants: product.isParent || false,
     });
@@ -648,7 +648,7 @@ export default function ProductsPage() {
                       {product.category}
                     </span>
                   </div>
-                  <div className="text-gray-900">${product.price.toFixed(2)}</div>
+                  <div className="text-gray-900">${(product.price || 0).toFixed(2)}</div>
                   <div>
                     <span className={`font-medium ${getTotalStock(product) > 10 ? 'text-green-600' : getTotalStock(product) > 0 ? 'text-yellow-600' : 'text-red-600'}`}>
                       {product.isParent ? `${getTotalStock(product)} total` : getTotalStock(product)}
