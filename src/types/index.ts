@@ -119,17 +119,33 @@ export interface VariantConfig {
 // Tipos para Órdenes
 export interface OrderProduct {
   productId: number;
+  productName: string;
+  productSku: string;
   quantity: number;
   price: number;
+  subtotal: number;
 }
 
 export interface Order {
-  id: number;
-  customerId: number;
+  id: string; // Usaremos string para poder tener números de orden personalizados
+  orderNumber: string; // Número de orden consecutivo (ej: "ORD-0001")
+  customerId: string;
+  customerName?: string; // Para mostrar sin hacer join
   products: OrderProduct[];
+  subtotal: number;
+  tax: number;
   total: number;
-  status: 'pending' | 'completed' | 'cancelled';
+  status: 'pending' | 'processing' | 'completed' | 'cancelled';
+  notes?: string;
+  createdBy: string; // Usuario que creó la orden
   createdAt: string;
+  updatedAt: string;
+  updatedBy?: string; // Usuario que modificó por última vez
+}
+
+export interface OrderWithDetails extends Order {
+  customer?: Customer;
+  productDetails?: Product[];
 }
 
 // Tipos para Facturas

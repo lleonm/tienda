@@ -53,15 +53,22 @@ export const productsAPI = {
 // Orders API
 export const ordersAPI = {
   getAll: () => fetchAPI<any[]>('/orders'),
-  getById: (id: number) => fetchAPI<any>(`/orders/${id}`),
+  getById: (id: string) => fetchAPI<any>(`/orders/${id}`),
   create: (data: any) => fetchAPI<any>('/orders', {
     method: 'POST',
     body: JSON.stringify(data),
   }),
-  update: (id: number, data: any) => fetchAPI<any>(`/orders/${id}`, {
+  update: (id: string, data: any) => fetchAPI<any>(`/orders/${id}`, {
     method: 'PATCH',
     body: JSON.stringify(data),
   }),
+  getNextOrderNumber: async () => {
+    const orders = await fetchAPI<any[]>('/orders');
+    if (orders.length === 0) return 'ORD-0001';
+    const lastOrder = orders[orders.length - 1];
+    const lastNumber = parseInt(lastOrder.orderNumber.split('-')[1]);
+    return `ORD-${String(lastNumber + 1).padStart(4, '0')}`;
+  },
 };
 
 // Invoices API
