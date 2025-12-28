@@ -18,6 +18,7 @@ interface VariantCombination {
   price: string;
   stock: string;
   sku: string;
+  imageUrl?: string;
 }
 
 export default function ProductsPage() {
@@ -259,7 +260,7 @@ export default function ProductsPage() {
     setFormData({
       name: product.name,
       description: product.description,
-      category: product.category,
+      category: (product.category || 'ropa') as 'ropa' | 'accesorios',
       price: (product.price || 0).toString(),
       stock: (product.stock || 0).toString(),
       sku: product.sku || '',
@@ -413,7 +414,7 @@ export default function ProductsPage() {
     }));
   };
 
-  const updateCombinationValue = (index: number, field: 'price' | 'stock' | 'sku', value: string) => {
+  const updateCombinationValue = (index: number, field: 'price' | 'stock' | 'sku' | 'imageUrl', value: string) => {
     const updated = [...variantCombinations];
     updated[index] = { ...updated[index], [field]: value };
     setVariantCombinations(updated);
@@ -443,7 +444,7 @@ export default function ProductsPage() {
       ...formData,
       name: product.name,
       description: product.description,
-      category: product.category,
+      category: (product.category || 'ropa') as 'ropa' | 'accesorios',
       price: product.price.toString(),
       sku: product.sku,
     });

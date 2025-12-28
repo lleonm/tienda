@@ -86,6 +86,7 @@ export interface Product {
   name: string;
   description: string;
   catalogNodeId: number; // Referencia al nodo del catálogo
+  category?: string; // Categoría del producto (legacy field)
   price: number;
   stock: number;
   sku: string;
