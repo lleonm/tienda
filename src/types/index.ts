@@ -8,13 +8,58 @@ export interface User {
   createdAt: string;
 }
 
+// Tipos para Geografía de Costa Rica
+export interface Provincia {
+  id: number;
+  codigo: string;
+  nombre: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Canton {
+  id: number;
+  codigo: string;
+  nombre: string;
+  provinciaId: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Distrito {
+  id: number;
+  codigo: string;
+  nombre: string;
+  cantonId: number;
+  codigoPostal: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface CostaRicaGeografia {
+  provincias: Provincia[];
+  cantones: Canton[];
+  distritos: Distrito[];
+}
+
 export interface Customer {
   id: number;
   name: string;
   email: string;
-  phone: string;
-  address: string;
+  identificationType: 'fisica' | 'juridica' | 'dimex' | 'pasaporte'; // Tipo de identificación
+  identificationNumber: string; // Número de cédula/DIMEX/pasaporte
+  phones: string[]; // Array de teléfonos (formato: 8888-8888)
+  address: {
+    provinciaCodigo: string; // Código de provincia (1-7)
+    cantonCodigo: string; // Código de cantón (101, 102, etc.)
+    distritoCodigo: string; // Código de distrito (10101, 10102, etc.)
+    direccionExacta: string; // Dirección exacta (señas)
+    codigoPostal?: string; // Código postal (asignado automáticamente por distrito)
+  };
+  createdBy: 'frontend' | 'admin'; // Origen de creación
+  isActive: boolean;
   createdAt: string;
+  updatedAt?: string;
 }
 
 // Tipos para Catálogo Jerárquico

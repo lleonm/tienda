@@ -107,3 +107,20 @@ export const catalogAPI = {
     method: 'DELETE',
   }),
 };
+
+// Customers API
+export const customersAPI = {
+  getAll: () => fetchAPI<any[]>('/customers'),
+  getById: (id: number) => fetchAPI<any>(`/customers/${id}`),
+  create: (data: any) => fetchAPI<any>('/customers', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  update: (id: number, data: any) => fetchAPI<any>(`/customers/${id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(data),
+  }),
+  delete: (id: number) => fetchAPI<void>(`/customers/${id}`, {
+    method: 'DELETE',
+  }),
+};

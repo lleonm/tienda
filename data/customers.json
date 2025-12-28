@@ -1,0 +1,362 @@
+[
+  {
+    "id": "1",
+    "name": "María Rodríguez García",
+    "email": "maria.rodriguez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0234-0567",
+    "phones": ["2234-5678", "8765-4321"],
+    "address": {
+      "provinciaCodigo": "1",
+      "cantonCodigo": "101",
+      "distritoCodigo": "10101",
+      "direccionExacta": "De la esquina del Banco Nacional, 200 metros norte, casa portón café",
+      "codigoPostal": "10101"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-15T10:30:00.000Z",
+    "updatedAt": "2024-01-15T10:30:00.000Z"
+  },
+  {
+    "id": "2",
+    "name": "Carlos Fernández Mora",
+    "email": "carlos.fernandez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-0456-0789",
+    "phones": ["2245-6789"],
+    "address": {
+      "provinciaCodigo": "2",
+      "cantonCodigo": "201",
+      "distritoCodigo": "20101",
+      "direccionExacta": "Frente al Parque Central, edificio amarillo",
+      "codigoPostal": "20101"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-16T11:15:00.000Z",
+    "updatedAt": "2024-01-16T11:15:00.000Z"
+  },
+  {
+    "id": "3",
+    "name": "Ana López Jiménez",
+    "email": "ana.lopez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0567-0890",
+    "phones": ["2256-7890", "8876-5432"],
+    "address": {
+      "provinciaCodigo": "3",
+      "cantonCodigo": "301",
+      "distritoCodigo": "30101",
+      "direccionExacta": "200 metros oeste del supermercado",
+      "codigoPostal": "30101"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-17T09:45:00.000Z",
+    "updatedAt": "2024-01-17T09:45:00.000Z"
+  },
+  {
+    "id": "4",
+    "name": "TechCorp S.A.",
+    "email": "info@techcorp.co.cr",
+    "identificationType": "juridica",
+    "identificationNumber": "3-101-234567",
+    "phones": ["2267-8901"],
+    "address": {
+      "provinciaCodigo": "1",
+      "cantonCodigo": "108",
+      "distritoCodigo": "10801",
+      "direccionExacta": "Edificio Torres del Este, piso 5, oficina 502",
+      "codigoPostal": "10801"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-18T14:20:00.000Z",
+    "updatedAt": "2024-01-18T14:20:00.000Z"
+  },
+  {
+    "id": "5",
+    "name": "José González Vargas",
+    "email": "jose.gonzalez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0678-0901",
+    "phones": ["2278-9012", "8987-6543"],
+    "address": {
+      "provinciaCodigo": "4",
+      "cantonCodigo": "401",
+      "distritoCodigo": "40101",
+      "direccionExacta": "Del cementerio, 100 metros sur",
+      "codigoPostal": "40101"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-19T08:30:00.000Z",
+    "updatedAt": "2024-01-19T08:30:00.000Z"
+  },
+  {
+    "id": "6",
+    "name": "Laura Martínez Solís",
+    "email": "laura.martinez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-0789-0123",
+    "phones": ["2289-0123"],
+    "address": {
+      "provinciaCodigo": "5",
+      "cantonCodigo": "501",
+      "distritoCodigo": "50101",
+      "direccionExacta": "Contiguo a la escuela, casa verde",
+      "codigoPostal": "50101"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-20T10:00:00.000Z",
+    "updatedAt": "2024-01-20T10:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "name": "Pedro Ramírez Castro",
+    "email": "pedro.ramirez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0890-0234",
+    "phones": ["2290-1234", "8098-7654"],
+    "address": {
+      "provinciaCodigo": "6",
+      "cantonCodigo": "601",
+      "distritoCodigo": "60101",
+      "direccionExacta": "De la iglesia católica, 300 metros este",
+      "codigoPostal": "60101"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-21T13:45:00.000Z",
+    "updatedAt": "2024-01-21T13:45:00.000Z"
+  },
+  {
+    "id": "8",
+    "name": "Comercial El Sol Ltda",
+    "email": "ventas@elsol.co.cr",
+    "identificationType": "juridica",
+    "identificationNumber": "3-102-345678",
+    "phones": ["2201-2345"],
+    "address": {
+      "provinciaCodigo": "1",
+      "cantonCodigo": "102",
+      "distritoCodigo": "10201",
+      "direccionExacta": "Centro comercial La Plaza, local 15",
+      "codigoPostal": "10201"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-22T11:20:00.000Z",
+    "updatedAt": "2024-01-22T11:20:00.000Z"
+  },
+  {
+    "id": "9",
+    "name": "Gabriela Herrera Pérez",
+    "email": "gabriela.herrera@email.com",
+    "identificationType": "dimex",
+    "identificationNumber": "155678901234",
+    "phones": ["2212-3456", "8209-8765"],
+    "address": {
+      "provinciaCodigo": "7",
+      "cantonCodigo": "701",
+      "distritoCodigo": "70101",
+      "direccionExacta": "Apartamentos Los Coco, apartamento 12B",
+      "codigoPostal": "70101"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-23T15:30:00.000Z",
+    "updatedAt": "2024-01-23T15:30:00.000Z"
+  },
+  {
+    "id": "10",
+    "name": "Roberto Sánchez Mora",
+    "email": "roberto.sanchez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0901-0345",
+    "phones": ["2223-4567"],
+    "address": {
+      "provinciaCodigo": "1",
+      "cantonCodigo": "103",
+      "distritoCodigo": "10301",
+      "direccionExacta": "Urbanización Los Pinos, casa 45",
+      "codigoPostal": "10301"
+    },
+    "isActive": false,
+    "createdAt": "2024-01-24T09:15:00.000Z",
+    "updatedAt": "2024-01-24T09:15:00.000Z"
+  },
+  {
+    "id": "11",
+    "name": "Sofía Jiménez Rojas",
+    "email": "sofia.jimenez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-1012-0456",
+    "phones": ["2234-5678", "8321-0987"],
+    "address": {
+      "provinciaCodigo": "2",
+      "cantonCodigo": "202",
+      "distritoCodigo": "20201",
+      "direccionExacta": "Del estadio, 500 metros norte, casa azul",
+      "codigoPostal": "20201"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-25T10:45:00.000Z",
+    "updatedAt": "2024-01-25T10:45:00.000Z"
+  },
+  {
+    "id": "12",
+    "name": "Construcciones Modernas S.A.",
+    "email": "proyectos@construccionesmodernas.co.cr",
+    "identificationType": "juridica",
+    "identificationNumber": "3-103-456789",
+    "phones": ["2245-6789"],
+    "address": {
+      "provinciaCodigo": "3",
+      "cantonCodigo": "302",
+      "distritoCodigo": "30201",
+      "direccionExacta": "Zona industrial, bodega 8",
+      "codigoPostal": "30201"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-26T14:00:00.000Z",
+    "updatedAt": "2024-01-26T14:00:00.000Z"
+  },
+  {
+    "id": "13",
+    "name": "Diego Méndez Villalobos",
+    "email": "diego.mendez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-1123-0567",
+    "phones": ["2256-7890", "8432-1098"],
+    "address": {
+      "provinciaCodigo": "4",
+      "cantonCodigo": "402",
+      "distritoCodigo": "40201",
+      "direccionExacta": "Residencial Las Brisas, lote 22",
+      "codigoPostal": "40201"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-27T08:20:00.000Z",
+    "updatedAt": "2024-01-27T08:20:00.000Z"
+  },
+  {
+    "id": "14",
+    "name": "Valentina Castro Núñez",
+    "email": "valentina.castro@email.com",
+    "identificationType": "pasaporte",
+    "identificationNumber": "AB123456",
+    "phones": ["2267-8901"],
+    "address": {
+      "provinciaCodigo": "5",
+      "cantonCodigo": "502",
+      "distritoCodigo": "50201",
+      "direccionExacta": "Hotel Vista Mar, habitación 305",
+      "codigoPostal": "50201"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-28T12:30:00.000Z",
+    "updatedAt": "2024-01-28T12:30:00.000Z"
+  },
+  {
+    "id": "15",
+    "name": "Ricardo Torres Gutiérrez",
+    "email": "ricardo.torres@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-1234-0678",
+    "phones": ["2278-9012", "8543-2109"],
+    "address": {
+      "provinciaCodigo": "6",
+      "cantonCodigo": "602",
+      "distritoCodigo": "60201",
+      "direccionExacta": "Barrio San Antonio, frente al parque",
+      "codigoPostal": "60201"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-29T16:15:00.000Z",
+    "updatedAt": "2024-01-29T16:15:00.000Z"
+  },
+  {
+    "id": "16",
+    "name": "Servicios Digitales CR",
+    "email": "contacto@serviciosdigitales.co.cr",
+    "identificationType": "juridica",
+    "identificationNumber": "3-104-567890",
+    "phones": ["2289-0123"],
+    "address": {
+      "provinciaCodigo": "7",
+      "cantonCodigo": "702",
+      "distritoCodigo": "70201",
+      "direccionExacta": "Plaza comercial del Este, nivel 2, oficina 201",
+      "codigoPostal": "70201"
+    },
+    "isActive": true,
+    "createdAt": "2024-01-30T11:00:00.000Z",
+    "updatedAt": "2024-01-30T11:00:00.000Z"
+  },
+  {
+    "id": "17",
+    "name": "Patricia Vargas Quesada",
+    "email": "patricia.vargas@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-1345-0789",
+    "phones": ["2290-1234"],
+    "address": {
+      "provinciaCodigo": "1",
+      "cantonCodigo": "104",
+      "distritoCodigo": "10401",
+      "direccionExacta": "Condominio Los Almendros, casa 7",
+      "codigoPostal": "10401"
+    },
+    "isActive": false,
+    "createdAt": "2024-01-31T13:20:00.000Z",
+    "updatedAt": "2024-01-31T13:20:00.000Z"
+  },
+  {
+    "id": "18",
+    "name": "Fernando Blanco Salazar",
+    "email": "fernando.blanco@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-1456-0890",
+    "phones": ["2201-2345", "8654-3210"],
+    "address": {
+      "provinciaCodigo": "2",
+      "cantonCodigo": "203",
+      "distritoCodigo": "20301",
+      "direccionExacta": "Del puente, 200 metros oeste, casa esquinera",
+      "codigoPostal": "20301"
+    },
+    "isActive": true,
+    "createdAt": "2024-02-01T09:40:00.000Z",
+    "updatedAt": "2024-02-01T09:40:00.000Z"
+  },
+  {
+    "id": "19",
+    "name": "Distribuidora Nacional Ltda",
+    "email": "logistica@distribuidoranacional.co.cr",
+    "identificationType": "juridica",
+    "identificationNumber": "3-105-678901",
+    "phones": ["2212-3456"],
+    "address": {
+      "provinciaCodigo": "3",
+      "cantonCodigo": "303",
+      "distritoCodigo": "30301",
+      "direccionExacta": "Parque industrial, nave 12",
+      "codigoPostal": "30301"
+    },
+    "isActive": true,
+    "createdAt": "2024-02-02T14:50:00.000Z",
+    "updatedAt": "2024-02-02T14:50:00.000Z"
+  },
+  {
+    "id": "20",
+    "name": "Mónica Rojas Campos",
+    "email": "monica.rojas@email.com",
+    "identificationType": "dimex",
+    "identificationNumber": "156789012345",
+    "phones": ["2223-4567", "8765-4321"],
+    "address": {
+      "provinciaCodigo": "4",
+      "cantonCodigo": "403",
+      "distritoCodigo": "40301",
+      "direccionExacta": "Urbanización El Paraíso, lote 88",
+      "codigoPostal": "40301"
+    },
+    "isActive": true,
+    "createdAt": "2024-02-03T10:25:00.000Z",
+    "updatedAt": "2024-02-03T10:25:00.000Z"
+  }
+]

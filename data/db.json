@@ -1,145 +1,493 @@
-{
-    "products":  [
-
-                 ],
-    "customers":  [
-
-                  ],
-    "invoices":  [
-
-                 ],
-    "orders":  [
-
-               ],
-    "catalogNodes":  {
-                         "value":  [
-                                       {
-                                           "id":  1,
-                                           "name":  "Ropa",
-                                           "description":  "Prendas de vestir",
-                                           "parentId":  null,
-                                           "level":  0,
-                                           "order":  0,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  2,
-                                           "name":  "Hombre",
-                                           "description":  "Ropa para hombre",
-                                           "parentId":  1,
-                                           "level":  1,
-                                           "order":  0,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  3,
-                                           "name":  "Mujer",
-                                           "description":  "Ropa para mujer",
-                                           "parentId":  1,
-                                           "level":  1,
-                                           "order":  1,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  4,
-                                           "name":  "Camisetas",
-                                           "description":  "Camisetas casuales y deportivas",
-                                           "parentId":  2,
-                                           "level":  2,
-                                           "order":  0,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  5,
-                                           "name":  "Pantalones",
-                                           "description":  "Pantalones para hombre",
-                                           "parentId":  2,
-                                           "level":  2,
-                                           "order":  1,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  6,
-                                           "name":  "Blusas",
-                                           "description":  "Blusas y camisas",
-                                           "parentId":  3,
-                                           "level":  2,
-                                           "order":  0,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  7,
-                                           "name":  "Faldas",
-                                           "description":  "Faldas para mujer",
-                                           "parentId":  3,
-                                           "level":  2,
-                                           "order":  1,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  8,
-                                           "name":  "Accesorios",
-                                           "description":  "Accesorios de moda",
-                                           "parentId":  null,
-                                           "level":  0,
-                                           "order":  1,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  9,
-                                           "name":  "Bolsos",
-                                           "description":  "Bolsos y carteras",
-                                           "parentId":  8,
-                                           "level":  1,
-                                           "order":  0,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  10,
-                                           "name":  "Joyas",
-                                           "description":  "Joyería y bisutería",
-                                           "parentId":  8,
-                                           "level":  1,
-                                           "order":  1,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  11,
-                                           "name":  "Aretes",
-                                           "description":  "Aretes y pendientes",
-                                           "parentId":  10,
-                                           "level":  2,
-                                           "order":  0,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       },
-                                       {
-                                           "id":  12,
-                                           "name":  "Collares",
-                                           "description":  "Collares y cadenas",
-                                           "parentId":  10,
-                                           "level":  2,
-                                           "order":  1,
-                                           "isActive":  true,
-                                           "createdAt":  "2024-01-01T00:00:00.000Z"
-                                       }
-                                   ],
-                         "Count":  12
-                     },
-    "users":  [
-
-              ],
-    "variantConfigs":  [
-
-                       ]
+﻿{
+  "users": [],
+  "customers": [
+  {
+    "id": 1,
+    "name": "Maria Fernandez Rojas",
+    "email": "maria.fernandez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0234-0567",
+    "phones": ["8888-1234", "7777-5678"],
+    "address": {
+      "provincia": "San Jose",
+      "canton": "Central",
+      "distrito": "Carmen",
+      "direccionExacta": "De la Sabana 200m norte, casa verde con porton blanco",
+      "codigoPostal": "10101"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-01-15T10:30:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Juan Carlos Mora Castro",
+    "email": "juan.mora@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-0456-0789",
+    "phones": ["8765-4321"],
+    "address": {
+      "provincia": "Alajuela",
+      "canton": "Alajuela",
+      "distrito": "San Jose",
+      "direccionExacta": "Frente al Parque Central, edificio azul segundo piso",
+      "codigoPostal": "20101"
+    },
+    "createdBy": "admin",
+    "isActive": true,
+    "createdAt": "2024-02-20T14:45:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Ana Sofia Vargas Jimenez",
+    "email": "ana.vargas@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0678-0901",
+    "phones": ["8543-2109", "7654-3210"],
+    "address": {
+      "provincia": "Cartago",
+      "canton": "Cartago",
+      "distrito": "Oriental",
+      "direccionExacta": "Del Colegio San Luis 100m este, casa esquinera",
+      "codigoPostal": "30101"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-03-10T09:15:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Carlos Eduardo Sanchez Lopez",
+    "email": "carlos.sanchez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "3-0345-0678",
+    "phones": ["8432-1098"],
+    "address": {
+      "provincia": "Heredia",
+      "canton": "Heredia",
+      "distrito": "Mercedes",
+      "direccionExacta": "Residencial Los Jardines, casa 24B",
+      "codigoPostal": "40101"
+    },
+    "createdBy": "frontend",
+    "isActive": false,
+    "createdAt": "2024-03-15T11:20:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Laura Patricia Gonzalez Arias",
+    "email": "laura.gonzalez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0789-0123",
+    "phones": ["8321-0987", "7543-2109"],
+    "address": {
+      "provincia": "Guanacaste",
+      "canton": "Liberia",
+      "distrito": "Liberia",
+      "direccionExacta": "Centro comercial La Plaza, local 15",
+      "codigoPostal": "50101"
+    },
+    "createdBy": "admin",
+    "isActive": true,
+    "createdAt": "2024-03-20T13:30:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Roberto Alvarado Murillo",
+    "email": "roberto.alvarado@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "4-0234-0567",
+    "phones": ["8210-9876"],
+    "address": {
+      "provincia": "Puntarenas",
+      "canton": "Puntarenas",
+      "distrito": "Chacarita",
+      "direccionExacta": "Frente a la playa, casa amarilla",
+      "codigoPostal": "60101"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-04-01T15:45:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "Patricia Chaves Rojas",
+    "email": "patricia.chaves@email.com",
+    "identificationType": "dimex",
+    "identificationNumber": "155812345678",
+    "phones": ["8109-8765"],
+    "address": {
+      "provincia": "Limon",
+      "canton": "Limon",
+      "distrito": "Limon",
+      "direccionExacta": "Barrio Pueblo Nuevo, casa 42",
+      "codigoPostal": "70101"
+    },
+    "createdBy": "admin",
+    "isActive": false,
+    "createdAt": "2024-04-05T16:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "name": "Fernando Ramirez Salas",
+    "email": "fernando.ramirez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-0567-0890",
+    "phones": ["8098-7654", "7432-1098"],
+    "address": {
+      "provincia": "San Jose",
+      "canton": "Escazu",
+      "distrito": "San Rafael",
+      "direccionExacta": "Trejos Montealegre, condominio Las Palmas, casa 8",
+      "codigoPostal": "10203"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-04-10T17:15:00.000Z"
+  },
+  {
+    "id": 9,
+    "name": "Sofia Madrigal Quesada",
+    "email": "sofia.madrigal@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0890-0123",
+    "phones": ["8987-6543"],
+    "address": {
+      "provincia": "Alajuela",
+      "canton": "Grecia",
+      "distrito": "Grecia",
+      "direccionExacta": "De la iglesia 300m sur, portÃ³n negro",
+      "codigoPostal": "20301"
+    },
+    "createdBy": "admin",
+    "isActive": true,
+    "createdAt": "2024-04-15T18:30:00.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Diego Monge Villalobos",
+    "email": "diego.monge@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "3-0678-0901",
+    "phones": ["8876-5432"],
+    "address": {
+      "provincia": "Cartago",
+      "canton": "Paraiso",
+      "distrito": "Paraiso",
+      "direccionExacta": "Del supermercado 200m oeste",
+      "codigoPostal": "30401"
+    },
+    "createdBy": "frontend",
+    "isActive": false,
+    "createdAt": "2024-04-20T19:45:00.000Z"
+  },
+  {
+    "id": 11,
+    "name": "Gabriela Solis Hernandez",
+    "email": "gabriela.solis@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-0901-0234",
+    "phones": ["8765-4321", "7321-0987"],
+    "address": {
+      "provincia": "Heredia",
+      "canton": "Santo Domingo",
+      "distrito": "Santo Domingo",
+      "direccionExacta": "Residencial Santa Rosa, torre B, apartamento 305",
+      "codigoPostal": "40301"
+    },
+    "createdBy": "admin",
+    "isActive": true,
+    "createdAt": "2024-05-01T20:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "name": "Miguel Angel Campos Ulate",
+    "email": "miguel.campos@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-0789-0123",
+    "phones": ["8654-3210"],
+    "address": {
+      "provincia": "Guanacaste",
+      "canton": "Santa Cruz",
+      "distrito": "Santa Cruz",
+      "direccionExacta": "Barrio La Cruz, casa celeste",
+      "codigoPostal": "50401"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-05-05T21:15:00.000Z"
+  },
+  {
+    "id": 13,
+    "name": "Valeria Rojas Carmona",
+    "email": "valeria.rojas@email.com",
+    "identificationType": "juridica",
+    "identificationNumber": "3-101-654321",
+    "phones": ["8543-2109"],
+    "address": {
+      "provincia": "San Jose",
+      "canton": "Curridabat",
+      "distrito": "Curridabat",
+      "direccionExacta": "Centro Comercial Momentum, oficina 201",
+      "codigoPostal": "11801"
+    },
+    "createdBy": "admin",
+    "isActive": false,
+    "createdAt": "2024-05-10T22:30:00.000Z"
+  },
+  {
+    "id": 14,
+    "name": "Ricardo Mendez Brenes",
+    "email": "ricardo.mendez@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "4-0456-0789",
+    "phones": ["8432-1098", "7210-9876"],
+    "address": {
+      "provincia": "Puntarenas",
+      "canton": "Esparza",
+      "distrito": "Esparza",
+      "direccionExacta": "Del parque 100m norte, casa con portÃ³n cafÃ©",
+      "codigoPostal": "60201"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-05-15T23:45:00.000Z"
+  },
+  {
+    "id": 15,
+    "name": "Carmen Julia Navarro Vega",
+    "email": "carmen.navarro@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-1012-0345",
+    "phones": ["8321-0987"],
+    "address": {
+      "provincia": "Limon",
+      "canton": "Pococi",
+      "distrito": "Guapiles",
+      "direccionExacta": "Entrada de GuÃ¡piles, 500m este del hospital",
+      "codigoPostal": "70201"
+    },
+    "createdBy": "admin",
+    "isActive": true,
+    "createdAt": "2024-05-20T08:00:00.000Z"
+  },
+  {
+    "id": 16,
+    "name": "Alberto Solano Picado",
+    "email": "alberto.solano@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "3-0890-0123",
+    "phones": ["8210-9876"],
+    "address": {
+      "provincia": "San Jose",
+      "canton": "Desamparados",
+      "distrito": "Desamparados",
+      "direccionExacta": "Barrio Los Angeles, casa 77",
+      "codigoPostal": "10301"
+    },
+    "createdBy": "frontend",
+    "isActive": false,
+    "createdAt": "2024-06-01T09:15:00.000Z"
+  },
+  {
+    "id": 17,
+    "name": "Daniela Marin Cordero",
+    "email": "daniela.marin@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "1-1123-0456",
+    "phones": ["8109-8765", "7098-7654"],
+    "address": {
+      "provincia": "Alajuela",
+      "canton": "San Carlos",
+      "distrito": "Quesada",
+      "direccionExacta": "Del estadio 200m sur, casa blanca con jardÃ­n",
+      "codigoPostal": "21001"
+    },
+    "createdBy": "admin",
+    "isActive": true,
+    "createdAt": "2024-06-05T10:30:00.000Z"
+  },
+  {
+    "id": 18,
+    "name": "Javier Araya Calvo",
+    "email": "javier.araya@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "2-0901-0234",
+    "phones": ["8098-7654"],
+    "address": {
+      "provincia": "Cartago",
+      "canton": "La Union",
+      "distrito": "Tres Rios",
+      "direccionExacta": "Residencial Villa Real, casa 15C",
+      "codigoPostal": "30801"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-06-10T11:45:00.000Z"
+  },
+  {
+    "id": 19,
+    "name": "Lucia Valverde Meza",
+    "email": "lucia.valverde@email.com",
+    "identificationType": "pasaporte",
+    "identificationNumber": "CR1234567",
+    "phones": ["8987-6543"],
+    "address": {
+      "provincia": "Heredia",
+      "canton": "Belen",
+      "distrito": "San Antonio",
+      "direccionExacta": "Condominio Los Arcos, casa 22",
+      "codigoPostal": "40401"
+    },
+    "createdBy": "admin",
+    "isActive": false,
+    "createdAt": "2024-06-15T12:00:00.000Z"
+  },
+  {
+    "id": 20,
+    "name": "Andres Montero Saenz",
+    "email": "andres.montero@email.com",
+    "identificationType": "fisica",
+    "identificationNumber": "4-0567-0890",
+    "phones": ["8876-5432", "7654-3210"],
+    "address": {
+      "provincia": "Guanacaste",
+      "canton": "Nicoya",
+      "distrito": "Nicoya",
+      "direccionExacta": "Centro de Nicoya, edificio municipal segundo piso",
+      "codigoPostal": "50201"
+    },
+    "createdBy": "frontend",
+    "isActive": true,
+    "createdAt": "2024-06-20T13:15:00.000Z"
+  }
+]
+,
+  "products": [],
+  "catalogNodes": [
+  {
+    "id": 1,
+    "name": "Ropa",
+    "description": "Prendas de vestir",
+    "parentId": null,
+    "level": 0,
+    "order": 0,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Hombre",
+    "description": "Ropa para hombre",
+    "parentId": 1,
+    "level": 1,
+    "order": 0,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Mujer",
+    "description": "Ropa para mujer",
+    "parentId": 1,
+    "level": 1,
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Camisetas",
+    "description": "Camisetas casuales y deportivas",
+    "parentId": 2,
+    "level": 2,
+    "order": 0,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Pantalones",
+    "description": "Pantalones para hombre",
+    "parentId": 2,
+    "level": 2,
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Blusas",
+    "description": "Blusas y camisas",
+    "parentId": 3,
+    "level": 2,
+    "order": 0,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "Faldas",
+    "description": "Faldas para mujer",
+    "parentId": 3,
+    "level": 2,
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "name": "Accesorios",
+    "description": "Accesorios de moda",
+    "parentId": null,
+    "level": 0,
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "name": "Bolsos",
+    "description": "Bolsos y carteras",
+    "parentId": 8,
+    "level": 1,
+    "order": 0,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Joyas",
+    "description": "JoyerÃ­a y bisuterÃ­a",
+    "parentId": 8,
+    "level": 1,
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 11,
+    "name": "Aretes",
+    "description": "Aretes y pendientes",
+    "parentId": 10,
+    "level": 2,
+    "order": 0,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "name": "Collares",
+    "description": "Collares y cadenas",
+    "parentId": 10,
+    "level": 2,
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  }
+]
+,
+  "orders": [],
+  "invoices": [],
+  "variantConfigs": []
 }

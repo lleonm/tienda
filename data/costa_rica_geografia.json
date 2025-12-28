@@ -1,0 +1,5024 @@
+{
+  "provincias": [
+    {
+      "id": 1,
+      "codigo": "1",
+      "nombre": "San José",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "codigo": "2",
+      "nombre": "Alajuela",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "codigo": "3",
+      "nombre": "Cartago",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 4,
+      "codigo": "4",
+      "nombre": "Heredia",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 5,
+      "codigo": "5",
+      "nombre": "Guanacaste",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 6,
+      "codigo": "6",
+      "nombre": "Puntarenas",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 7,
+      "codigo": "7",
+      "nombre": "Limón",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    }
+  ],
+  "cantones": [
+    {
+      "id": 101,
+      "codigo": "101",
+      "nombre": "San José",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 102,
+      "codigo": "102",
+      "nombre": "Escazú",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 103,
+      "codigo": "103",
+      "nombre": "Desamparados",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 104,
+      "codigo": "104",
+      "nombre": "Puriscal",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 105,
+      "codigo": "105",
+      "nombre": "Tarrazú",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 106,
+      "codigo": "106",
+      "nombre": "Aserrí",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 107,
+      "codigo": "107",
+      "nombre": "Mora",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 108,
+      "codigo": "108",
+      "nombre": "Goicoechea",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 109,
+      "codigo": "109",
+      "nombre": "Santa Ana",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 110,
+      "codigo": "110",
+      "nombre": "Alajuelita",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 111,
+      "codigo": "111",
+      "nombre": "Vázquez de Coronado",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 112,
+      "codigo": "112",
+      "nombre": "Acosta",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 113,
+      "codigo": "113",
+      "nombre": "Tibás",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 114,
+      "codigo": "114",
+      "nombre": "Moravia",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 115,
+      "codigo": "115",
+      "nombre": "Montes de Oca",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 116,
+      "codigo": "116",
+      "nombre": "Turrubares",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 117,
+      "codigo": "117",
+      "nombre": "Dota",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 118,
+      "codigo": "118",
+      "nombre": "Curridabat",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 119,
+      "codigo": "119",
+      "nombre": "Pérez Zeledón",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 120,
+      "codigo": "120",
+      "nombre": "León Cortés Castro",
+      "provinciaId": 1,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 201,
+      "codigo": "201",
+      "nombre": "Alajuela",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 202,
+      "codigo": "202",
+      "nombre": "San Ramón",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 203,
+      "codigo": "203",
+      "nombre": "Grecia",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 204,
+      "codigo": "204",
+      "nombre": "San Mateo",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 205,
+      "codigo": "205",
+      "nombre": "Atenas",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 206,
+      "codigo": "206",
+      "nombre": "Naranjo",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 207,
+      "codigo": "207",
+      "nombre": "Palmares",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 208,
+      "codigo": "208",
+      "nombre": "Poás",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 209,
+      "codigo": "209",
+      "nombre": "Orotina",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 210,
+      "codigo": "210",
+      "nombre": "San Carlos",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 211,
+      "codigo": "211",
+      "nombre": "Zarcero",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 212,
+      "codigo": "212",
+      "nombre": "Valverde Vega",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 213,
+      "codigo": "213",
+      "nombre": "Upala",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 214,
+      "codigo": "214",
+      "nombre": "Los Chiles",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 215,
+      "codigo": "215",
+      "nombre": "Guatuso",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 216,
+      "codigo": "216",
+      "nombre": "Río Cuarto",
+      "provinciaId": 2,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 301,
+      "codigo": "301",
+      "nombre": "Cartago",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 302,
+      "codigo": "302",
+      "nombre": "Paraíso",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 303,
+      "codigo": "303",
+      "nombre": "La Unión",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 304,
+      "codigo": "304",
+      "nombre": "Jiménez",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 305,
+      "codigo": "305",
+      "nombre": "Turrialba",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 306,
+      "codigo": "306",
+      "nombre": "Alvarado",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 307,
+      "codigo": "307",
+      "nombre": "Oreamuno",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 308,
+      "codigo": "308",
+      "nombre": "El Guarco",
+      "provinciaId": 3,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 401,
+      "codigo": "401",
+      "nombre": "Heredia",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 402,
+      "codigo": "402",
+      "nombre": "Barva",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 403,
+      "codigo": "403",
+      "nombre": "Santo Domingo",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 404,
+      "codigo": "404",
+      "nombre": "Santa Bárbara",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 405,
+      "codigo": "405",
+      "nombre": "San Rafael",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 406,
+      "codigo": "406",
+      "nombre": "San Isidro",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 407,
+      "codigo": "407",
+      "nombre": "Belén",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 408,
+      "codigo": "408",
+      "nombre": "Flores",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 409,
+      "codigo": "409",
+      "nombre": "San Pablo",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 410,
+      "codigo": "410",
+      "nombre": "Sarapiquí",
+      "provinciaId": 4,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 501,
+      "codigo": "501",
+      "nombre": "Liberia",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 502,
+      "codigo": "502",
+      "nombre": "Nicoya",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 503,
+      "codigo": "503",
+      "nombre": "Santa Cruz",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 504,
+      "codigo": "504",
+      "nombre": "Bagaces",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 505,
+      "codigo": "505",
+      "nombre": "Carrillo",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 506,
+      "codigo": "506",
+      "nombre": "Cañas",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 507,
+      "codigo": "507",
+      "nombre": "Abangares",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 508,
+      "codigo": "508",
+      "nombre": "Tilarán",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 509,
+      "codigo": "509",
+      "nombre": "Nandayure",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 510,
+      "codigo": "510",
+      "nombre": "La Cruz",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 511,
+      "codigo": "511",
+      "nombre": "Hojancha",
+      "provinciaId": 5,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 601,
+      "codigo": "601",
+      "nombre": "Puntarenas",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 602,
+      "codigo": "602",
+      "nombre": "Esparza",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 603,
+      "codigo": "603",
+      "nombre": "Buenos Aires",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 604,
+      "codigo": "604",
+      "nombre": "Montes de Oro",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 605,
+      "codigo": "605",
+      "nombre": "Osa",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 606,
+      "codigo": "606",
+      "nombre": "Aguirre",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 607,
+      "codigo": "607",
+      "nombre": "Golfito",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 608,
+      "codigo": "608",
+      "nombre": "Coto Brus",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 609,
+      "codigo": "609",
+      "nombre": "Parrita",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 610,
+      "codigo": "610",
+      "nombre": "Corredores",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 611,
+      "codigo": "611",
+      "nombre": "Garabito",
+      "provinciaId": 6,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 701,
+      "codigo": "701",
+      "nombre": "Limón",
+      "provinciaId": 7,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 702,
+      "codigo": "702",
+      "nombre": "Pococí",
+      "provinciaId": 7,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 703,
+      "codigo": "703",
+      "nombre": "Siquirres",
+      "provinciaId": 7,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 704,
+      "codigo": "704",
+      "nombre": "Talamanca",
+      "provinciaId": 7,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 705,
+      "codigo": "705",
+      "nombre": "Matina",
+      "provinciaId": 7,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 706,
+      "codigo": "706",
+      "nombre": "Guácimo",
+      "provinciaId": 7,
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    }
+  ],
+  "distritos": [
+    {
+      "id": 10101,
+      "codigo": "10101",
+      "nombre": "Carmen",
+      "cantonId": 101,
+      "codigoPostal": "10101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10102,
+      "codigo": "10102",
+      "nombre": "Merced",
+      "cantonId": 101,
+      "codigoPostal": "10102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10103,
+      "codigo": "10103",
+      "nombre": "Hospital",
+      "cantonId": 101,
+      "codigoPostal": "10103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10104,
+      "codigo": "10104",
+      "nombre": "Catedral",
+      "cantonId": 101,
+      "codigoPostal": "10104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10105,
+      "codigo": "10105",
+      "nombre": "Zapote",
+      "cantonId": 101,
+      "codigoPostal": "10105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10106,
+      "codigo": "10106",
+      "nombre": "San Francisco de Dos Ríos",
+      "cantonId": 101,
+      "codigoPostal": "10106",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10107,
+      "codigo": "10107",
+      "nombre": "La Uruca",
+      "cantonId": 101,
+      "codigoPostal": "10107",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10108,
+      "codigo": "10108",
+      "nombre": "Mata Redonda",
+      "cantonId": 101,
+      "codigoPostal": "10108",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10109,
+      "codigo": "10109",
+      "nombre": "Pavas",
+      "cantonId": 101,
+      "codigoPostal": "10109",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10110,
+      "codigo": "10110",
+      "nombre": "Hatillo",
+      "cantonId": 101,
+      "codigoPostal": "10110",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10111,
+      "codigo": "10111",
+      "nombre": "San Sebastián",
+      "cantonId": 101,
+      "codigoPostal": "10111",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10201,
+      "codigo": "10201",
+      "nombre": "Escazú",
+      "cantonId": 102,
+      "codigoPostal": "10201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10202,
+      "codigo": "10202",
+      "nombre": "San Antonio",
+      "cantonId": 102,
+      "codigoPostal": "10202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10203,
+      "codigo": "10203",
+      "nombre": "San Rafael",
+      "cantonId": 102,
+      "codigoPostal": "10203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10301,
+      "codigo": "10301",
+      "nombre": "Desamparados",
+      "cantonId": 103,
+      "codigoPostal": "10301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10302,
+      "codigo": "10302",
+      "nombre": "San Miguel",
+      "cantonId": 103,
+      "codigoPostal": "10302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10303,
+      "codigo": "10303",
+      "nombre": "San Juan de Dios",
+      "cantonId": 103,
+      "codigoPostal": "10303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10304,
+      "codigo": "10304",
+      "nombre": "San Rafael Arriba",
+      "cantonId": 103,
+      "codigoPostal": "10304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10305,
+      "codigo": "10305",
+      "nombre": "San Antonio",
+      "cantonId": 103,
+      "codigoPostal": "10305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10306,
+      "codigo": "10306",
+      "nombre": "Frailes",
+      "cantonId": 103,
+      "codigoPostal": "10306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10307,
+      "codigo": "10307",
+      "nombre": "Patarrá",
+      "cantonId": 103,
+      "codigoPostal": "10307",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10308,
+      "codigo": "10308",
+      "nombre": "San Cristóbal",
+      "cantonId": 103,
+      "codigoPostal": "10308",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10309,
+      "codigo": "10309",
+      "nombre": "Rosario",
+      "cantonId": 103,
+      "codigoPostal": "10309",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10310,
+      "codigo": "10310",
+      "nombre": "Damas",
+      "cantonId": 103,
+      "codigoPostal": "10310",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10311,
+      "codigo": "10311",
+      "nombre": "San Rafael Abajo",
+      "cantonId": 103,
+      "codigoPostal": "10311",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10312,
+      "codigo": "10312",
+      "nombre": "Gravilias",
+      "cantonId": 103,
+      "codigoPostal": "10312",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10313,
+      "codigo": "10313",
+      "nombre": "Los Guido",
+      "cantonId": 103,
+      "codigoPostal": "10313",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20101,
+      "codigo": "20101",
+      "nombre": "Alajuela",
+      "cantonId": 201,
+      "codigoPostal": "20101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20102,
+      "codigo": "20102",
+      "nombre": "San José",
+      "cantonId": 201,
+      "codigoPostal": "20102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20103,
+      "codigo": "20103",
+      "nombre": "Carrizal",
+      "cantonId": 201,
+      "codigoPostal": "20103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20104,
+      "codigo": "20104",
+      "nombre": "San Antonio",
+      "cantonId": 201,
+      "codigoPostal": "20104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20105,
+      "codigo": "20105",
+      "nombre": "Guácima",
+      "cantonId": 201,
+      "codigoPostal": "20105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20106,
+      "codigo": "20106",
+      "nombre": "San Isidro",
+      "cantonId": 201,
+      "codigoPostal": "20106",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20107,
+      "codigo": "20107",
+      "nombre": "Sabanilla",
+      "cantonId": 201,
+      "codigoPostal": "20107",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20108,
+      "codigo": "20108",
+      "nombre": "San Rafael",
+      "cantonId": 201,
+      "codigoPostal": "20108",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20109,
+      "codigo": "20109",
+      "nombre": "Río Segundo",
+      "cantonId": 201,
+      "codigoPostal": "20109",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20110,
+      "codigo": "20110",
+      "nombre": "Desamparados",
+      "cantonId": 201,
+      "codigoPostal": "20110",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20111,
+      "codigo": "20111",
+      "nombre": "Turrúcares",
+      "cantonId": 201,
+      "codigoPostal": "20111",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20112,
+      "codigo": "20112",
+      "nombre": "Tambor",
+      "cantonId": 201,
+      "codigoPostal": "20112",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20113,
+      "codigo": "20113",
+      "nombre": "Garita",
+      "cantonId": 201,
+      "codigoPostal": "20113",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20114,
+      "codigo": "20114",
+      "nombre": "Sarapiquí",
+      "cantonId": 201,
+      "codigoPostal": "20114",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30101,
+      "codigo": "30101",
+      "nombre": "Oriental",
+      "cantonId": 301,
+      "codigoPostal": "30101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30102,
+      "codigo": "30102",
+      "nombre": "Occidental",
+      "cantonId": 301,
+      "codigoPostal": "30102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30103,
+      "codigo": "30103",
+      "nombre": "Carmen",
+      "cantonId": 301,
+      "codigoPostal": "30103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30104,
+      "codigo": "30104",
+      "nombre": "San Nicolás",
+      "cantonId": 301,
+      "codigoPostal": "30104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30105,
+      "codigo": "30105",
+      "nombre": "Aguacaliente o San Francisco",
+      "cantonId": 301,
+      "codigoPostal": "30105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30106,
+      "codigo": "30106",
+      "nombre": "Guadalupe o Arenilla",
+      "cantonId": 301,
+      "codigoPostal": "30106",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30107,
+      "codigo": "30107",
+      "nombre": "Corralillo",
+      "cantonId": 301,
+      "codigoPostal": "30107",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30108,
+      "codigo": "30108",
+      "nombre": "Tierra Blanca",
+      "cantonId": 301,
+      "codigoPostal": "30108",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30109,
+      "codigo": "30109",
+      "nombre": "Dulce Nombre",
+      "cantonId": 301,
+      "codigoPostal": "30109",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30110,
+      "codigo": "30110",
+      "nombre": "Llano Grande",
+      "cantonId": 301,
+      "codigoPostal": "30110",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30111,
+      "codigo": "30111",
+      "nombre": "Quebradilla",
+      "cantonId": 301,
+      "codigoPostal": "30111",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70102,
+      "codigo": "70102",
+      "nombre": "Valle La Estrella",
+      "cantonId": 701,
+      "codigoPostal": "70102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70103,
+      "codigo": "70103",
+      "nombre": "Río Blanco",
+      "cantonId": 701,
+      "codigoPostal": "70103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70104,
+      "codigo": "70104",
+      "nombre": "Matama",
+      "cantonId": 701,
+      "codigoPostal": "70104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70201,
+      "codigo": "70201",
+      "nombre": "Guápiles",
+      "cantonId": 702,
+      "codigoPostal": "70201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70202,
+      "codigo": "70202",
+      "nombre": "Jiménez",
+      "cantonId": 702,
+      "codigoPostal": "70202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70203,
+      "codigo": "70203",
+      "nombre": "Rita",
+      "cantonId": 702,
+      "codigoPostal": "70203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70204,
+      "codigo": "70204",
+      "nombre": "Roxana",
+      "cantonId": 702,
+      "codigoPostal": "70204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70205,
+      "codigo": "70205",
+      "nombre": "Cariari",
+      "cantonId": 702,
+      "codigoPostal": "70205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70206,
+      "codigo": "70206",
+      "nombre": "Colorado",
+      "cantonId": 702,
+      "codigoPostal": "70206",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70207,
+      "codigo": "70207",
+      "nombre": "La Colonia",
+      "cantonId": 702,
+      "codigoPostal": "70207",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70301,
+      "codigo": "70301",
+      "nombre": "Siquirres",
+      "cantonId": 703,
+      "codigoPostal": "70301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70302,
+      "codigo": "70302",
+      "nombre": "Pacuarito",
+      "cantonId": 703,
+      "codigoPostal": "70302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70303,
+      "codigo": "70303",
+      "nombre": "Florida",
+      "cantonId": 703,
+      "codigoPostal": "70303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70304,
+      "codigo": "70304",
+      "nombre": "Germania",
+      "cantonId": 703,
+      "codigoPostal": "70304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70305,
+      "codigo": "70305",
+      "nombre": "El Cairo",
+      "cantonId": 703,
+      "codigoPostal": "70305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70306,
+      "codigo": "70306",
+      "nombre": "Alegría",
+      "cantonId": 703,
+      "codigoPostal": "70306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70401,
+      "codigo": "70401",
+      "nombre": "Bratsi",
+      "cantonId": 704,
+      "codigoPostal": "70401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70402,
+      "codigo": "70402",
+      "nombre": "Sixaola",
+      "cantonId": 704,
+      "codigoPostal": "70402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70403,
+      "codigo": "70403",
+      "nombre": "Cahuita",
+      "cantonId": 704,
+      "codigoPostal": "70403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70404,
+      "codigo": "70404",
+      "nombre": "Telire",
+      "cantonId": 704,
+      "codigoPostal": "70404",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70501,
+      "codigo": "70501",
+      "nombre": "Matina",
+      "cantonId": 705,
+      "codigoPostal": "70501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70502,
+      "codigo": "70502",
+      "nombre": "Batán",
+      "cantonId": 705,
+      "codigoPostal": "70502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70503,
+      "codigo": "70503",
+      "nombre": "Carrandi",
+      "cantonId": 705,
+      "codigoPostal": "70503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70601,
+      "codigo": "70601",
+      "nombre": "Guácimo",
+      "cantonId": 706,
+      "codigoPostal": "70601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70602,
+      "codigo": "70602",
+      "nombre": "Mercedes",
+      "cantonId": 706,
+      "codigoPostal": "70602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70603,
+      "codigo": "70603",
+      "nombre": "Pocora",
+      "cantonId": 706,
+      "codigoPostal": "70603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70604,
+      "codigo": "70604",
+      "nombre": "Río Jiménez",
+      "cantonId": 706,
+      "codigoPostal": "70604",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70605,
+      "codigo": "70605",
+      "nombre": "Duacarí",
+      "cantonId": 706,
+      "codigoPostal": "70605",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10401,
+      "codigo": "10401",
+      "nombre": "Santiago",
+      "cantonId": 104,
+      "codigoPostal": "10401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10402,
+      "codigo": "10402",
+      "nombre": "Mercedes Sur",
+      "cantonId": 104,
+      "codigoPostal": "10402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10403,
+      "codigo": "10403",
+      "nombre": "Barbacoas",
+      "cantonId": 104,
+      "codigoPostal": "10403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10404,
+      "codigo": "10404",
+      "nombre": "Grifo Alto",
+      "cantonId": 104,
+      "codigoPostal": "10404",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10405,
+      "codigo": "10405",
+      "nombre": "San Rafael",
+      "cantonId": 104,
+      "codigoPostal": "10405",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10406,
+      "codigo": "10406",
+      "nombre": "Candelarita",
+      "cantonId": 104,
+      "codigoPostal": "10406",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10407,
+      "codigo": "10407",
+      "nombre": "Desamparaditos",
+      "cantonId": 104,
+      "codigoPostal": "10407",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10408,
+      "codigo": "10408",
+      "nombre": "San Antonio",
+      "cantonId": 104,
+      "codigoPostal": "10408",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10409,
+      "codigo": "10409",
+      "nombre": "Chires",
+      "cantonId": 104,
+      "codigoPostal": "10409",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10501,
+      "codigo": "10501",
+      "nombre": "Tarrazú",
+      "cantonId": 105,
+      "codigoPostal": "10501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10502,
+      "codigo": "10502",
+      "nombre": "San Marcos",
+      "cantonId": 105,
+      "codigoPostal": "10502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10503,
+      "codigo": "10503",
+      "nombre": "San Lorenzo",
+      "cantonId": 105,
+      "codigoPostal": "10503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10601,
+      "codigo": "10601",
+      "nombre": "Aserrí",
+      "cantonId": 106,
+      "codigoPostal": "10601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10602,
+      "codigo": "10602",
+      "nombre": "Tarbaca",
+      "cantonId": 106,
+      "codigoPostal": "10602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10603,
+      "codigo": "10603",
+      "nombre": "Vuelta de Jorco",
+      "cantonId": 106,
+      "codigoPostal": "10603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10604,
+      "codigo": "10604",
+      "nombre": "San Gabriel",
+      "cantonId": 106,
+      "codigoPostal": "10604",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10605,
+      "codigo": "10605",
+      "nombre": "Legua",
+      "cantonId": 106,
+      "codigoPostal": "10605",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10606,
+      "codigo": "10606",
+      "nombre": "Monterrey",
+      "cantonId": 106,
+      "codigoPostal": "10606",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10607,
+      "codigo": "10607",
+      "nombre": "Salitrillos",
+      "cantonId": 106,
+      "codigoPostal": "10607",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10701,
+      "codigo": "10701",
+      "nombre": "Colón",
+      "cantonId": 107,
+      "codigoPostal": "10701",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10702,
+      "codigo": "10702",
+      "nombre": "Guayabo",
+      "cantonId": 107,
+      "codigoPostal": "10702",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10703,
+      "codigo": "10703",
+      "nombre": "Tabarcia",
+      "cantonId": 107,
+      "codigoPostal": "10703",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10704,
+      "codigo": "10704",
+      "nombre": "Piedras Negras",
+      "cantonId": 107,
+      "codigoPostal": "10704",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10705,
+      "codigo": "10705",
+      "nombre": "Picagres",
+      "cantonId": 107,
+      "codigoPostal": "10705",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10706,
+      "codigo": "10706",
+      "nombre": "Jaris",
+      "cantonId": 107,
+      "codigoPostal": "10706",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10707,
+      "codigo": "10707",
+      "nombre": "Quitirrisí",
+      "cantonId": 107,
+      "codigoPostal": "10707",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10801,
+      "codigo": "10801",
+      "nombre": "Guadalupe",
+      "cantonId": 108,
+      "codigoPostal": "10801",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10802,
+      "codigo": "10802",
+      "nombre": "San Francisco",
+      "cantonId": 108,
+      "codigoPostal": "10802",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10803,
+      "codigo": "10803",
+      "nombre": "Calle Blancos",
+      "cantonId": 108,
+      "codigoPostal": "10803",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10804,
+      "codigo": "10804",
+      "nombre": "Mata de Plátano",
+      "cantonId": 108,
+      "codigoPostal": "10804",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10805,
+      "codigo": "10805",
+      "nombre": "Ipís",
+      "cantonId": 108,
+      "codigoPostal": "10805",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10806,
+      "codigo": "10806",
+      "nombre": "Rancho Redondo",
+      "cantonId": 108,
+      "codigoPostal": "10806",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10807,
+      "codigo": "10807",
+      "nombre": "Purral",
+      "cantonId": 108,
+      "codigoPostal": "10807",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10901,
+      "codigo": "10901",
+      "nombre": "Santa Ana",
+      "cantonId": 109,
+      "codigoPostal": "10901",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10902,
+      "codigo": "10902",
+      "nombre": "Salitral",
+      "cantonId": 109,
+      "codigoPostal": "10902",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10903,
+      "codigo": "10903",
+      "nombre": "Pozos",
+      "cantonId": 109,
+      "codigoPostal": "10903",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10904,
+      "codigo": "10904",
+      "nombre": "Uruca",
+      "cantonId": 109,
+      "codigoPostal": "10904",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10905,
+      "codigo": "10905",
+      "nombre": "Piedades",
+      "cantonId": 109,
+      "codigoPostal": "10905",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 10906,
+      "codigo": "10906",
+      "nombre": "Brasil",
+      "cantonId": 109,
+      "codigoPostal": "10906",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11001,
+      "codigo": "11001",
+      "nombre": "Alajuelita",
+      "cantonId": 110,
+      "codigoPostal": "11001",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11002,
+      "codigo": "11002",
+      "nombre": "San Josecito",
+      "cantonId": 110,
+      "codigoPostal": "11002",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11003,
+      "codigo": "11003",
+      "nombre": "San Antonio",
+      "cantonId": 110,
+      "codigoPostal": "11003",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11004,
+      "codigo": "11004",
+      "nombre": "Concepción",
+      "cantonId": 110,
+      "codigoPostal": "11004",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11005,
+      "codigo": "11005",
+      "nombre": "San Felipe",
+      "cantonId": 110,
+      "codigoPostal": "11005",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11101,
+      "codigo": "11101",
+      "nombre": "San Isidro de El General",
+      "cantonId": 111,
+      "codigoPostal": "11101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11102,
+      "codigo": "11102",
+      "nombre": "El General",
+      "cantonId": 111,
+      "codigoPostal": "11102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11103,
+      "codigo": "11103",
+      "nombre": "Daniel Flores",
+      "cantonId": 111,
+      "codigoPostal": "11103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11104,
+      "codigo": "11104",
+      "nombre": "Rivas",
+      "cantonId": 111,
+      "codigoPostal": "11104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11105,
+      "codigo": "11105",
+      "nombre": "San Pedro",
+      "cantonId": 111,
+      "codigoPostal": "11105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11106,
+      "codigo": "11106",
+      "nombre": "Platanares",
+      "cantonId": 111,
+      "codigoPostal": "11106",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11107,
+      "codigo": "11107",
+      "nombre": "Pejibaye",
+      "cantonId": 111,
+      "codigoPostal": "11107",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11108,
+      "codigo": "11108",
+      "nombre": "Cajón",
+      "cantonId": 111,
+      "codigoPostal": "11108",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11109,
+      "codigo": "11109",
+      "nombre": "Barú",
+      "cantonId": 111,
+      "codigoPostal": "11109",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11110,
+      "codigo": "11110",
+      "nombre": "Río Nuevo",
+      "cantonId": 111,
+      "codigoPostal": "11110",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11111,
+      "codigo": "11111",
+      "nombre": "Páramo",
+      "cantonId": 111,
+      "codigoPostal": "11111",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11112,
+      "codigo": "11112",
+      "nombre": "La Amistad",
+      "cantonId": 111,
+      "codigoPostal": "11112",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11201,
+      "codigo": "11201",
+      "nombre": "San Vicente",
+      "cantonId": 112,
+      "codigoPostal": "11201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11202,
+      "codigo": "11202",
+      "nombre": "San Jerónimo",
+      "cantonId": 112,
+      "codigoPostal": "11202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11203,
+      "codigo": "11203",
+      "nombre": "San Pedro",
+      "cantonId": 112,
+      "codigoPostal": "11203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11204,
+      "codigo": "11204",
+      "nombre": "Dulce Nombre de Jesús",
+      "cantonId": 112,
+      "codigoPostal": "11204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11205,
+      "codigo": "11205",
+      "nombre": "Trinidad",
+      "cantonId": 112,
+      "codigoPostal": "11205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11301,
+      "codigo": "11301",
+      "nombre": "San Isidro",
+      "cantonId": 113,
+      "codigoPostal": "11301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11302,
+      "codigo": "11302",
+      "nombre": "San José",
+      "cantonId": 113,
+      "codigoPostal": "11302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11303,
+      "codigo": "11303",
+      "nombre": "Concepción",
+      "cantonId": 113,
+      "codigoPostal": "11303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11304,
+      "codigo": "11304",
+      "nombre": "San Francisco",
+      "cantonId": 113,
+      "codigoPostal": "11304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11401,
+      "codigo": "11401",
+      "nombre": "San Vicente",
+      "cantonId": 114,
+      "codigoPostal": "11401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11402,
+      "codigo": "11402",
+      "nombre": "San Jerónimo",
+      "cantonId": 114,
+      "codigoPostal": "11402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11403,
+      "codigo": "11403",
+      "nombre": "San Pedro",
+      "cantonId": 114,
+      "codigoPostal": "11403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11404,
+      "codigo": "11404",
+      "nombre": "Dulce Nombre de Jesús",
+      "cantonId": 114,
+      "codigoPostal": "11404",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11405,
+      "codigo": "11405",
+      "nombre": "Trinidad",
+      "cantonId": 114,
+      "codigoPostal": "11405",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11406,
+      "codigo": "11406",
+      "nombre": "San Isidro",
+      "cantonId": 114,
+      "codigoPostal": "11406",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11407,
+      "codigo": "11407",
+      "nombre": "San Rafael",
+      "cantonId": 114,
+      "codigoPostal": "11407",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11408,
+      "codigo": "11408",
+      "nombre": "Candelaria",
+      "cantonId": 114,
+      "codigoPostal": "11408",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11409,
+      "codigo": "11409",
+      "nombre": "Santa Teresa",
+      "cantonId": 114,
+      "codigoPostal": "11409",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11410,
+      "codigo": "11410",
+      "nombre": "Quebradilla",
+      "cantonId": 114,
+      "codigoPostal": "11410",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11411,
+      "codigo": "11411",
+      "nombre": "Piedades Norte",
+      "cantonId": 114,
+      "codigoPostal": "11411",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11501,
+      "codigo": "11501",
+      "nombre": "San Pedro",
+      "cantonId": 115,
+      "codigoPostal": "11501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11502,
+      "codigo": "11502",
+      "nombre": "Sabanilla",
+      "cantonId": 115,
+      "codigoPostal": "11502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11503,
+      "codigo": "11503",
+      "nombre": "Mercedes",
+      "cantonId": 115,
+      "codigoPostal": "11503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11504,
+      "codigo": "11504",
+      "nombre": "San Rafael",
+      "cantonId": 115,
+      "codigoPostal": "11504",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11601,
+      "codigo": "11601",
+      "nombre": "San Pablo",
+      "cantonId": 116,
+      "codigoPostal": "11601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11602,
+      "codigo": "11602",
+      "nombre": "San Pedro",
+      "cantonId": 116,
+      "codigoPostal": "11602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11603,
+      "codigo": "11603",
+      "nombre": "San Juan de Mata",
+      "cantonId": 116,
+      "codigoPostal": "11603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11604,
+      "codigo": "11604",
+      "nombre": "San Luis",
+      "cantonId": 116,
+      "codigoPostal": "11604",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11605,
+      "codigo": "11605",
+      "nombre": "Carara",
+      "cantonId": 116,
+      "codigoPostal": "11605",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11701,
+      "codigo": "11701",
+      "nombre": "Santa María",
+      "cantonId": 117,
+      "codigoPostal": "11701",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11702,
+      "codigo": "11702",
+      "nombre": "Jardín",
+      "cantonId": 117,
+      "codigoPostal": "11702",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11703,
+      "codigo": "11703",
+      "nombre": "Copey",
+      "cantonId": 117,
+      "codigoPostal": "11703",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11801,
+      "codigo": "11801",
+      "nombre": "Curridabat",
+      "cantonId": 118,
+      "codigoPostal": "11801",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11802,
+      "codigo": "11802",
+      "nombre": "Granadilla",
+      "cantonId": 118,
+      "codigoPostal": "11802",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11803,
+      "codigo": "11803",
+      "nombre": "Sánchez",
+      "cantonId": 118,
+      "codigoPostal": "11803",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 11804,
+      "codigo": "11804",
+      "nombre": "Tirrases",
+      "cantonId": 118,
+      "codigoPostal": "11804",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 12001,
+      "codigo": "12001",
+      "nombre": "San Pablo",
+      "cantonId": 120,
+      "codigoPostal": "12001",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 12002,
+      "codigo": "12002",
+      "nombre": "San Andrés",
+      "cantonId": 120,
+      "codigoPostal": "12002",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 12003,
+      "codigo": "12003",
+      "nombre": "Llano Bonito",
+      "cantonId": 120,
+      "codigoPostal": "12003",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 12004,
+      "codigo": "12004",
+      "nombre": "San Isidro",
+      "cantonId": 120,
+      "codigoPostal": "12004",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 12005,
+      "codigo": "12005",
+      "nombre": "Santa Cruz",
+      "cantonId": 120,
+      "codigoPostal": "12005",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 12006,
+      "codigo": "12006",
+      "nombre": "San Antonio",
+      "cantonId": 120,
+      "codigoPostal": "12006",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20201,
+      "codigo": "20201",
+      "nombre": "San Ramón",
+      "cantonId": 202,
+      "codigoPostal": "20201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20202,
+      "codigo": "20202",
+      "nombre": "Santiago",
+      "cantonId": 202,
+      "codigoPostal": "20202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20203,
+      "codigo": "20203",
+      "nombre": "San Juan",
+      "cantonId": 202,
+      "codigoPostal": "20203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20204,
+      "codigo": "20204",
+      "nombre": "Piedades Norte",
+      "cantonId": 202,
+      "codigoPostal": "20204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20205,
+      "codigo": "20205",
+      "nombre": "Piedades Sur",
+      "cantonId": 202,
+      "codigoPostal": "20205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20206,
+      "codigo": "20206",
+      "nombre": "San Rafael",
+      "cantonId": 202,
+      "codigoPostal": "20206",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20207,
+      "codigo": "20207",
+      "nombre": "San Isidro",
+      "cantonId": 202,
+      "codigoPostal": "20207",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20208,
+      "codigo": "20208",
+      "nombre": "Ángeles",
+      "cantonId": 202,
+      "codigoPostal": "20208",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20209,
+      "codigo": "20209",
+      "nombre": "Alfaro",
+      "cantonId": 202,
+      "codigoPostal": "20209",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20210,
+      "codigo": "20210",
+      "nombre": "Volio",
+      "cantonId": 202,
+      "codigoPostal": "20210",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20211,
+      "codigo": "20211",
+      "nombre": "Concepción",
+      "cantonId": 202,
+      "codigoPostal": "20211",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20212,
+      "codigo": "20212",
+      "nombre": "Zapotal",
+      "cantonId": 202,
+      "codigoPostal": "20212",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20213,
+      "codigo": "20213",
+      "nombre": "Peñas Blancas",
+      "cantonId": 202,
+      "codigoPostal": "20213",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20301,
+      "codigo": "20301",
+      "nombre": "Grecia",
+      "cantonId": 203,
+      "codigoPostal": "20301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20302,
+      "codigo": "20302",
+      "nombre": "San Isidro",
+      "cantonId": 203,
+      "codigoPostal": "20302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20303,
+      "codigo": "20303",
+      "nombre": "San José",
+      "cantonId": 203,
+      "codigoPostal": "20303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20304,
+      "codigo": "20304",
+      "nombre": "San Roque",
+      "cantonId": 203,
+      "codigoPostal": "20304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20305,
+      "codigo": "20305",
+      "nombre": "Tacares",
+      "cantonId": 203,
+      "codigoPostal": "20305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20306,
+      "codigo": "20306",
+      "nombre": "Puente de Piedra",
+      "cantonId": 203,
+      "codigoPostal": "20306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20307,
+      "codigo": "20307",
+      "nombre": "Bolívar",
+      "cantonId": 203,
+      "codigoPostal": "20307",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20401,
+      "codigo": "20401",
+      "nombre": "San Mateo",
+      "cantonId": 204,
+      "codigoPostal": "20401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20402,
+      "codigo": "20402",
+      "nombre": "Desmonte",
+      "cantonId": 204,
+      "codigoPostal": "20402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20403,
+      "codigo": "20403",
+      "nombre": "Jesús María",
+      "cantonId": 204,
+      "codigoPostal": "20403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20501,
+      "codigo": "20501",
+      "nombre": "Atenas",
+      "cantonId": 205,
+      "codigoPostal": "20501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20502,
+      "codigo": "20502",
+      "nombre": "Jesús",
+      "cantonId": 205,
+      "codigoPostal": "20502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20503,
+      "codigo": "20503",
+      "nombre": "Mercedes",
+      "cantonId": 205,
+      "codigoPostal": "20503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20504,
+      "codigo": "20504",
+      "nombre": "San Isidro",
+      "cantonId": 205,
+      "codigoPostal": "20504",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20505,
+      "codigo": "20505",
+      "nombre": "Concepción",
+      "cantonId": 205,
+      "codigoPostal": "20505",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20506,
+      "codigo": "20506",
+      "nombre": "San José",
+      "cantonId": 205,
+      "codigoPostal": "20506",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20507,
+      "codigo": "20507",
+      "nombre": "Santa Eulalia",
+      "cantonId": 205,
+      "codigoPostal": "20507",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20508,
+      "codigo": "20508",
+      "nombre": "Escobal",
+      "cantonId": 205,
+      "codigoPostal": "20508",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20601,
+      "codigo": "20601",
+      "nombre": "Naranjo",
+      "cantonId": 206,
+      "codigoPostal": "20601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20602,
+      "codigo": "20602",
+      "nombre": "San Miguel",
+      "cantonId": 206,
+      "codigoPostal": "20602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20603,
+      "codigo": "20603",
+      "nombre": "San José",
+      "cantonId": 206,
+      "codigoPostal": "20603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20604,
+      "codigo": "20604",
+      "nombre": "Cirrí Sur",
+      "cantonId": 206,
+      "codigoPostal": "20604",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20605,
+      "codigo": "20605",
+      "nombre": "San Jerónimo",
+      "cantonId": 206,
+      "codigoPostal": "20605",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20606,
+      "codigo": "20606",
+      "nombre": "San Juan",
+      "cantonId": 206,
+      "codigoPostal": "20606",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20607,
+      "codigo": "20607",
+      "nombre": "El Rosario",
+      "cantonId": 206,
+      "codigoPostal": "20607",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20608,
+      "codigo": "20608",
+      "nombre": "Palmitos",
+      "cantonId": 206,
+      "codigoPostal": "20608",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20701,
+      "codigo": "20701",
+      "nombre": "Palmares",
+      "cantonId": 207,
+      "codigoPostal": "20701",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20702,
+      "codigo": "20702",
+      "nombre": "Zaragoza",
+      "cantonId": 207,
+      "codigoPostal": "20702",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20703,
+      "codigo": "20703",
+      "nombre": "Buenos Aires",
+      "cantonId": 207,
+      "codigoPostal": "20703",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20704,
+      "codigo": "20704",
+      "nombre": "Santiago",
+      "cantonId": 207,
+      "codigoPostal": "20704",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20705,
+      "codigo": "20705",
+      "nombre": "Candelaria",
+      "cantonId": 207,
+      "codigoPostal": "20705",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20706,
+      "codigo": "20706",
+      "nombre": "Esquipulas",
+      "cantonId": 207,
+      "codigoPostal": "20706",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20707,
+      "codigo": "20707",
+      "nombre": "La Granja",
+      "cantonId": 207,
+      "codigoPostal": "20707",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20801,
+      "codigo": "20801",
+      "nombre": "San Pedro",
+      "cantonId": 208,
+      "codigoPostal": "20801",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20802,
+      "codigo": "20802",
+      "nombre": "San Juan",
+      "cantonId": 208,
+      "codigoPostal": "20802",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20803,
+      "codigo": "20803",
+      "nombre": "San Rafael",
+      "cantonId": 208,
+      "codigoPostal": "20803",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20804,
+      "codigo": "20804",
+      "nombre": "Carrillos",
+      "cantonId": 208,
+      "codigoPostal": "20804",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20805,
+      "codigo": "20805",
+      "nombre": "Sabana Redonda",
+      "cantonId": 208,
+      "codigoPostal": "20805",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20901,
+      "codigo": "20901",
+      "nombre": "Orotina",
+      "cantonId": 209,
+      "codigoPostal": "20901",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20902,
+      "codigo": "20902",
+      "nombre": "El Mastate",
+      "cantonId": 209,
+      "codigoPostal": "20902",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20903,
+      "codigo": "20903",
+      "nombre": "Hacienda Vieja",
+      "cantonId": 209,
+      "codigoPostal": "20903",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20904,
+      "codigo": "20904",
+      "nombre": "Coyolar",
+      "cantonId": 209,
+      "codigoPostal": "20904",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 20905,
+      "codigo": "20905",
+      "nombre": "La Ceiba",
+      "cantonId": 209,
+      "codigoPostal": "20905",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21001,
+      "codigo": "21001",
+      "nombre": "Quesada",
+      "cantonId": 210,
+      "codigoPostal": "21001",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21002,
+      "codigo": "21002",
+      "nombre": "Florencia",
+      "cantonId": 210,
+      "codigoPostal": "21002",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21003,
+      "codigo": "21003",
+      "nombre": "Buenavista",
+      "cantonId": 210,
+      "codigoPostal": "21003",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21004,
+      "codigo": "21004",
+      "nombre": "Aguas Zarcas",
+      "cantonId": 210,
+      "codigoPostal": "21004",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21005,
+      "codigo": "21005",
+      "nombre": "Venecia",
+      "cantonId": 210,
+      "codigoPostal": "21005",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21006,
+      "codigo": "21006",
+      "nombre": "Pital",
+      "cantonId": 210,
+      "codigoPostal": "21006",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21007,
+      "codigo": "21007",
+      "nombre": "La Fortuna",
+      "cantonId": 210,
+      "codigoPostal": "21007",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21008,
+      "codigo": "21008",
+      "nombre": "La Tigra",
+      "cantonId": 210,
+      "codigoPostal": "21008",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21009,
+      "codigo": "21009",
+      "nombre": "La Palmera",
+      "cantonId": 210,
+      "codigoPostal": "21009",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21010,
+      "codigo": "21010",
+      "nombre": "Venado",
+      "cantonId": 210,
+      "codigoPostal": "21010",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21011,
+      "codigo": "21011",
+      "nombre": "Cutris",
+      "cantonId": 210,
+      "codigoPostal": "21011",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21012,
+      "codigo": "21012",
+      "nombre": "Monterrey",
+      "cantonId": 210,
+      "codigoPostal": "21012",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21013,
+      "codigo": "21013",
+      "nombre": "Pocosol",
+      "cantonId": 210,
+      "codigoPostal": "21013",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21101,
+      "codigo": "21101",
+      "nombre": "Zarcero",
+      "cantonId": 211,
+      "codigoPostal": "21101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21102,
+      "codigo": "21102",
+      "nombre": "Laguna",
+      "cantonId": 211,
+      "codigoPostal": "21102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21103,
+      "codigo": "21103",
+      "nombre": "Tapesco",
+      "cantonId": 211,
+      "codigoPostal": "21103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21104,
+      "codigo": "21104",
+      "nombre": "Guadalupe",
+      "cantonId": 211,
+      "codigoPostal": "21104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21105,
+      "codigo": "21105",
+      "nombre": "Palmira",
+      "cantonId": 211,
+      "codigoPostal": "21105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21106,
+      "codigo": "21106",
+      "nombre": "Zapote",
+      "cantonId": 211,
+      "codigoPostal": "21106",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21107,
+      "codigo": "21107",
+      "nombre": "Brisas",
+      "cantonId": 211,
+      "codigoPostal": "21107",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21201,
+      "codigo": "21201",
+      "nombre": "Sarchí Norte",
+      "cantonId": 212,
+      "codigoPostal": "21201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21202,
+      "codigo": "21202",
+      "nombre": "Sarchí Sur",
+      "cantonId": 212,
+      "codigoPostal": "21202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21203,
+      "codigo": "21203",
+      "nombre": "Tarcoles",
+      "cantonId": 212,
+      "codigoPostal": "21203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21204,
+      "codigo": "21204",
+      "nombre": "San Pedro",
+      "cantonId": 212,
+      "codigoPostal": "21204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21205,
+      "codigo": "21205",
+      "nombre": "Rodríguez",
+      "cantonId": 212,
+      "codigoPostal": "21205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21301,
+      "codigo": "21301",
+      "nombre": "Upala",
+      "cantonId": 213,
+      "codigoPostal": "21301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21302,
+      "codigo": "21302",
+      "nombre": "Aguas Claras",
+      "cantonId": 213,
+      "codigoPostal": "21302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21303,
+      "codigo": "21303",
+      "nombre": "San José",
+      "cantonId": 213,
+      "codigoPostal": "21303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21304,
+      "codigo": "21304",
+      "nombre": "Bijagua",
+      "cantonId": 213,
+      "codigoPostal": "21304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21305,
+      "codigo": "21305",
+      "nombre": "Delicias",
+      "cantonId": 213,
+      "codigoPostal": "21305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21306,
+      "codigo": "21306",
+      "nombre": "Dos Ríos",
+      "cantonId": 213,
+      "codigoPostal": "21306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21307,
+      "codigo": "21307",
+      "nombre": "Yolillal",
+      "cantonId": 213,
+      "codigoPostal": "21307",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21401,
+      "codigo": "21401",
+      "nombre": "Los Chiles",
+      "cantonId": 214,
+      "codigoPostal": "21401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21402,
+      "codigo": "21402",
+      "nombre": "Caño Negro",
+      "cantonId": 214,
+      "codigoPostal": "21402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21403,
+      "codigo": "21403",
+      "nombre": "El Amparo",
+      "cantonId": 214,
+      "codigoPostal": "21403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21404,
+      "codigo": "21404",
+      "nombre": "San Jorge",
+      "cantonId": 214,
+      "codigoPostal": "21404",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21501,
+      "codigo": "21501",
+      "nombre": "San Rafael",
+      "cantonId": 215,
+      "codigoPostal": "21501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21502,
+      "codigo": "21502",
+      "nombre": "Buenavista",
+      "cantonId": 215,
+      "codigoPostal": "21502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21503,
+      "codigo": "21503",
+      "nombre": "Cote",
+      "cantonId": 215,
+      "codigoPostal": "21503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21504,
+      "codigo": "21504",
+      "nombre": "Katira",
+      "cantonId": 215,
+      "codigoPostal": "21504",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21601,
+      "codigo": "21601",
+      "nombre": "Río Cuarto",
+      "cantonId": 216,
+      "codigoPostal": "21601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21602,
+      "codigo": "21602",
+      "nombre": "Santa Rita",
+      "cantonId": 216,
+      "codigoPostal": "21602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 21603,
+      "codigo": "21603",
+      "nombre": "Santa Isabel",
+      "cantonId": 216,
+      "codigoPostal": "21603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30201,
+      "codigo": "30201",
+      "nombre": "Paraíso",
+      "cantonId": 302,
+      "codigoPostal": "30201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30202,
+      "codigo": "30202",
+      "nombre": "Santiago",
+      "cantonId": 302,
+      "codigoPostal": "30202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30203,
+      "codigo": "30203",
+      "nombre": "Orosi",
+      "cantonId": 302,
+      "codigoPostal": "30203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30204,
+      "codigo": "30204",
+      "nombre": "Cachí",
+      "cantonId": 302,
+      "codigoPostal": "30204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30205,
+      "codigo": "30205",
+      "nombre": "Llanos de Santa Lucía",
+      "cantonId": 302,
+      "codigoPostal": "30205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30301,
+      "codigo": "30301",
+      "nombre": "Tres Ríos",
+      "cantonId": 303,
+      "codigoPostal": "30301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30302,
+      "codigo": "30302",
+      "nombre": "San Diego",
+      "cantonId": 303,
+      "codigoPostal": "30302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30303,
+      "codigo": "30303",
+      "nombre": "San Juan",
+      "cantonId": 303,
+      "codigoPostal": "30303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30304,
+      "codigo": "30304",
+      "nombre": "San Rafael",
+      "cantonId": 303,
+      "codigoPostal": "30304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30305,
+      "codigo": "30305",
+      "nombre": "Concepción",
+      "cantonId": 303,
+      "codigoPostal": "30305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30306,
+      "codigo": "30306",
+      "nombre": "Dulce Nombre",
+      "cantonId": 303,
+      "codigoPostal": "30306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30307,
+      "codigo": "30307",
+      "nombre": "San Ramón",
+      "cantonId": 303,
+      "codigoPostal": "30307",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30308,
+      "codigo": "30308",
+      "nombre": "Río Azul",
+      "cantonId": 303,
+      "codigoPostal": "30308",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30401,
+      "codigo": "30401",
+      "nombre": "Juan Viñas",
+      "cantonId": 304,
+      "codigoPostal": "30401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30402,
+      "codigo": "30402",
+      "nombre": "Tucurrique",
+      "cantonId": 304,
+      "codigoPostal": "30402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30403,
+      "codigo": "30403",
+      "nombre": "Pejibaye",
+      "cantonId": 304,
+      "codigoPostal": "30403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30501,
+      "codigo": "30501",
+      "nombre": "Turrialba",
+      "cantonId": 305,
+      "codigoPostal": "30501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30502,
+      "codigo": "30502",
+      "nombre": "La Suiza",
+      "cantonId": 305,
+      "codigoPostal": "30502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30503,
+      "codigo": "30503",
+      "nombre": "Peralta",
+      "cantonId": 305,
+      "codigoPostal": "30503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30504,
+      "codigo": "30504",
+      "nombre": "Santa Cruz",
+      "cantonId": 305,
+      "codigoPostal": "30504",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30505,
+      "codigo": "30505",
+      "nombre": "Santa Teresita",
+      "cantonId": 305,
+      "codigoPostal": "30505",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30506,
+      "codigo": "30506",
+      "nombre": "Pavones",
+      "cantonId": 305,
+      "codigoPostal": "30506",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30507,
+      "codigo": "30507",
+      "nombre": "Tuis",
+      "cantonId": 305,
+      "codigoPostal": "30507",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30508,
+      "codigo": "30508",
+      "nombre": "Tayutic",
+      "cantonId": 305,
+      "codigoPostal": "30508",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30509,
+      "codigo": "30509",
+      "nombre": "Santa Rosa",
+      "cantonId": 305,
+      "codigoPostal": "30509",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30510,
+      "codigo": "30510",
+      "nombre": "Tres Equis",
+      "cantonId": 305,
+      "codigoPostal": "30510",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30511,
+      "codigo": "30511",
+      "nombre": "La Isabel",
+      "cantonId": 305,
+      "codigoPostal": "30511",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30512,
+      "codigo": "30512",
+      "nombre": "Chirripó",
+      "cantonId": 305,
+      "codigoPostal": "30512",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30601,
+      "codigo": "30601",
+      "nombre": "Pacayas",
+      "cantonId": 306,
+      "codigoPostal": "30601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30602,
+      "codigo": "30602",
+      "nombre": "Cervantes",
+      "cantonId": 306,
+      "codigoPostal": "30602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30603,
+      "codigo": "30603",
+      "nombre": "Capellades",
+      "cantonId": 306,
+      "codigoPostal": "30603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30701,
+      "codigo": "30701",
+      "nombre": "San Rafael",
+      "cantonId": 307,
+      "codigoPostal": "30701",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30702,
+      "codigo": "30702",
+      "nombre": "Cot",
+      "cantonId": 307,
+      "codigoPostal": "30702",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30703,
+      "codigo": "30703",
+      "nombre": "Potrero Cerrado",
+      "cantonId": 307,
+      "codigoPostal": "30703",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30704,
+      "codigo": "30704",
+      "nombre": "Cipreses",
+      "cantonId": 307,
+      "codigoPostal": "30704",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30705,
+      "codigo": "30705",
+      "nombre": "Santa Rosa",
+      "cantonId": 307,
+      "codigoPostal": "30705",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30801,
+      "codigo": "30801",
+      "nombre": "El Tejar",
+      "cantonId": 308,
+      "codigoPostal": "30801",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30802,
+      "codigo": "30802",
+      "nombre": "San Isidro",
+      "cantonId": 308,
+      "codigoPostal": "30802",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30803,
+      "codigo": "30803",
+      "nombre": "Tobosi",
+      "cantonId": 308,
+      "codigoPostal": "30803",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 30804,
+      "codigo": "30804",
+      "nombre": "Patio de Agua",
+      "cantonId": 308,
+      "codigoPostal": "30804",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40101,
+      "codigo": "40101",
+      "nombre": "Heredia",
+      "cantonId": 401,
+      "codigoPostal": "40101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40102,
+      "codigo": "40102",
+      "nombre": "Mercedes",
+      "cantonId": 401,
+      "codigoPostal": "40102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40103,
+      "codigo": "40103",
+      "nombre": "San Francisco",
+      "cantonId": 401,
+      "codigoPostal": "40103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40104,
+      "codigo": "40104",
+      "nombre": "Ulloa",
+      "cantonId": 401,
+      "codigoPostal": "40104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40105,
+      "codigo": "40105",
+      "nombre": "Varablanca",
+      "cantonId": 401,
+      "codigoPostal": "40105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40201,
+      "codigo": "40201",
+      "nombre": "Barva",
+      "cantonId": 402,
+      "codigoPostal": "40201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40202,
+      "codigo": "40202",
+      "nombre": "San Pedro",
+      "cantonId": 402,
+      "codigoPostal": "40202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40203,
+      "codigo": "40203",
+      "nombre": "San Pablo",
+      "cantonId": 402,
+      "codigoPostal": "40203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40204,
+      "codigo": "40204",
+      "nombre": "San Roque",
+      "cantonId": 402,
+      "codigoPostal": "40204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40205,
+      "codigo": "40205",
+      "nombre": "Santa Lucía",
+      "cantonId": 402,
+      "codigoPostal": "40205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40206,
+      "codigo": "40206",
+      "nombre": "San José de la Montaña",
+      "cantonId": 402,
+      "codigoPostal": "40206",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40301,
+      "codigo": "40301",
+      "nombre": "Santo Domingo",
+      "cantonId": 403,
+      "codigoPostal": "40301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40302,
+      "codigo": "40302",
+      "nombre": "San Vicente",
+      "cantonId": 403,
+      "codigoPostal": "40302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40303,
+      "codigo": "40303",
+      "nombre": "San Miguel",
+      "cantonId": 403,
+      "codigoPostal": "40303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40304,
+      "codigo": "40304",
+      "nombre": "Paracito",
+      "cantonId": 403,
+      "codigoPostal": "40304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40305,
+      "codigo": "40305",
+      "nombre": "Santo Tomás",
+      "cantonId": 403,
+      "codigoPostal": "40305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40306,
+      "codigo": "40306",
+      "nombre": "Santa Rosa",
+      "cantonId": 403,
+      "codigoPostal": "40306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40307,
+      "codigo": "40307",
+      "nombre": "Tures",
+      "cantonId": 403,
+      "codigoPostal": "40307",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40308,
+      "codigo": "40308",
+      "nombre": "Pará",
+      "cantonId": 403,
+      "codigoPostal": "40308",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40401,
+      "codigo": "40401",
+      "nombre": "Santa Bárbara",
+      "cantonId": 404,
+      "codigoPostal": "40401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40402,
+      "codigo": "40402",
+      "nombre": "San Pedro",
+      "cantonId": 404,
+      "codigoPostal": "40402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40403,
+      "codigo": "40403",
+      "nombre": "San Juan",
+      "cantonId": 404,
+      "codigoPostal": "40403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40404,
+      "codigo": "40404",
+      "nombre": "Jesús",
+      "cantonId": 404,
+      "codigoPostal": "40404",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40405,
+      "codigo": "40405",
+      "nombre": "Santo Domingo",
+      "cantonId": 404,
+      "codigoPostal": "40405",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40406,
+      "codigo": "40406",
+      "nombre": "Purabá",
+      "cantonId": 404,
+      "codigoPostal": "40406",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40501,
+      "codigo": "40501",
+      "nombre": "San Rafael",
+      "cantonId": 405,
+      "codigoPostal": "40501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40502,
+      "codigo": "40502",
+      "nombre": "San Josecito",
+      "cantonId": 405,
+      "codigoPostal": "40502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40503,
+      "codigo": "40503",
+      "nombre": "Santiago",
+      "cantonId": 405,
+      "codigoPostal": "40503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40504,
+      "codigo": "40504",
+      "nombre": "Ángeles",
+      "cantonId": 405,
+      "codigoPostal": "40504",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40505,
+      "codigo": "40505",
+      "nombre": "Concepción",
+      "cantonId": 405,
+      "codigoPostal": "40505",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40601,
+      "codigo": "40601",
+      "nombre": "San Isidro",
+      "cantonId": 406,
+      "codigoPostal": "40601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40602,
+      "codigo": "40602",
+      "nombre": "San José",
+      "cantonId": 406,
+      "codigoPostal": "40602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40603,
+      "codigo": "40603",
+      "nombre": "Concepción",
+      "cantonId": 406,
+      "codigoPostal": "40603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40604,
+      "codigo": "40604",
+      "nombre": "San Francisco",
+      "cantonId": 406,
+      "codigoPostal": "40604",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40701,
+      "codigo": "40701",
+      "nombre": "San Antonio",
+      "cantonId": 407,
+      "codigoPostal": "40701",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40702,
+      "codigo": "40702",
+      "nombre": "La Ribera",
+      "cantonId": 407,
+      "codigoPostal": "40702",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40703,
+      "codigo": "40703",
+      "nombre": "La Asunción",
+      "cantonId": 407,
+      "codigoPostal": "40703",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40801,
+      "codigo": "40801",
+      "nombre": "San Lorenzo",
+      "cantonId": 408,
+      "codigoPostal": "40801",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40802,
+      "codigo": "40802",
+      "nombre": "San Carlos",
+      "cantonId": 408,
+      "codigoPostal": "40802",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40803,
+      "codigo": "40803",
+      "nombre": "Llorente",
+      "cantonId": 408,
+      "codigoPostal": "40803",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40901,
+      "codigo": "40901",
+      "nombre": "San Pablo",
+      "cantonId": 409,
+      "codigoPostal": "40901",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 40902,
+      "codigo": "40902",
+      "nombre": "Rincón de Sabanilla",
+      "cantonId": 409,
+      "codigoPostal": "40902",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 41001,
+      "codigo": "41001",
+      "nombre": "Puerto Viejo",
+      "cantonId": 410,
+      "codigoPostal": "41001",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 41002,
+      "codigo": "41002",
+      "nombre": "La Virgen",
+      "cantonId": 410,
+      "codigoPostal": "41002",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 41003,
+      "codigo": "41003",
+      "nombre": "Las Horquetas",
+      "cantonId": 410,
+      "codigoPostal": "41003",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 41004,
+      "codigo": "41004",
+      "nombre": "Llanuras del Gaspar",
+      "cantonId": 410,
+      "codigoPostal": "41004",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 41005,
+      "codigo": "41005",
+      "nombre": "Cureña",
+      "cantonId": 410,
+      "codigoPostal": "41005",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50101,
+      "codigo": "50101",
+      "nombre": "Liberia",
+      "cantonId": 501,
+      "codigoPostal": "50101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50102,
+      "codigo": "50102",
+      "nombre": "Cañas Dulces",
+      "cantonId": 501,
+      "codigoPostal": "50102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50103,
+      "codigo": "50103",
+      "nombre": "Mayorga",
+      "cantonId": 501,
+      "codigoPostal": "50103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50104,
+      "codigo": "50104",
+      "nombre": "Nacascolo",
+      "cantonId": 501,
+      "codigoPostal": "50104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50105,
+      "codigo": "50105",
+      "nombre": "Curubandé",
+      "cantonId": 501,
+      "codigoPostal": "50105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50201,
+      "codigo": "50201",
+      "nombre": "Nicoya",
+      "cantonId": 502,
+      "codigoPostal": "50201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50202,
+      "codigo": "50202",
+      "nombre": "Mansión",
+      "cantonId": 502,
+      "codigoPostal": "50202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50203,
+      "codigo": "50203",
+      "nombre": "San Antonio",
+      "cantonId": 502,
+      "codigoPostal": "50203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50204,
+      "codigo": "50204",
+      "nombre": "Quebrada Honda",
+      "cantonId": 502,
+      "codigoPostal": "50204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50205,
+      "codigo": "50205",
+      "nombre": "Sámara",
+      "cantonId": 502,
+      "codigoPostal": "50205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50206,
+      "codigo": "50206",
+      "nombre": "Nosara",
+      "cantonId": 502,
+      "codigoPostal": "50206",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50207,
+      "codigo": "50207",
+      "nombre": "Belén de Nosarita",
+      "cantonId": 502,
+      "codigoPostal": "50207",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50301,
+      "codigo": "50301",
+      "nombre": "Santa Cruz",
+      "cantonId": 503,
+      "codigoPostal": "50301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50302,
+      "codigo": "50302",
+      "nombre": "Bolsón",
+      "cantonId": 503,
+      "codigoPostal": "50302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50303,
+      "codigo": "50303",
+      "nombre": "Veintisiete de Abril",
+      "cantonId": 503,
+      "codigoPostal": "50303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50304,
+      "codigo": "50304",
+      "nombre": "Tempate",
+      "cantonId": 503,
+      "codigoPostal": "50304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50305,
+      "codigo": "50305",
+      "nombre": "Cartagena",
+      "cantonId": 503,
+      "codigoPostal": "50305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50306,
+      "codigo": "50306",
+      "nombre": "Cuajiniquil",
+      "cantonId": 503,
+      "codigoPostal": "50306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50307,
+      "codigo": "50307",
+      "nombre": "Diriá",
+      "cantonId": 503,
+      "codigoPostal": "50307",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50308,
+      "codigo": "50308",
+      "nombre": "Cabo Velas",
+      "cantonId": 503,
+      "codigoPostal": "50308",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50309,
+      "codigo": "50309",
+      "nombre": "Tamarindo",
+      "cantonId": 503,
+      "codigoPostal": "50309",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50401,
+      "codigo": "50401",
+      "nombre": "Bagaces",
+      "cantonId": 504,
+      "codigoPostal": "50401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50402,
+      "codigo": "50402",
+      "nombre": "La Fortuna",
+      "cantonId": 504,
+      "codigoPostal": "50402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50403,
+      "codigo": "50403",
+      "nombre": "Mogote",
+      "cantonId": 504,
+      "codigoPostal": "50403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50404,
+      "codigo": "50404",
+      "nombre": "Río Naranjo",
+      "cantonId": 504,
+      "codigoPostal": "50404",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50501,
+      "codigo": "50501",
+      "nombre": "Filadelfia",
+      "cantonId": 505,
+      "codigoPostal": "50501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50502,
+      "codigo": "50502",
+      "nombre": "Palmira",
+      "cantonId": 505,
+      "codigoPostal": "50502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50503,
+      "codigo": "50503",
+      "nombre": "Sardinal",
+      "cantonId": 505,
+      "codigoPostal": "50503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50504,
+      "codigo": "50504",
+      "nombre": "Belén",
+      "cantonId": 505,
+      "codigoPostal": "50504",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50601,
+      "codigo": "50601",
+      "nombre": "Cañas",
+      "cantonId": 506,
+      "codigoPostal": "50601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50602,
+      "codigo": "50602",
+      "nombre": "Palmira",
+      "cantonId": 506,
+      "codigoPostal": "50602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50603,
+      "codigo": "50603",
+      "nombre": "San Miguel",
+      "cantonId": 506,
+      "codigoPostal": "50603",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50604,
+      "codigo": "50604",
+      "nombre": "Bebedero",
+      "cantonId": 506,
+      "codigoPostal": "50604",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50605,
+      "codigo": "50605",
+      "nombre": "Porozal",
+      "cantonId": 506,
+      "codigoPostal": "50605",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50701,
+      "codigo": "50701",
+      "nombre": "Las Juntas",
+      "cantonId": 507,
+      "codigoPostal": "50701",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50702,
+      "codigo": "50702",
+      "nombre": "Sierra",
+      "cantonId": 507,
+      "codigoPostal": "50702",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50703,
+      "codigo": "50703",
+      "nombre": "San Juan",
+      "cantonId": 507,
+      "codigoPostal": "50703",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50704,
+      "codigo": "50704",
+      "nombre": "Colorado",
+      "cantonId": 507,
+      "codigoPostal": "50704",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50801,
+      "codigo": "50801",
+      "nombre": "Tilarán",
+      "cantonId": 508,
+      "codigoPostal": "50801",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50802,
+      "codigo": "50802",
+      "nombre": "Quebrada Grande",
+      "cantonId": 508,
+      "codigoPostal": "50802",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50803,
+      "codigo": "50803",
+      "nombre": "Tronadora",
+      "cantonId": 508,
+      "codigoPostal": "50803",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50804,
+      "codigo": "50804",
+      "nombre": "Santa Rosa",
+      "cantonId": 508,
+      "codigoPostal": "50804",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50805,
+      "codigo": "50805",
+      "nombre": "Líbano",
+      "cantonId": 508,
+      "codigoPostal": "50805",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50806,
+      "codigo": "50806",
+      "nombre": "Tierras Morenas",
+      "cantonId": 508,
+      "codigoPostal": "50806",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50807,
+      "codigo": "50807",
+      "nombre": "Arenal",
+      "cantonId": 508,
+      "codigoPostal": "50807",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50901,
+      "codigo": "50901",
+      "nombre": "Carmona",
+      "cantonId": 509,
+      "codigoPostal": "50901",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50902,
+      "codigo": "50902",
+      "nombre": "Santa Rita",
+      "cantonId": 509,
+      "codigoPostal": "50902",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50903,
+      "codigo": "50903",
+      "nombre": "Zapotal",
+      "cantonId": 509,
+      "codigoPostal": "50903",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50904,
+      "codigo": "50904",
+      "nombre": "San Pablo",
+      "cantonId": 509,
+      "codigoPostal": "50904",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50905,
+      "codigo": "50905",
+      "nombre": "Porvenir",
+      "cantonId": 509,
+      "codigoPostal": "50905",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 50906,
+      "codigo": "50906",
+      "nombre": "Bejuco",
+      "cantonId": 509,
+      "codigoPostal": "50906",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51001,
+      "codigo": "51001",
+      "nombre": "La Cruz",
+      "cantonId": 510,
+      "codigoPostal": "51001",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51002,
+      "codigo": "51002",
+      "nombre": "Santa Cecilia",
+      "cantonId": 510,
+      "codigoPostal": "51002",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51003,
+      "codigo": "51003",
+      "nombre": "La Garita",
+      "cantonId": 510,
+      "codigoPostal": "51003",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51004,
+      "codigo": "51004",
+      "nombre": "Santa Elena",
+      "cantonId": 510,
+      "codigoPostal": "51004",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51101,
+      "codigo": "51101",
+      "nombre": "Hojancha",
+      "cantonId": 511,
+      "codigoPostal": "51101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51102,
+      "codigo": "51102",
+      "nombre": "Monte Romo",
+      "cantonId": 511,
+      "codigoPostal": "51102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51103,
+      "codigo": "51103",
+      "nombre": "Puerto Carrillo",
+      "cantonId": 511,
+      "codigoPostal": "51103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 51104,
+      "codigo": "51104",
+      "nombre": "Huacas",
+      "cantonId": 511,
+      "codigoPostal": "51104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60101,
+      "codigo": "60101",
+      "nombre": "Puntarenas",
+      "cantonId": 601,
+      "codigoPostal": "60101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60102,
+      "codigo": "60102",
+      "nombre": "Pitahaya",
+      "cantonId": 601,
+      "codigoPostal": "60102",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60103,
+      "codigo": "60103",
+      "nombre": "Chomes",
+      "cantonId": 601,
+      "codigoPostal": "60103",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60104,
+      "codigo": "60104",
+      "nombre": "Lepanto",
+      "cantonId": 601,
+      "codigoPostal": "60104",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60105,
+      "codigo": "60105",
+      "nombre": "Paquera",
+      "cantonId": 601,
+      "codigoPostal": "60105",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60106,
+      "codigo": "60106",
+      "nombre": "Manzanillo",
+      "cantonId": 601,
+      "codigoPostal": "60106",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60107,
+      "codigo": "60107",
+      "nombre": "Guacimal",
+      "cantonId": 601,
+      "codigoPostal": "60107",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60108,
+      "codigo": "60108",
+      "nombre": "Barranca",
+      "cantonId": 601,
+      "codigoPostal": "60108",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60109,
+      "codigo": "60109",
+      "nombre": "Monteverde",
+      "cantonId": 601,
+      "codigoPostal": "60109",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60110,
+      "codigo": "60110",
+      "nombre": "Isla del Coco",
+      "cantonId": 601,
+      "codigoPostal": "60110",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60111,
+      "codigo": "60111",
+      "nombre": "Cóbano",
+      "cantonId": 601,
+      "codigoPostal": "60111",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60112,
+      "codigo": "60112",
+      "nombre": "Chacarita",
+      "cantonId": 601,
+      "codigoPostal": "60112",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60113,
+      "codigo": "60113",
+      "nombre": "Chira",
+      "cantonId": 601,
+      "codigoPostal": "60113",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60114,
+      "codigo": "60114",
+      "nombre": "Acapulco",
+      "cantonId": 601,
+      "codigoPostal": "60114",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60115,
+      "codigo": "60115",
+      "nombre": "El Roble",
+      "cantonId": 601,
+      "codigoPostal": "60115",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60116,
+      "codigo": "60116",
+      "nombre": "Arancibia",
+      "cantonId": 601,
+      "codigoPostal": "60116",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60201,
+      "codigo": "60201",
+      "nombre": "Espíritu Santo",
+      "cantonId": 602,
+      "codigoPostal": "60201",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60202,
+      "codigo": "60202",
+      "nombre": "San Juan Grande",
+      "cantonId": 602,
+      "codigoPostal": "60202",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60203,
+      "codigo": "60203",
+      "nombre": "Macacona",
+      "cantonId": 602,
+      "codigoPostal": "60203",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60204,
+      "codigo": "60204",
+      "nombre": "San Rafael",
+      "cantonId": 602,
+      "codigoPostal": "60204",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60205,
+      "codigo": "60205",
+      "nombre": "San Jerónimo",
+      "cantonId": 602,
+      "codigoPostal": "60205",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60206,
+      "codigo": "60206",
+      "nombre": "Caldera",
+      "cantonId": 602,
+      "codigoPostal": "60206",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60301,
+      "codigo": "60301",
+      "nombre": "Buenos Aires",
+      "cantonId": 603,
+      "codigoPostal": "60301",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60302,
+      "codigo": "60302",
+      "nombre": "Volcán",
+      "cantonId": 603,
+      "codigoPostal": "60302",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60303,
+      "codigo": "60303",
+      "nombre": "Potrero Grande",
+      "cantonId": 603,
+      "codigoPostal": "60303",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60304,
+      "codigo": "60304",
+      "nombre": "Boruca",
+      "cantonId": 603,
+      "codigoPostal": "60304",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60305,
+      "codigo": "60305",
+      "nombre": "Pilas",
+      "cantonId": 603,
+      "codigoPostal": "60305",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60306,
+      "codigo": "60306",
+      "nombre": "Colinas",
+      "cantonId": 603,
+      "codigoPostal": "60306",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60307,
+      "codigo": "60307",
+      "nombre": "Chánguena",
+      "cantonId": 603,
+      "codigoPostal": "60307",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60308,
+      "codigo": "60308",
+      "nombre": "Biolley",
+      "cantonId": 603,
+      "codigoPostal": "60308",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60309,
+      "codigo": "60309",
+      "nombre": "Brunka",
+      "cantonId": 603,
+      "codigoPostal": "60309",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60401,
+      "codigo": "60401",
+      "nombre": "Miramar",
+      "cantonId": 604,
+      "codigoPostal": "60401",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60402,
+      "codigo": "60402",
+      "nombre": "La Unión",
+      "cantonId": 604,
+      "codigoPostal": "60402",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60403,
+      "codigo": "60403",
+      "nombre": "San Isidro",
+      "cantonId": 604,
+      "codigoPostal": "60403",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60501,
+      "codigo": "60501",
+      "nombre": "Quepos",
+      "cantonId": 605,
+      "codigoPostal": "60501",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60502,
+      "codigo": "60502",
+      "nombre": "Savegre",
+      "cantonId": 605,
+      "codigoPostal": "60502",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60503,
+      "codigo": "60503",
+      "nombre": "Naranjito",
+      "cantonId": 605,
+      "codigoPostal": "60503",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60601,
+      "codigo": "60601",
+      "nombre": "Jacó",
+      "cantonId": 606,
+      "codigoPostal": "60601",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60602,
+      "codigo": "60602",
+      "nombre": "Tárcoles",
+      "cantonId": 606,
+      "codigoPostal": "60602",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60701,
+      "codigo": "60701",
+      "nombre": "Golfito",
+      "cantonId": 607,
+      "codigoPostal": "60701",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60702,
+      "codigo": "60702",
+      "nombre": "Puerto Jiménez",
+      "cantonId": 607,
+      "codigoPostal": "60702",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60703,
+      "codigo": "60703",
+      "nombre": "Guaycará",
+      "cantonId": 607,
+      "codigoPostal": "60703",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60704,
+      "codigo": "60704",
+      "nombre": "Pavón",
+      "cantonId": 607,
+      "codigoPostal": "60704",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60801,
+      "codigo": "60801",
+      "nombre": "San Vito",
+      "cantonId": 608,
+      "codigoPostal": "60801",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60802,
+      "codigo": "60802",
+      "nombre": "Sabalito",
+      "cantonId": 608,
+      "codigoPostal": "60802",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60803,
+      "codigo": "60803",
+      "nombre": "Aguabuena",
+      "cantonId": 608,
+      "codigoPostal": "60803",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60804,
+      "codigo": "60804",
+      "nombre": "Limoncito",
+      "cantonId": 608,
+      "codigoPostal": "60804",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60805,
+      "codigo": "60805",
+      "nombre": "Pittier",
+      "cantonId": 608,
+      "codigoPostal": "60805",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60806,
+      "codigo": "60806",
+      "nombre": "Gutiérrez Braun",
+      "cantonId": 608,
+      "codigoPostal": "60806",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 60901,
+      "codigo": "60901",
+      "nombre": "Parrita",
+      "cantonId": 609,
+      "codigoPostal": "60901",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 61001,
+      "codigo": "61001",
+      "nombre": "Corredor",
+      "cantonId": 610,
+      "codigoPostal": "61001",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 61002,
+      "codigo": "61002",
+      "nombre": "La Cuesta",
+      "cantonId": 610,
+      "codigoPostal": "61002",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 61003,
+      "codigo": "61003",
+      "nombre": "Canoas",
+      "cantonId": 610,
+      "codigoPostal": "61003",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 61004,
+      "codigo": "61004",
+      "nombre": "Laurel",
+      "cantonId": 610,
+      "codigoPostal": "61004",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 61101,
+      "codigo": "61101",
+      "nombre": "Garabito",
+      "cantonId": 611,
+      "codigoPostal": "61101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    },
+    {
+      "id": 70101,
+      "codigo": "70101",
+      "nombre": "Limón",
+      "cantonId": 701,
+      "codigoPostal": "70101",
+      "createdAt": "2025-08-10T00:00:00Z",
+      "updatedAt": "2025-08-10T00:00:00Z"
+    }
+  ]
+}

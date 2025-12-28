@@ -83,6 +83,17 @@ export default function AdminLayout({
             </Link>
 
             <Link
+              href="/admin/customers"
+              className={`block px-4 py-2 rounded-lg transition-colors ${
+                isActive('/admin/customers')
+                  ? 'bg-blue-50 text-blue-700 font-medium'
+                  : 'text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              👤 Clientes
+            </Link>
+
+            <Link
               href="/admin/configuration"
               className={`block px-4 py-2 rounded-lg transition-colors ${
                 isActive('/admin/configuration')
