@@ -42,20 +42,26 @@ export interface CostaRicaGeografia {
   distritos: Distrito[];
 }
 
+// Tipo para dirección individual
+export interface CustomerAddress {
+  id: string; // ID único para cada dirección
+  label?: string; // Etiqueta opcional (ej: "Casa", "Oficina", "Casa de mamá")
+  provinciaCodigo: string; // Código de provincia (1-7)
+  cantonCodigo: string; // Código de cantón (101, 102, etc.)
+  distritoCodigo: string; // Código de distrito (10101, 10102, etc.)
+  direccionExacta: string; // Dirección exacta (señas)
+  codigoPostal?: string; // Código postal (asignado automáticamente por distrito)
+  isDefault: boolean; // true si es la dirección predeterminada
+}
+
 export interface Customer {
-  id: number;
+  id: string;
   name: string;
   email: string;
   identificationType: 'fisica' | 'juridica' | 'dimex' | 'pasaporte'; // Tipo de identificación
   identificationNumber: string; // Número de cédula/DIMEX/pasaporte
   phones: string[]; // Array de teléfonos (formato: 8888-8888)
-  address: {
-    provinciaCodigo: string; // Código de provincia (1-7)
-    cantonCodigo: string; // Código de cantón (101, 102, etc.)
-    distritoCodigo: string; // Código de distrito (10101, 10102, etc.)
-    direccionExacta: string; // Dirección exacta (señas)
-    codigoPostal?: string; // Código postal (asignado automáticamente por distrito)
-  };
+  addresses: CustomerAddress[]; // Array de direcciones
   createdBy: 'frontend' | 'admin'; // Origen de creación
   isActive: boolean;
   createdAt: string;
@@ -80,39 +86,69 @@ export interface CatalogNodeWithChildren extends CatalogNode {
   productCount?: number; // Cantidad de productos en este nodo
 }
 
-// Tipos para Productos
+// Tipos para Productos (nuevo sistema normalizado)
 export interface Product {
   id: number;
   name: string;
-  description: string;
-  catalogNodeId: number; // Referencia al nodo del catálogo
-  category?: string; // Categoría del producto (legacy field)
+  description?: string;
+  catalogNodeId?: number;
+  baseSku?: string;
+  createdAt: string;
+  updatedAt?: string;
+}
+
+export interface ProductAttribute {
+  id: number;
+  name: string;
+  input_type?: string; // select, radio, text
+  createdAt: string;
+}
+
+export interface ProductAttributeValue {
+  id: number;
+  attribute_id: number;
+  value: string;
+  createdAt: string;
+}
+
+export interface ProductVariant {
+  id: number;
+  product_id: number;
+  sku: string;
   price: number;
   stock: number;
-  sku: string;
-  imageUrl?: string;
+  active: boolean;
   createdAt: string;
-  // Campos para manejo de variantes
-  isParent?: boolean; // true si es un producto padre que agrupa variantes
-  parentId?: number | null; // ID del producto padre (si es una variante)
-  variantType?: 'size' | 'color' | 'design' | null; // Tipo de variación
-  variantValue?: string; // Valor de la variación (ej: "M", "Rojo", "Diseño 1")
-  // Campo para activar/desactivar
-  isActive?: boolean; // true si está activo y disponible para venta
+}
+
+export interface VariantAttributeValue {
+  variant_id: number;
+  attribute_value_id: number;
+}
+
+// Tipos extendidos para trabajar con joins
+export interface ProductVariantWithDetails extends ProductVariant {
+  attributes?: Array<{
+    attribute_id: number;
+    attribute_name: string;
+    value_id: number;
+    value: string;
+  }>;
+  product?: Product;
 }
 
 export interface ProductWithVariants extends Product {
-  variants?: Product[]; // Variantes del producto (solo si isParent = true)
-  catalogNode?: CatalogNode; // Información del nodo del catálogo
+  variants?: ProductVariantWithDetails[];
+  catalogNode?: CatalogNode;
 }
 
-// Configuración de Variantes
+// Configuración de Variantes (legacy - mantener por compatibilidad)
 export interface VariantConfig {
   id: number;
-  type: string; // 'size', 'color', 'design', etc.
-  label: string; // 'Talla', 'Color', 'Diseño'
-  hasGlobalValues: boolean; // true si tiene valores predefinidos globales
-  values?: string[]; // Valores predefinidos (solo si hasGlobalValues = true)
+  type: string;
+  label: string;
+  hasGlobalValues: boolean;
+  values?: string[];
   createdAt: string;
 }
 
@@ -131,6 +167,7 @@ export interface Order {
   orderNumber: string; // Número de orden consecutivo (ej: "ORD-0001")
   customerId: string;
   customerName?: string; // Para mostrar sin hacer join
+  shippingAddress?: CustomerAddress | null; // Dirección de entrega
   products: OrderProduct[];
   subtotal: number;
   tax: number;

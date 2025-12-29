@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1",
+    "type": "size",
+    "label": "Talla",
+    "hasGlobalValues": true,
+    "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "createdAt": "2025-12-21T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "type": "color",
+    "label": "Color",
+    "hasGlobalValues": true,
+    "values": [
+      "Rojo",
+      "Azul",
+      "Verde",
+      "Negro",
+      "Blanco",
+      "Amarillo"
+    ],
+    "createdAt": "2025-12-21T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "type": "design",
+    "label": "Diseño",
+    "hasGlobalValues": false,
+    "values": [],
+    "createdAt": "2025-12-21T00:00:00.000Z"
+  }
+]

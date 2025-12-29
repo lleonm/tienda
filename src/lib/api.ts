@@ -118,16 +118,86 @@ export const catalogAPI = {
 // Customers API
 export const customersAPI = {
   getAll: () => fetchAPI<any[]>('/customers'),
-  getById: (id: number) => fetchAPI<any>(`/customers/${id}`),
+  getById: (id: string) => fetchAPI<any>(`/customers/${id}`),
   create: (data: any) => fetchAPI<any>('/customers', {
     method: 'POST',
     body: JSON.stringify(data),
   }),
-  update: (id: number, data: any) => fetchAPI<any>(`/customers/${id}`, {
+  update: (id: string, data: any) => fetchAPI<any>(`/customers/${id}`, {
     method: 'PATCH',
     body: JSON.stringify(data),
   }),
-  delete: (id: number) => fetchAPI<void>(`/customers/${id}`, {
+  delete: (id: string) => fetchAPI<void>(`/customers/${id}`, {
     method: 'DELETE',
   }),
+};
+
+// Product Attributes API
+export const productAttributesAPI = {
+  getAll: () => fetchAPI<any[]>('/productAttributes'),
+  getById: (id: number) => fetchAPI<any>(`/productAttributes/${id}`),
+  create: (data: any) => fetchAPI<any>('/productAttributes', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  update: (id: number, data: any) => fetchAPI<any>(`/productAttributes/${id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(data),
+  }),
+  delete: (id: number) => fetchAPI<void>(`/productAttributes/${id}`, {
+    method: 'DELETE',
+  }),
+};
+
+// Product Attribute Values API
+export const productAttributeValuesAPI = {
+  getAll: () => fetchAPI<any[]>('/productAttributeValues'),
+  getById: (id: number) => fetchAPI<any>(`/productAttributeValues/${id}`),
+  getByAttributeId: (attributeId: number) => 
+    fetchAPI<any[]>(`/productAttributeValues?attribute_id=${attributeId}`),
+  create: (data: any) => fetchAPI<any>('/productAttributeValues', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  update: (id: number, data: any) => fetchAPI<any>(`/productAttributeValues/${id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(data),
+  }),
+  delete: (id: number) => fetchAPI<void>(`/productAttributeValues/${id}`, {
+    method: 'DELETE',
+  }),
+};
+
+// Product Variants API
+export const productVariantsAPI = {
+  getAll: () => fetchAPI<any[]>('/productVariants'),
+  getById: (id: number) => fetchAPI<any>(`/productVariants/${id}`),
+  getByProductId: (productId: number) => 
+    fetchAPI<any[]>(`/productVariants?product_id=${productId}`),
+  create: (data: any) => fetchAPI<any>('/productVariants', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  update: (id: number, data: any) => fetchAPI<any>(`/productVariants/${id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(data),
+  }),
+  delete: (id: number) => fetchAPI<void>(`/productVariants/${id}`, {
+    method: 'DELETE',
+  }),
+};
+
+// Variant Attribute Values API (relación many-to-many)
+export const variantAttributeValuesAPI = {
+  getAll: () => fetchAPI<any[]>('/variantAttributeValues'),
+  getByVariantId: (variantId: number) => 
+    fetchAPI<any[]>(`/variantAttributeValues?variant_id=${variantId}`),
+  create: (data: any) => fetchAPI<any>('/variantAttributeValues', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  delete: (variantId: number, attributeValueId: number) => 
+    fetchAPI<void>(`/variantAttributeValues?variant_id=${variantId}&attribute_value_id=${attributeValueId}`, {
+      method: 'DELETE',
+    }),
 };

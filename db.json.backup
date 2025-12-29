@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Admin",
       "email": "admin@tienda.com",
       "role": "admin",
@@ -22,7 +22,7 @@
       ],
       "isActive": true,
       "createdAt": "2024-01-15T10:30:00.000Z",
-      "updatedAt": "2024-01-15T10:30:00.000Z",
+      "updatedAt": "2025-12-28T04:34:04.828Z",
       "addresses": [
         {
           "id": "69976b01-03b5-4df5-88b9-02bdcd92f697",
@@ -33,8 +33,19 @@
           "direccionExacta": "De la esquina del Banco Nacional, 200 metros norte, casa portón café",
           "codigoPostal": "10101",
           "isDefault": true
+        },
+        {
+          "id": "1d8e8c3c-e28c-475b-b91c-7155e8131aba",
+          "label": "second address",
+          "provinciaCodigo": "2",
+          "cantonCodigo": "210",
+          "distritoCodigo": "21007",
+          "direccionExacta": "123 calle nueva",
+          "codigoPostal": "21007",
+          "isDefault": false
         }
-      ]
+      ],
+      "createdBy": "admin"
     },
     {
       "id": "2",
@@ -523,7 +534,7 @@
   ],
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Camisa ML",
       "description": "Camisa Manga Larga",
       "catalogNodeId": "ropa",
@@ -531,7 +542,7 @@
       "createdAt": "2025-12-28T05:10:08.969Z"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Medias",
       "description": "Medias H",
       "catalogNodeId": "ropa",
@@ -539,675 +550,8 @@
       "createdAt": "2025-12-28T05:11:30.521Z"
     }
   ],
-  "productAttributes": [
-    {
-      "id": "1",
-      "name": "Talla",
-      "input_type": "select",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "2",
-      "name": "Color",
-      "input_type": "select",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "3",
-      "name": "Material",
-      "input_type": "select",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    }
-  ],
-  "productAttributeValues": [
-    {
-      "id": "1",
-      "attribute_id": 1,
-      "value": "XS",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "2",
-      "attribute_id": 1,
-      "value": "S",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "3",
-      "attribute_id": 1,
-      "value": "M",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "4",
-      "attribute_id": 1,
-      "value": "L",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "5",
-      "attribute_id": 1,
-      "value": "XL",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "6",
-      "attribute_id": 1,
-      "value": "XXL",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "7",
-      "attribute_id": 2,
-      "value": "Rojo",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "8",
-      "attribute_id": 2,
-      "value": "Azul",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "9",
-      "attribute_id": 2,
-      "value": "Verde",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "10",
-      "attribute_id": 2,
-      "value": "Negro",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "11",
-      "attribute_id": 2,
-      "value": "Blanco",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "12",
-      "attribute_id": 2,
-      "value": "Amarillo",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "13",
-      "attribute_id": 3,
-      "value": "Algodón",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "14",
-      "attribute_id": 3,
-      "value": "Poliéster",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    },
-    {
-      "id": "15",
-      "attribute_id": 3,
-      "value": "Mezclilla",
-      "createdAt": "2025-12-28T00:00:00.000Z"
-    }
-  ],
-  "productVariants": [
-    {
-      "id": "1",
-      "product_id": 1,
-      "sku": "SKU-000001-V001",
-      "price": 25000,
-      "stock": 13,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:08.986Z"
-    },
-    {
-      "id": "2",
-      "product_id": 1,
-      "sku": "SKU-000001-V002",
-      "price": 25000,
-      "stock": 30,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:08.996Z"
-    },
-    {
-      "id": "3",
-      "product_id": 1,
-      "sku": "SKU-000001-V003",
-      "price": 25000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:09.005Z"
-    },
-    {
-      "id": "4",
-      "product_id": 1,
-      "sku": "SKU-000001-V004",
-      "price": 25000,
-      "stock": 30,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:09.014Z"
-    },
-    {
-      "id": "5",
-      "product_id": 1,
-      "sku": "SKU-000001-V005",
-      "price": 25000,
-      "stock": 80,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:09.021Z"
-    },
-    {
-      "id": "6",
-      "product_id": 1,
-      "sku": "SKU-000001-V006",
-      "price": 25000,
-      "stock": 25,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:09.029Z"
-    },
-    {
-      "id": "7",
-      "product_id": 1,
-      "sku": "SKU-000001-V007",
-      "price": 25000,
-      "stock": 20,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:09.035Z"
-    },
-    {
-      "id": "8",
-      "product_id": 1,
-      "sku": "SKU-000001-V008",
-      "price": 25000,
-      "stock": 15,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:09.042Z"
-    },
-    {
-      "id": "9",
-      "product_id": 1,
-      "sku": "SKU-000001-V009",
-      "price": 25000,
-      "stock": 10,
-      "active": true,
-      "createdAt": "2025-12-28T05:10:09.049Z"
-    },
-    {
-      "id": "10",
-      "product_id": 2,
-      "sku": "SKU-000002-V001",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.532Z"
-    },
-    {
-      "id": "11",
-      "product_id": 2,
-      "sku": "SKU-000002-V002",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.539Z"
-    },
-    {
-      "id": "12",
-      "product_id": 2,
-      "sku": "SKU-000002-V003",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.546Z"
-    },
-    {
-      "id": "13",
-      "product_id": 2,
-      "sku": "SKU-000002-V004",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.553Z"
-    },
-    {
-      "id": "14",
-      "product_id": 2,
-      "sku": "SKU-000002-V005",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.560Z"
-    },
-    {
-      "id": "15",
-      "product_id": 2,
-      "sku": "SKU-000002-V006",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.566Z"
-    },
-    {
-      "id": "16",
-      "product_id": 2,
-      "sku": "SKU-000002-V007",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.571Z"
-    },
-    {
-      "id": "17",
-      "product_id": 2,
-      "sku": "SKU-000002-V008",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.577Z"
-    },
-    {
-      "id": "18",
-      "product_id": 2,
-      "sku": "SKU-000002-V009",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.581Z"
-    },
-    {
-      "id": "19",
-      "product_id": 2,
-      "sku": "SKU-000002-V010",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.586Z"
-    },
-    {
-      "id": "20",
-      "product_id": 2,
-      "sku": "SKU-000002-V011",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.591Z"
-    },
-    {
-      "id": "21",
-      "product_id": 2,
-      "sku": "SKU-000002-V012",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.597Z"
-    },
-    {
-      "id": "22",
-      "product_id": 2,
-      "sku": "SKU-000002-V013",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.602Z"
-    },
-    {
-      "id": "23",
-      "product_id": 2,
-      "sku": "SKU-000002-V014",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.608Z"
-    },
-    {
-      "id": "24",
-      "product_id": 2,
-      "sku": "SKU-000002-V015",
-      "price": 5000,
-      "stock": 5,
-      "active": true,
-      "createdAt": "2025-12-28T05:11:30.614Z"
-    },
-    {
-      "id": "51c3",
-      "product_id": 1,
-      "sku": "SKU-000001-V013",
-      "price": 6000,
-      "stock": 10,
-      "active": true,
-      "createdAt": "2025-12-29T01:13:02.228Z"
-    },
-    {
-      "id": "c9fa",
-      "product_id": 1,
-      "sku": "SKU-000001-V017",
-      "price": 6000,
-      "stock": 15,
-      "active": true,
-      "createdAt": "2025-12-29T01:13:02.290Z"
-    },
-    {
-      "id": "60e1",
-      "product_id": 1,
-      "sku": "SKU-000001-V021",
-      "price": 6000,
-      "stock": 20,
-      "active": true,
-      "createdAt": "2025-12-29T01:13:02.308Z"
-    }
-  ],
-  "variantAttributeValues": [
-    {
-      "variant_id": 1,
-      "attribute_value_id": 1,
-      "id": "1"
-    },
-    {
-      "variant_id": 1,
-      "attribute_value_id": 8,
-      "id": "2"
-    },
-    {
-      "variant_id": 2,
-      "attribute_value_id": 1,
-      "id": "3"
-    },
-    {
-      "variant_id": 2,
-      "attribute_value_id": 10,
-      "id": "4"
-    },
-    {
-      "variant_id": 3,
-      "attribute_value_id": 1,
-      "id": "5"
-    },
-    {
-      "variant_id": 3,
-      "attribute_value_id": 12,
-      "id": "6"
-    },
-    {
-      "variant_id": 4,
-      "attribute_value_id": 3,
-      "id": "7"
-    },
-    {
-      "variant_id": 4,
-      "attribute_value_id": 8,
-      "id": "8"
-    },
-    {
-      "variant_id": 5,
-      "attribute_value_id": 3,
-      "id": "9"
-    },
-    {
-      "variant_id": 5,
-      "attribute_value_id": 10,
-      "id": "10"
-    },
-    {
-      "variant_id": 6,
-      "attribute_value_id": 3,
-      "id": "11"
-    },
-    {
-      "variant_id": 6,
-      "attribute_value_id": 12,
-      "id": "12"
-    },
-    {
-      "variant_id": 7,
-      "attribute_value_id": 5,
-      "id": "13"
-    },
-    {
-      "variant_id": 7,
-      "attribute_value_id": 8,
-      "id": "14"
-    },
-    {
-      "variant_id": 8,
-      "attribute_value_id": 5,
-      "id": "15"
-    },
-    {
-      "variant_id": 8,
-      "attribute_value_id": 10,
-      "id": "16"
-    },
-    {
-      "variant_id": 9,
-      "attribute_value_id": 5,
-      "id": "17"
-    },
-    {
-      "variant_id": 9,
-      "attribute_value_id": 12,
-      "id": "18"
-    },
-    {
-      "variant_id": 10,
-      "attribute_value_id": 1,
-      "id": "19"
-    },
-    {
-      "variant_id": 10,
-      "attribute_value_id": 7,
-      "id": "20"
-    },
-    {
-      "variant_id": 11,
-      "attribute_value_id": 1,
-      "id": "21"
-    },
-    {
-      "variant_id": 11,
-      "attribute_value_id": 9,
-      "id": "22"
-    },
-    {
-      "variant_id": 12,
-      "attribute_value_id": 1,
-      "id": "23"
-    },
-    {
-      "variant_id": 12,
-      "attribute_value_id": 11,
-      "id": "24"
-    },
-    {
-      "variant_id": 13,
-      "attribute_value_id": 2,
-      "id": "25"
-    },
-    {
-      "variant_id": 13,
-      "attribute_value_id": 7,
-      "id": "26"
-    },
-    {
-      "variant_id": 14,
-      "attribute_value_id": 2,
-      "id": "27"
-    },
-    {
-      "variant_id": 14,
-      "attribute_value_id": 9,
-      "id": "28"
-    },
-    {
-      "variant_id": 15,
-      "attribute_value_id": 2,
-      "id": "29"
-    },
-    {
-      "variant_id": 15,
-      "attribute_value_id": 11,
-      "id": "30"
-    },
-    {
-      "variant_id": 16,
-      "attribute_value_id": 3,
-      "id": "31"
-    },
-    {
-      "variant_id": 16,
-      "attribute_value_id": 7,
-      "id": "32"
-    },
-    {
-      "variant_id": 17,
-      "attribute_value_id": 3,
-      "id": "33"
-    },
-    {
-      "variant_id": 17,
-      "attribute_value_id": 9,
-      "id": "34"
-    },
-    {
-      "variant_id": 18,
-      "attribute_value_id": 3,
-      "id": "35"
-    },
-    {
-      "variant_id": 18,
-      "attribute_value_id": 11,
-      "id": "36"
-    },
-    {
-      "variant_id": 19,
-      "attribute_value_id": 5,
-      "id": "37"
-    },
-    {
-      "variant_id": 19,
-      "attribute_value_id": 7,
-      "id": "38"
-    },
-    {
-      "variant_id": 20,
-      "attribute_value_id": 5,
-      "id": "39"
-    },
-    {
-      "variant_id": 20,
-      "attribute_value_id": 9,
-      "id": "40"
-    },
-    {
-      "variant_id": 21,
-      "attribute_value_id": 5,
-      "id": "41"
-    },
-    {
-      "variant_id": 21,
-      "attribute_value_id": 11,
-      "id": "42"
-    },
-    {
-      "variant_id": 22,
-      "attribute_value_id": 4,
-      "id": "43"
-    },
-    {
-      "variant_id": 22,
-      "attribute_value_id": 7,
-      "id": "44"
-    },
-    {
-      "variant_id": 23,
-      "attribute_value_id": 4,
-      "id": "45"
-    },
-    {
-      "variant_id": 23,
-      "attribute_value_id": 9,
-      "id": "46"
-    },
-    {
-      "variant_id": 24,
-      "attribute_value_id": 4,
-      "id": "47"
-    },
-    {
-      "variant_id": 24,
-      "attribute_value_id": 11,
-      "id": "48"
-    },
-    {
-      "id": "29aa",
-      "variant_id": "51c3",
-      "attribute_value_id": 1
-    },
-    {
-      "id": "f102",
-      "variant_id": "51c3",
-      "attribute_value_id": 11
-    },
-    {
-      "id": "b8e3",
-      "variant_id": "c9fa",
-      "attribute_value_id": 3
-    },
-    {
-      "id": "3b8f",
-      "variant_id": "c9fa",
-      "attribute_value_id": 11
-    },
-    {
-      "id": "a5d7",
-      "variant_id": "60e1",
-      "attribute_value_id": 5
-    },
-    {
-      "id": "0bb8",
-      "variant_id": "60e1",
-      "attribute_value_id": 11
-    }
-  ],
-  "variantConfigs": [
-    {
-      "id": "1",
-      "type": "size",
-      "label": "Talla",
-      "hasGlobalValues": true,
-      "values": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "createdAt": "2025-12-21T00:00:00.000Z"
-    },
-    {
-      "id": "2",
-      "type": "color",
-      "label": "Color",
-      "hasGlobalValues": true,
-      "values": [
-        "Rojo",
-        "Azul",
-        "Verde",
-        "Negro",
-        "Blanco",
-        "Amarillo"
-      ],
-      "createdAt": "2025-12-21T00:00:00.000Z"
-    },
-    {
-      "id": "3",
-      "type": "design",
-      "label": "Diseño",
-      "hasGlobalValues": false,
-      "values": [],
-      "createdAt": "2025-12-21T00:00:00.000Z"
-    }
-  ],
+  "orders": [],
+  "invoices": [],
   "catalogNodes": [
     {
       "id": "1",
@@ -1302,7 +646,7 @@
     {
       "id": "10",
       "name": "Joyas",
-      "description": "Joyería y bisutería",
+      "description": "JoyerÃ­a y bisuterÃ­a",
       "parentId": 8,
       "level": 1,
       "order": 1,
@@ -1330,6 +674,568 @@
       "createdAt": "2024-01-01T00:00:00.000Z"
     }
   ],
-  "orders": [],
-  "invoices": []
+  "variantConfigs": [
+    {
+      "id": "1",
+      "type": "size",
+      "label": "Talla",
+      "hasGlobalValues": true,
+      "values": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "type": "color",
+      "label": "Color",
+      "hasGlobalValues": true,
+      "values": [
+        "Rojo",
+        "Azul",
+        "Verde",
+        "Negro",
+        "Blanco",
+        "Amarillo"
+      ],
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "type": "design",
+      "label": "Diseño",
+      "hasGlobalValues": false,
+      "values": [],
+      "createdAt": "2025-12-21T00:00:00.000Z"
+    }
+  ],
+  "productAttributes": [
+    {
+      "id": 1,
+      "name": "Talla",
+      "input_type": "select",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Color",
+      "input_type": "select",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Material",
+      "input_type": "select",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    }
+  ],
+  "productAttributeValues": [
+    {
+      "id": 1,
+      "attribute_id": 1,
+      "value": "XS",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "attribute_id": 1,
+      "value": "S",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "attribute_id": 1,
+      "value": "M",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "attribute_id": 1,
+      "value": "L",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "attribute_id": 1,
+      "value": "XL",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "attribute_id": 1,
+      "value": "XXL",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "attribute_id": 2,
+      "value": "Rojo",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "attribute_id": 2,
+      "value": "Azul",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "attribute_id": 2,
+      "value": "Verde",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "attribute_id": 2,
+      "value": "Negro",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "attribute_id": 2,
+      "value": "Blanco",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "attribute_id": 2,
+      "value": "Amarillo",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 13,
+      "attribute_id": 3,
+      "value": "Algodón",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 14,
+      "attribute_id": 3,
+      "value": "Poliéster",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    },
+    {
+      "id": 15,
+      "attribute_id": 3,
+      "value": "Mezclilla",
+      "createdAt": "2025-12-28T00:00:00.000Z"
+    }
+  ],
+  "productVariants": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "sku": "SKU-000001-V001",
+      "price": 25000,
+      "stock": 25,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:08.986Z"
+    },
+    {
+      "id": 2,
+      "product_id": 1,
+      "sku": "SKU-000001-V002",
+      "price": 25000,
+      "stock": 20,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:08.996Z"
+    },
+    {
+      "id": 3,
+      "product_id": 1,
+      "sku": "SKU-000001-V003",
+      "price": 25000,
+      "stock": 15,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:09.005Z"
+    },
+    {
+      "id": 4,
+      "product_id": 1,
+      "sku": "SKU-000001-V004",
+      "price": 25000,
+      "stock": 30,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:09.014Z"
+    },
+    {
+      "id": 5,
+      "product_id": 1,
+      "sku": "SKU-000001-V005",
+      "price": 25000,
+      "stock": 80,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:09.021Z"
+    },
+    {
+      "id": 6,
+      "product_id": 1,
+      "sku": "SKU-000001-V006",
+      "price": 25000,
+      "stock": 25,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:09.029Z"
+    },
+    {
+      "id": 7,
+      "product_id": 1,
+      "sku": "SKU-000001-V007",
+      "price": 25000,
+      "stock": 20,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:09.035Z"
+    },
+    {
+      "id": 8,
+      "product_id": 1,
+      "sku": "SKU-000001-V008",
+      "price": 25000,
+      "stock": 15,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:09.042Z"
+    },
+    {
+      "id": 9,
+      "product_id": 1,
+      "sku": "SKU-000001-V009",
+      "price": 25000,
+      "stock": 10,
+      "active": true,
+      "createdAt": "2025-12-28T05:10:09.049Z"
+    },
+    {
+      "id": 10,
+      "product_id": 2,
+      "sku": "SKU-000002-V001",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.532Z"
+    },
+    {
+      "id": 11,
+      "product_id": 2,
+      "sku": "SKU-000002-V002",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.539Z"
+    },
+    {
+      "id": 12,
+      "product_id": 2,
+      "sku": "SKU-000002-V003",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.546Z"
+    },
+    {
+      "id": 13,
+      "product_id": 2,
+      "sku": "SKU-000002-V004",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.553Z"
+    },
+    {
+      "id": 14,
+      "product_id": 2,
+      "sku": "SKU-000002-V005",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.560Z"
+    },
+    {
+      "id": 15,
+      "product_id": 2,
+      "sku": "SKU-000002-V006",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.566Z"
+    },
+    {
+      "id": 16,
+      "product_id": 2,
+      "sku": "SKU-000002-V007",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.571Z"
+    },
+    {
+      "id": 17,
+      "product_id": 2,
+      "sku": "SKU-000002-V008",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.577Z"
+    },
+    {
+      "id": 18,
+      "product_id": 2,
+      "sku": "SKU-000002-V009",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.581Z"
+    },
+    {
+      "id": 19,
+      "product_id": 2,
+      "sku": "SKU-000002-V010",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.586Z"
+    },
+    {
+      "id": 20,
+      "product_id": 2,
+      "sku": "SKU-000002-V011",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.591Z"
+    },
+    {
+      "id": 21,
+      "product_id": 2,
+      "sku": "SKU-000002-V012",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.597Z"
+    },
+    {
+      "id": 22,
+      "product_id": 2,
+      "sku": "SKU-000002-V013",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.602Z"
+    },
+    {
+      "id": 23,
+      "product_id": 2,
+      "sku": "SKU-000002-V014",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.608Z"
+    },
+    {
+      "id": 24,
+      "product_id": 2,
+      "sku": "SKU-000002-V015",
+      "price": 5000,
+      "stock": 5,
+      "active": true,
+      "createdAt": "2025-12-28T05:11:30.614Z"
+    }
+  ],
+  "variantAttributeValues": [
+    {
+      "variant_id": 1,
+      "attribute_value_id": 1
+    },
+    {
+      "variant_id": 1,
+      "attribute_value_id": 8
+    },
+    {
+      "variant_id": 2,
+      "attribute_value_id": 1
+    },
+    {
+      "variant_id": 2,
+      "attribute_value_id": 10
+    },
+    {
+      "variant_id": 3,
+      "attribute_value_id": 1
+    },
+    {
+      "variant_id": 3,
+      "attribute_value_id": 12
+    },
+    {
+      "variant_id": 4,
+      "attribute_value_id": 3
+    },
+    {
+      "variant_id": 4,
+      "attribute_value_id": 8
+    },
+    {
+      "variant_id": 5,
+      "attribute_value_id": 3
+    },
+    {
+      "variant_id": 5,
+      "attribute_value_id": 10
+    },
+    {
+      "variant_id": 6,
+      "attribute_value_id": 3
+    },
+    {
+      "variant_id": 6,
+      "attribute_value_id": 12
+    },
+    {
+      "variant_id": 7,
+      "attribute_value_id": 5
+    },
+    {
+      "variant_id": 7,
+      "attribute_value_id": 8
+    },
+    {
+      "variant_id": 8,
+      "attribute_value_id": 5
+    },
+    {
+      "variant_id": 8,
+      "attribute_value_id": 10
+    },
+    {
+      "variant_id": 9,
+      "attribute_value_id": 5
+    },
+    {
+      "variant_id": 9,
+      "attribute_value_id": 12
+    },
+    {
+      "variant_id": 10,
+      "attribute_value_id": 1
+    },
+    {
+      "variant_id": 10,
+      "attribute_value_id": 7
+    },
+    {
+      "variant_id": 11,
+      "attribute_value_id": 1
+    },
+    {
+      "variant_id": 11,
+      "attribute_value_id": 9
+    },
+    {
+      "variant_id": 12,
+      "attribute_value_id": 1
+    },
+    {
+      "variant_id": 12,
+      "attribute_value_id": 11
+    },
+    {
+      "variant_id": 13,
+      "attribute_value_id": 2
+    },
+    {
+      "variant_id": 13,
+      "attribute_value_id": 7
+    },
+    {
+      "variant_id": 14,
+      "attribute_value_id": 2
+    },
+    {
+      "variant_id": 14,
+      "attribute_value_id": 9
+    },
+    {
+      "variant_id": 15,
+      "attribute_value_id": 2
+    },
+    {
+      "variant_id": 15,
+      "attribute_value_id": 11
+    },
+    {
+      "variant_id": 16,
+      "attribute_value_id": 3
+    },
+    {
+      "variant_id": 16,
+      "attribute_value_id": 7
+    },
+    {
+      "variant_id": 17,
+      "attribute_value_id": 3
+    },
+    {
+      "variant_id": 17,
+      "attribute_value_id": 9
+    },
+    {
+      "variant_id": 18,
+      "attribute_value_id": 3
+    },
+    {
+      "variant_id": 18,
+      "attribute_value_id": 11
+    },
+    {
+      "variant_id": 19,
+      "attribute_value_id": 5
+    },
+    {
+      "variant_id": 19,
+      "attribute_value_id": 7
+    },
+    {
+      "variant_id": 20,
+      "attribute_value_id": 5
+    },
+    {
+      "variant_id": 20,
+      "attribute_value_id": 9
+    },
+    {
+      "variant_id": 21,
+      "attribute_value_id": 5
+    },
+    {
+      "variant_id": 21,
+      "attribute_value_id": 11
+    },
+    {
+      "variant_id": 22,
+      "attribute_value_id": 4
+    },
+    {
+      "variant_id": 22,
+      "attribute_value_id": 7
+    },
+    {
+      "variant_id": 23,
+      "attribute_value_id": 4
+    },
+    {
+      "variant_id": 23,
+      "attribute_value_id": 9
+    },
+    {
+      "variant_id": 24,
+      "attribute_value_id": 4
+    },
+    {
+      "variant_id": 24,
+      "attribute_value_id": 11
+    }
+  ]
 }

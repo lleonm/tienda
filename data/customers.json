@@ -5,17 +5,25 @@
     "email": "maria.rodriguez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-0234-0567",
-    "phones": ["2234-5678", "8765-4321"],
-    "address": {
-      "provinciaCodigo": "1",
-      "cantonCodigo": "101",
-      "distritoCodigo": "10101",
-      "direccionExacta": "De la esquina del Banco Nacional, 200 metros norte, casa portón café",
-      "codigoPostal": "10101"
-    },
+    "phones": [
+      "2234-5678",
+      "8765-4321"
+    ],
     "isActive": true,
     "createdAt": "2024-01-15T10:30:00.000Z",
-    "updatedAt": "2024-01-15T10:30:00.000Z"
+    "updatedAt": "2024-01-15T10:30:00.000Z",
+    "addresses": [
+      {
+        "id": "69976b01-03b5-4df5-88b9-02bdcd92f697",
+        "label": "Principal",
+        "provinciaCodigo": "1",
+        "cantonCodigo": "101",
+        "distritoCodigo": "10101",
+        "direccionExacta": "De la esquina del Banco Nacional, 200 metros norte, casa portón café",
+        "codigoPostal": "10101",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "2",
@@ -23,17 +31,24 @@
     "email": "carlos.fernandez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "2-0456-0789",
-    "phones": ["2245-6789"],
-    "address": {
-      "provinciaCodigo": "2",
-      "cantonCodigo": "201",
-      "distritoCodigo": "20101",
-      "direccionExacta": "Frente al Parque Central, edificio amarillo",
-      "codigoPostal": "20101"
-    },
+    "phones": [
+      "2245-6789"
+    ],
     "isActive": true,
     "createdAt": "2024-01-16T11:15:00.000Z",
-    "updatedAt": "2024-01-16T11:15:00.000Z"
+    "updatedAt": "2024-01-16T11:15:00.000Z",
+    "addresses": [
+      {
+        "id": "4aebae7d-6c18-4e4b-8766-e700e54788e5",
+        "label": "Principal",
+        "provinciaCodigo": "2",
+        "cantonCodigo": "201",
+        "distritoCodigo": "20101",
+        "direccionExacta": "Frente al Parque Central, edificio amarillo",
+        "codigoPostal": "20101",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "3",
@@ -41,17 +56,25 @@
     "email": "ana.lopez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-0567-0890",
-    "phones": ["2256-7890", "8876-5432"],
-    "address": {
-      "provinciaCodigo": "3",
-      "cantonCodigo": "301",
-      "distritoCodigo": "30101",
-      "direccionExacta": "200 metros oeste del supermercado",
-      "codigoPostal": "30101"
-    },
+    "phones": [
+      "2256-7890",
+      "8876-5432"
+    ],
     "isActive": true,
     "createdAt": "2024-01-17T09:45:00.000Z",
-    "updatedAt": "2024-01-17T09:45:00.000Z"
+    "updatedAt": "2024-01-17T09:45:00.000Z",
+    "addresses": [
+      {
+        "id": "63bd43be-e436-4b32-b84e-d4f391d8f0ba",
+        "label": "Principal",
+        "provinciaCodigo": "3",
+        "cantonCodigo": "301",
+        "distritoCodigo": "30101",
+        "direccionExacta": "200 metros oeste del supermercado",
+        "codigoPostal": "30101",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "4",
@@ -59,17 +82,24 @@
     "email": "info@techcorp.co.cr",
     "identificationType": "juridica",
     "identificationNumber": "3-101-234567",
-    "phones": ["2267-8901"],
-    "address": {
-      "provinciaCodigo": "1",
-      "cantonCodigo": "108",
-      "distritoCodigo": "10801",
-      "direccionExacta": "Edificio Torres del Este, piso 5, oficina 502",
-      "codigoPostal": "10801"
-    },
+    "phones": [
+      "2267-8901"
+    ],
     "isActive": true,
     "createdAt": "2024-01-18T14:20:00.000Z",
-    "updatedAt": "2024-01-18T14:20:00.000Z"
+    "updatedAt": "2024-01-18T14:20:00.000Z",
+    "addresses": [
+      {
+        "id": "d6609e7d-bd02-473b-95c4-48849e9b3188",
+        "label": "Principal",
+        "provinciaCodigo": "1",
+        "cantonCodigo": "108",
+        "distritoCodigo": "10801",
+        "direccionExacta": "Edificio Torres del Este, piso 5, oficina 502",
+        "codigoPostal": "10801",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "5",
@@ -77,17 +107,25 @@
     "email": "jose.gonzalez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-0678-0901",
-    "phones": ["2278-9012", "8987-6543"],
-    "address": {
-      "provinciaCodigo": "4",
-      "cantonCodigo": "401",
-      "distritoCodigo": "40101",
-      "direccionExacta": "Del cementerio, 100 metros sur",
-      "codigoPostal": "40101"
-    },
+    "phones": [
+      "2278-9012",
+      "8987-6543"
+    ],
     "isActive": true,
     "createdAt": "2024-01-19T08:30:00.000Z",
-    "updatedAt": "2024-01-19T08:30:00.000Z"
+    "updatedAt": "2024-01-19T08:30:00.000Z",
+    "addresses": [
+      {
+        "id": "04047460-fc6e-49a9-9a65-dfcc13614bb0",
+        "label": "Principal",
+        "provinciaCodigo": "4",
+        "cantonCodigo": "401",
+        "distritoCodigo": "40101",
+        "direccionExacta": "Del cementerio, 100 metros sur",
+        "codigoPostal": "40101",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "6",
@@ -95,17 +133,24 @@
     "email": "laura.martinez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "2-0789-0123",
-    "phones": ["2289-0123"],
-    "address": {
-      "provinciaCodigo": "5",
-      "cantonCodigo": "501",
-      "distritoCodigo": "50101",
-      "direccionExacta": "Contiguo a la escuela, casa verde",
-      "codigoPostal": "50101"
-    },
+    "phones": [
+      "2289-0123"
+    ],
     "isActive": true,
     "createdAt": "2024-01-20T10:00:00.000Z",
-    "updatedAt": "2024-01-20T10:00:00.000Z"
+    "updatedAt": "2024-01-20T10:00:00.000Z",
+    "addresses": [
+      {
+        "id": "c4cceb36-a4db-486b-9fd4-f25c66ed20f5",
+        "label": "Principal",
+        "provinciaCodigo": "5",
+        "cantonCodigo": "501",
+        "distritoCodigo": "50101",
+        "direccionExacta": "Contiguo a la escuela, casa verde",
+        "codigoPostal": "50101",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "7",
@@ -113,17 +158,25 @@
     "email": "pedro.ramirez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-0890-0234",
-    "phones": ["2290-1234", "8098-7654"],
-    "address": {
-      "provinciaCodigo": "6",
-      "cantonCodigo": "601",
-      "distritoCodigo": "60101",
-      "direccionExacta": "De la iglesia católica, 300 metros este",
-      "codigoPostal": "60101"
-    },
+    "phones": [
+      "2290-1234",
+      "8098-7654"
+    ],
     "isActive": true,
     "createdAt": "2024-01-21T13:45:00.000Z",
-    "updatedAt": "2024-01-21T13:45:00.000Z"
+    "updatedAt": "2024-01-21T13:45:00.000Z",
+    "addresses": [
+      {
+        "id": "ef1bc4f3-cb24-48fe-827d-c6142cf89e2f",
+        "label": "Principal",
+        "provinciaCodigo": "6",
+        "cantonCodigo": "601",
+        "distritoCodigo": "60101",
+        "direccionExacta": "De la iglesia católica, 300 metros este",
+        "codigoPostal": "60101",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "8",
@@ -131,17 +184,24 @@
     "email": "ventas@elsol.co.cr",
     "identificationType": "juridica",
     "identificationNumber": "3-102-345678",
-    "phones": ["2201-2345"],
-    "address": {
-      "provinciaCodigo": "1",
-      "cantonCodigo": "102",
-      "distritoCodigo": "10201",
-      "direccionExacta": "Centro comercial La Plaza, local 15",
-      "codigoPostal": "10201"
-    },
+    "phones": [
+      "2201-2345"
+    ],
     "isActive": true,
     "createdAt": "2024-01-22T11:20:00.000Z",
-    "updatedAt": "2024-01-22T11:20:00.000Z"
+    "updatedAt": "2024-01-22T11:20:00.000Z",
+    "addresses": [
+      {
+        "id": "72834e49-c5c6-4669-8ba5-accdb7ddf19b",
+        "label": "Principal",
+        "provinciaCodigo": "1",
+        "cantonCodigo": "102",
+        "distritoCodigo": "10201",
+        "direccionExacta": "Centro comercial La Plaza, local 15",
+        "codigoPostal": "10201",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "9",
@@ -149,17 +209,25 @@
     "email": "gabriela.herrera@email.com",
     "identificationType": "dimex",
     "identificationNumber": "155678901234",
-    "phones": ["2212-3456", "8209-8765"],
-    "address": {
-      "provinciaCodigo": "7",
-      "cantonCodigo": "701",
-      "distritoCodigo": "70101",
-      "direccionExacta": "Apartamentos Los Coco, apartamento 12B",
-      "codigoPostal": "70101"
-    },
+    "phones": [
+      "2212-3456",
+      "8209-8765"
+    ],
     "isActive": true,
     "createdAt": "2024-01-23T15:30:00.000Z",
-    "updatedAt": "2024-01-23T15:30:00.000Z"
+    "updatedAt": "2024-01-23T15:30:00.000Z",
+    "addresses": [
+      {
+        "id": "d510de16-222b-4807-957e-34eac8507d33",
+        "label": "Principal",
+        "provinciaCodigo": "7",
+        "cantonCodigo": "701",
+        "distritoCodigo": "70101",
+        "direccionExacta": "Apartamentos Los Coco, apartamento 12B",
+        "codigoPostal": "70101",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "10",
@@ -167,17 +235,24 @@
     "email": "roberto.sanchez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-0901-0345",
-    "phones": ["2223-4567"],
-    "address": {
-      "provinciaCodigo": "1",
-      "cantonCodigo": "103",
-      "distritoCodigo": "10301",
-      "direccionExacta": "Urbanización Los Pinos, casa 45",
-      "codigoPostal": "10301"
-    },
+    "phones": [
+      "2223-4567"
+    ],
     "isActive": false,
     "createdAt": "2024-01-24T09:15:00.000Z",
-    "updatedAt": "2024-01-24T09:15:00.000Z"
+    "updatedAt": "2024-01-24T09:15:00.000Z",
+    "addresses": [
+      {
+        "id": "1e4fea59-f9e6-450b-ad44-df3a76644cf0",
+        "label": "Principal",
+        "provinciaCodigo": "1",
+        "cantonCodigo": "103",
+        "distritoCodigo": "10301",
+        "direccionExacta": "Urbanización Los Pinos, casa 45",
+        "codigoPostal": "10301",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "11",
@@ -185,17 +260,25 @@
     "email": "sofia.jimenez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "2-1012-0456",
-    "phones": ["2234-5678", "8321-0987"],
-    "address": {
-      "provinciaCodigo": "2",
-      "cantonCodigo": "202",
-      "distritoCodigo": "20201",
-      "direccionExacta": "Del estadio, 500 metros norte, casa azul",
-      "codigoPostal": "20201"
-    },
+    "phones": [
+      "2234-5678",
+      "8321-0987"
+    ],
     "isActive": true,
     "createdAt": "2024-01-25T10:45:00.000Z",
-    "updatedAt": "2024-01-25T10:45:00.000Z"
+    "updatedAt": "2024-01-25T10:45:00.000Z",
+    "addresses": [
+      {
+        "id": "3b4d8cd3-7e01-43c5-846c-a734afb68cda",
+        "label": "Principal",
+        "provinciaCodigo": "2",
+        "cantonCodigo": "202",
+        "distritoCodigo": "20201",
+        "direccionExacta": "Del estadio, 500 metros norte, casa azul",
+        "codigoPostal": "20201",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "12",
@@ -203,17 +286,24 @@
     "email": "proyectos@construccionesmodernas.co.cr",
     "identificationType": "juridica",
     "identificationNumber": "3-103-456789",
-    "phones": ["2245-6789"],
-    "address": {
-      "provinciaCodigo": "3",
-      "cantonCodigo": "302",
-      "distritoCodigo": "30201",
-      "direccionExacta": "Zona industrial, bodega 8",
-      "codigoPostal": "30201"
-    },
+    "phones": [
+      "2245-6789"
+    ],
     "isActive": true,
     "createdAt": "2024-01-26T14:00:00.000Z",
-    "updatedAt": "2024-01-26T14:00:00.000Z"
+    "updatedAt": "2024-01-26T14:00:00.000Z",
+    "addresses": [
+      {
+        "id": "fb55a871-df1b-4436-9bb9-52079a1ef323",
+        "label": "Principal",
+        "provinciaCodigo": "3",
+        "cantonCodigo": "302",
+        "distritoCodigo": "30201",
+        "direccionExacta": "Zona industrial, bodega 8",
+        "codigoPostal": "30201",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "13",
@@ -221,17 +311,25 @@
     "email": "diego.mendez@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-1123-0567",
-    "phones": ["2256-7890", "8432-1098"],
-    "address": {
-      "provinciaCodigo": "4",
-      "cantonCodigo": "402",
-      "distritoCodigo": "40201",
-      "direccionExacta": "Residencial Las Brisas, lote 22",
-      "codigoPostal": "40201"
-    },
+    "phones": [
+      "2256-7890",
+      "8432-1098"
+    ],
     "isActive": true,
     "createdAt": "2024-01-27T08:20:00.000Z",
-    "updatedAt": "2024-01-27T08:20:00.000Z"
+    "updatedAt": "2024-01-27T08:20:00.000Z",
+    "addresses": [
+      {
+        "id": "38fcb7cf-2649-4a54-a790-18fdab2197cc",
+        "label": "Principal",
+        "provinciaCodigo": "4",
+        "cantonCodigo": "402",
+        "distritoCodigo": "40201",
+        "direccionExacta": "Residencial Las Brisas, lote 22",
+        "codigoPostal": "40201",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "14",
@@ -239,17 +337,24 @@
     "email": "valentina.castro@email.com",
     "identificationType": "pasaporte",
     "identificationNumber": "AB123456",
-    "phones": ["2267-8901"],
-    "address": {
-      "provinciaCodigo": "5",
-      "cantonCodigo": "502",
-      "distritoCodigo": "50201",
-      "direccionExacta": "Hotel Vista Mar, habitación 305",
-      "codigoPostal": "50201"
-    },
+    "phones": [
+      "2267-8901"
+    ],
     "isActive": true,
     "createdAt": "2024-01-28T12:30:00.000Z",
-    "updatedAt": "2024-01-28T12:30:00.000Z"
+    "updatedAt": "2024-01-28T12:30:00.000Z",
+    "addresses": [
+      {
+        "id": "592d3ebc-daa8-4bbd-a2d3-595708a1109d",
+        "label": "Principal",
+        "provinciaCodigo": "5",
+        "cantonCodigo": "502",
+        "distritoCodigo": "50201",
+        "direccionExacta": "Hotel Vista Mar, habitación 305",
+        "codigoPostal": "50201",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "15",
@@ -257,17 +362,25 @@
     "email": "ricardo.torres@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-1234-0678",
-    "phones": ["2278-9012", "8543-2109"],
-    "address": {
-      "provinciaCodigo": "6",
-      "cantonCodigo": "602",
-      "distritoCodigo": "60201",
-      "direccionExacta": "Barrio San Antonio, frente al parque",
-      "codigoPostal": "60201"
-    },
+    "phones": [
+      "2278-9012",
+      "8543-2109"
+    ],
     "isActive": true,
     "createdAt": "2024-01-29T16:15:00.000Z",
-    "updatedAt": "2024-01-29T16:15:00.000Z"
+    "updatedAt": "2024-01-29T16:15:00.000Z",
+    "addresses": [
+      {
+        "id": "8a167cb0-3db3-42e3-b981-05b94942e30f",
+        "label": "Principal",
+        "provinciaCodigo": "6",
+        "cantonCodigo": "602",
+        "distritoCodigo": "60201",
+        "direccionExacta": "Barrio San Antonio, frente al parque",
+        "codigoPostal": "60201",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "16",
@@ -275,17 +388,24 @@
     "email": "contacto@serviciosdigitales.co.cr",
     "identificationType": "juridica",
     "identificationNumber": "3-104-567890",
-    "phones": ["2289-0123"],
-    "address": {
-      "provinciaCodigo": "7",
-      "cantonCodigo": "702",
-      "distritoCodigo": "70201",
-      "direccionExacta": "Plaza comercial del Este, nivel 2, oficina 201",
-      "codigoPostal": "70201"
-    },
+    "phones": [
+      "2289-0123"
+    ],
     "isActive": true,
     "createdAt": "2024-01-30T11:00:00.000Z",
-    "updatedAt": "2024-01-30T11:00:00.000Z"
+    "updatedAt": "2024-01-30T11:00:00.000Z",
+    "addresses": [
+      {
+        "id": "3467e3d8-7058-40a4-80fb-491691beae36",
+        "label": "Principal",
+        "provinciaCodigo": "7",
+        "cantonCodigo": "702",
+        "distritoCodigo": "70201",
+        "direccionExacta": "Plaza comercial del Este, nivel 2, oficina 201",
+        "codigoPostal": "70201",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "17",
@@ -293,17 +413,24 @@
     "email": "patricia.vargas@email.com",
     "identificationType": "fisica",
     "identificationNumber": "2-1345-0789",
-    "phones": ["2290-1234"],
-    "address": {
-      "provinciaCodigo": "1",
-      "cantonCodigo": "104",
-      "distritoCodigo": "10401",
-      "direccionExacta": "Condominio Los Almendros, casa 7",
-      "codigoPostal": "10401"
-    },
+    "phones": [
+      "2290-1234"
+    ],
     "isActive": false,
     "createdAt": "2024-01-31T13:20:00.000Z",
-    "updatedAt": "2024-01-31T13:20:00.000Z"
+    "updatedAt": "2024-01-31T13:20:00.000Z",
+    "addresses": [
+      {
+        "id": "3454e1c9-5cda-4d25-9af7-010763972c78",
+        "label": "Principal",
+        "provinciaCodigo": "1",
+        "cantonCodigo": "104",
+        "distritoCodigo": "10401",
+        "direccionExacta": "Condominio Los Almendros, casa 7",
+        "codigoPostal": "10401",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "18",
@@ -311,17 +438,25 @@
     "email": "fernando.blanco@email.com",
     "identificationType": "fisica",
     "identificationNumber": "1-1456-0890",
-    "phones": ["2201-2345", "8654-3210"],
-    "address": {
-      "provinciaCodigo": "2",
-      "cantonCodigo": "203",
-      "distritoCodigo": "20301",
-      "direccionExacta": "Del puente, 200 metros oeste, casa esquinera",
-      "codigoPostal": "20301"
-    },
+    "phones": [
+      "2201-2345",
+      "8654-3210"
+    ],
     "isActive": true,
     "createdAt": "2024-02-01T09:40:00.000Z",
-    "updatedAt": "2024-02-01T09:40:00.000Z"
+    "updatedAt": "2024-02-01T09:40:00.000Z",
+    "addresses": [
+      {
+        "id": "9155d2cb-41eb-4402-85f6-0f856d28fbe2",
+        "label": "Principal",
+        "provinciaCodigo": "2",
+        "cantonCodigo": "203",
+        "distritoCodigo": "20301",
+        "direccionExacta": "Del puente, 200 metros oeste, casa esquinera",
+        "codigoPostal": "20301",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "19",
@@ -329,17 +464,24 @@
     "email": "logistica@distribuidoranacional.co.cr",
     "identificationType": "juridica",
     "identificationNumber": "3-105-678901",
-    "phones": ["2212-3456"],
-    "address": {
-      "provinciaCodigo": "3",
-      "cantonCodigo": "303",
-      "distritoCodigo": "30301",
-      "direccionExacta": "Parque industrial, nave 12",
-      "codigoPostal": "30301"
-    },
+    "phones": [
+      "2212-3456"
+    ],
     "isActive": true,
     "createdAt": "2024-02-02T14:50:00.000Z",
-    "updatedAt": "2024-02-02T14:50:00.000Z"
+    "updatedAt": "2024-02-02T14:50:00.000Z",
+    "addresses": [
+      {
+        "id": "3ba60d85-c617-4a06-bb2b-19ec450461ff",
+        "label": "Principal",
+        "provinciaCodigo": "3",
+        "cantonCodigo": "303",
+        "distritoCodigo": "30301",
+        "direccionExacta": "Parque industrial, nave 12",
+        "codigoPostal": "30301",
+        "isDefault": true
+      }
+    ]
   },
   {
     "id": "20",
@@ -347,16 +489,24 @@
     "email": "monica.rojas@email.com",
     "identificationType": "dimex",
     "identificationNumber": "156789012345",
-    "phones": ["2223-4567", "8765-4321"],
-    "address": {
-      "provinciaCodigo": "4",
-      "cantonCodigo": "403",
-      "distritoCodigo": "40301",
-      "direccionExacta": "Urbanización El Paraíso, lote 88",
-      "codigoPostal": "40301"
-    },
+    "phones": [
+      "2223-4567",
+      "8765-4321"
+    ],
     "isActive": true,
     "createdAt": "2024-02-03T10:25:00.000Z",
-    "updatedAt": "2024-02-03T10:25:00.000Z"
+    "updatedAt": "2024-02-03T10:25:00.000Z",
+    "addresses": [
+      {
+        "id": "0483ea3e-f6e3-44b2-9b2a-46522e9b42e4",
+        "label": "Principal",
+        "provinciaCodigo": "4",
+        "cantonCodigo": "403",
+        "distritoCodigo": "40301",
+        "direccionExacta": "Urbanización El Paraíso, lote 88",
+        "codigoPostal": "40301",
+        "isDefault": true
+      }
+    ]
   }
 ]

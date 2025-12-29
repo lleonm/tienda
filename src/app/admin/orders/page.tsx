@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Order, Customer, Product, OrderProduct } from '@/types';
+import { useRouter } from 'next/navigation';
+import { Order, Customer, Product } from '@/types';
 import { ordersAPI, customersAPI, productsAPI } from '@/lib/api';
 
 type ModalType = 'success' | 'error' | 'confirm';
@@ -15,6 +16,7 @@ interface ModalState {
 }
 
 export default function OrdersPage() {
+  const router = useRouter();
   const [orders, setOrders] = useState<Order[]>([]);
   const [customers, setCustomers] = useState<Customer[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
@@ -32,12 +34,6 @@ export default function OrdersPage() {
     title: '',
     message: '',
   });
-
-  // Estado para crear orden
-  const [creatingOrder, setCreatingOrder] = useState(false);
-  const [selectedCustomer, setSelectedCustomer] = useState<string>('');
-  const [orderProducts, setOrderProducts] = useState<OrderProduct[]>([]);
-  const [orderNotes, setOrderNotes] = useState('');
 
   const showNotification = (type: ModalType, title: string, message: string, onConfirm?: () => void) => {
     setModal({ isOpen: true, type, title, message, onConfirm });
@@ -83,133 +79,6 @@ export default function OrdersPage() {
     } catch (error) {
       console.error('Error cargando productos:', error);
     }
-  };
-
-  const addProductToOrder = () => {
-    setOrderProducts([...orderProducts, {
-      productId: 0,
-      productName: '',
-      productSku: '',
-      quantity: 1,
-      price: 0,
-      subtotal: 0,
-    }]);
-  };
-
-  const removeProductFromOrder = (index: number) => {
-    setOrderProducts(orderProducts.filter((_, i) => i !== index));
-  };
-
-  const updateOrderProduct = (index: number, field: keyof OrderProduct, value: any) => {
-    const updated = [...orderProducts];
-    
-    if (field === 'productId') {
-      const product = products.find(p => p.id === parseInt(value));
-      if (product) {
-        updated[index] = {
-          ...updated[index],
-          productId: product.id,
-          productName: product.name,
-          productSku: product.sku,
-          price: product.price,
-          subtotal: product.price * updated[index].quantity,
-        };
-      }
-    } else if (field === 'quantity') {
-      const quantity = parseInt(value) || 1;
-      updated[index] = {
-        ...updated[index],
-        quantity,
-        subtotal: updated[index].price * quantity,
-      };
-    } else {
-      updated[index] = { ...updated[index], [field]: value };
-    }
-    
-    setOrderProducts(updated);
-  };
-
-  const calculateOrderTotal = () => {
-    const subtotal = orderProducts.reduce((sum, p) => sum + p.subtotal, 0);
-    const tax = subtotal * 0.13; // IVA 13% Costa Rica
-    const total = subtotal + tax;
-    return { subtotal, tax, total };
-  };
-
-  const handleCreateOrder = async () => {
-    if (!selectedCustomer) {
-      showNotification('error', 'Error', 'Debe seleccionar un cliente');
-      return;
-    }
-
-    if (orderProducts.length === 0) {
-      showNotification('error', 'Error', 'Debe agregar al menos un producto');
-      return;
-    }
-
-    // Validar que todos los productos tengan ID seleccionado
-    if (orderProducts.some(p => !p.productId)) {
-      showNotification('error', 'Error', 'Todos los productos deben tener un artículo seleccionado');
-      return;
-    }
-
-    // Validar stock disponible
-    for (const orderProd of orderProducts) {
-      const product = products.find(p => p.id === orderProd.productId);
-      if (!product || product.stock < orderProd.quantity) {
-        showNotification('error', 'Error', `Stock insuficiente para ${orderProd.productName}`);
-        return;
-      }
-    }
-
-    try {
-      const { subtotal, tax, total } = calculateOrderTotal();
-      const orderNumber = await ordersAPI.getNextOrderNumber();
-      const customer = customers.find(c => c.id === selectedCustomer);
-
-      const newOrder: Partial<Order> = {
-        id: Date.now().toString(),
-        orderNumber,
-        customerId: selectedCustomer,
-        customerName: customer?.name || '',
-        products: orderProducts,
-        subtotal,
-        tax,
-        total,
-        status: 'pending',
-        notes: orderNotes,
-        createdBy: 'admin', // TODO: usar usuario real cuando tengamos autenticación
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-      };
-
-      await ordersAPI.create(newOrder);
-
-      // Descontar inventario
-      for (const orderProd of orderProducts) {
-        const product = products.find(p => p.id === orderProd.productId);
-        if (product) {
-          await productsAPI.update(product.id, {
-            stock: product.stock - orderProd.quantity,
-          });
-        }
-      }
-
-      showNotification('success', '¡Orden creada!', `Orden ${orderNumber} creada exitosamente`);
-      setCreatingOrder(false);
-      resetOrderForm();
-      loadOrders();
-      loadProducts();
-    } catch (error) {
-      console.error('Error creando orden:', error);
-      showNotification('error', 'Error', 'No se pudo crear la orden');
-    }
-  };
-
-  const resetOrderForm = () => {
-    setSelectedCustomer('');
-    setOrderProducts([]);
-    setOrderNotes('');
   };
 
   const handleCancelOrder = (order: Order) => {
@@ -423,7 +292,7 @@ export default function OrdersPage() {
             </button>
             
             <button
-              onClick={() => setCreatingOrder(true)}
+              onClick={() => router.push('/admin/orders/new')}
               className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium"
             >
               + Nueva Orden
@@ -656,165 +525,6 @@ export default function OrdersPage() {
                     </div>
                   )}
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Modal Crear Orden */}
-      {creatingOrder && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-6">
-                <h2 className="text-2xl font-bold text-gray-900">Nueva Orden</h2>
-                <button
-                  onClick={() => {
-                    setCreatingOrder(false);
-                    resetOrderForm();
-                  }}
-                  className="text-gray-400 hover:text-gray-600 text-2xl"
-                >
-                  ×
-                </button>
-              </div>
-
-              {/* Seleccionar Cliente */}
-              <div className="mb-6">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Cliente *
-                </label>
-                <select
-                  value={selectedCustomer}
-                  onChange={(e) => setSelectedCustomer(e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
-                  <option value="">Seleccionar cliente...</option>
-                  {customers.map(customer => (
-                    <option key={customer.id} value={customer.id}>
-                      {customer.name} - {customer.email}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Productos */}
-              <div className="mb-6">
-                <div className="flex justify-between items-center mb-3">
-                  <label className="block text-sm font-medium text-gray-700">
-                    Productos *
-                  </label>
-                  <button
-                    onClick={addProductToOrder}
-                    className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition-colors"
-                  >
-                    + Agregar Producto
-                  </button>
-                </div>
-
-                <div className="space-y-3">
-                  {orderProducts.map((orderProd, index) => (
-                    <div key={index} className="flex gap-3 items-start p-3 bg-gray-50 rounded-lg">
-                      <div className="flex-1">
-                        <select
-                          value={orderProd.productId}
-                          onChange={(e) => updateOrderProduct(index, 'productId', e.target.value)}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                        >
-                          <option value="">Seleccionar producto...</option>
-                          {products.map(product => (
-                            <option key={product.id} value={product.id}>
-                              {product.name} - ₡{product.price} (Stock: {product.stock})
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                      
-                      <div className="w-24">
-                        <input
-                          type="number"
-                          min="1"
-                          value={orderProd.quantity}
-                          onChange={(e) => updateOrderProduct(index, 'quantity', e.target.value)}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                          placeholder="Cant."
-                        />
-                      </div>
-
-                      <div className="w-32 px-3 py-2 bg-white border border-gray-300 rounded-lg text-right">
-                        ₡{orderProd.subtotal.toLocaleString('es-CR', { minimumFractionDigits: 2 })}
-                      </div>
-
-                      <button
-                        onClick={() => removeProductFromOrder(index)}
-                        className="px-3 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg transition-colors"
-                      >
-                        ×
-                      </button>
-                    </div>
-                  ))}
-
-                  {orderProducts.length === 0 && (
-                    <p className="text-center text-gray-500 py-4">
-                      No hay productos agregados. Haz clic en "Agregar Producto".
-                    </p>
-                  )}
-                </div>
-              </div>
-
-              {/* Notas */}
-              <div className="mb-6">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Notas (opcional)
-                </label>
-                <textarea
-                  value={orderNotes}
-                  onChange={(e) => setOrderNotes(e.target.value)}
-                  rows={3}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Notas adicionales sobre la orden..."
-                />
-              </div>
-
-              {/* Resumen */}
-              {orderProducts.length > 0 && (
-                <div className="mb-6 p-4 bg-blue-50 rounded-lg">
-                  <h3 className="font-semibold text-gray-900 mb-3">Resumen</h3>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Subtotal:</span>
-                      <span className="font-medium">₡{calculateOrderTotal().subtotal.toLocaleString('es-CR', { minimumFractionDigits: 2 })}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">IVA (13%):</span>
-                      <span className="font-medium">₡{calculateOrderTotal().tax.toLocaleString('es-CR', { minimumFractionDigits: 2 })}</span>
-                    </div>
-                    <div className="flex justify-between text-lg font-bold pt-2 border-t border-blue-200">
-                      <span>Total:</span>
-                      <span>₡{calculateOrderTotal().total.toLocaleString('es-CR', { minimumFractionDigits: 2 })}</span>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Botones */}
-              <div className="flex gap-3">
-                <button
-                  onClick={() => {
-                    setCreatingOrder(false);
-                    resetOrderForm();
-                  }}
-                  className="flex-1 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
-                >
-                  Cancelar
-                </button>
-                <button
-                  onClick={handleCreateOrder}
-                  className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium"
-                >
-                  Crear Orden
-                </button>
               </div>
             </div>
           </div>

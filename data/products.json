@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Camisa ML",
+    "description": "Camisa Manga Larga",
+    "catalogNodeId": "ropa",
+    "baseSku": "SKU-000001",
+    "createdAt": "2025-12-28T05:10:08.969Z"
+  },
+  {
+    "id": 2,
+    "name": "Medias",
+    "description": "Medias H",
+    "catalogNodeId": "ropa",
+    "baseSku": "SKU-000002",
+    "createdAt": "2025-12-28T05:11:30.521Z"
+  }
+]

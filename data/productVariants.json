@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "product_id": 1,
+    "sku": "SKU-000001-V001",
+    "price": 25000,
+    "stock": 25,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:08.986Z"
+  },
+  {
+    "id": 2,
+    "product_id": 1,
+    "sku": "SKU-000001-V002",
+    "price": 25000,
+    "stock": 20,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:08.996Z"
+  },
+  {
+    "id": 3,
+    "product_id": 1,
+    "sku": "SKU-000001-V003",
+    "price": 25000,
+    "stock": 15,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:09.005Z"
+  },
+  {
+    "id": 4,
+    "product_id": 1,
+    "sku": "SKU-000001-V004",
+    "price": 25000,
+    "stock": 30,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:09.014Z"
+  },
+  {
+    "id": 5,
+    "product_id": 1,
+    "sku": "SKU-000001-V005",
+    "price": 25000,
+    "stock": 80,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:09.021Z"
+  },
+  {
+    "id": 6,
+    "product_id": 1,
+    "sku": "SKU-000001-V006",
+    "price": 25000,
+    "stock": 25,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:09.029Z"
+  },
+  {
+    "id": 7,
+    "product_id": 1,
+    "sku": "SKU-000001-V007",
+    "price": 25000,
+    "stock": 20,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:09.035Z"
+  },
+  {
+    "id": 8,
+    "product_id": 1,
+    "sku": "SKU-000001-V008",
+    "price": 25000,
+    "stock": 15,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:09.042Z"
+  },
+  {
+    "id": 9,
+    "product_id": 1,
+    "sku": "SKU-000001-V009",
+    "price": 25000,
+    "stock": 10,
+    "active": true,
+    "createdAt": "2025-12-28T05:10:09.049Z"
+  },
+  {
+    "id": 10,
+    "product_id": 2,
+    "sku": "SKU-000002-V001",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.532Z"
+  },
+  {
+    "id": 11,
+    "product_id": 2,
+    "sku": "SKU-000002-V002",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.539Z"
+  },
+  {
+    "id": 12,
+    "product_id": 2,
+    "sku": "SKU-000002-V003",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.546Z"
+  },
+  {
+    "id": 13,
+    "product_id": 2,
+    "sku": "SKU-000002-V004",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.553Z"
+  },
+  {
+    "id": 14,
+    "product_id": 2,
+    "sku": "SKU-000002-V005",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.560Z"
+  },
+  {
+    "id": 15,
+    "product_id": 2,
+    "sku": "SKU-000002-V006",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.566Z"
+  },
+  {
+    "id": 16,
+    "product_id": 2,
+    "sku": "SKU-000002-V007",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.571Z"
+  },
+  {
+    "id": 17,
+    "product_id": 2,
+    "sku": "SKU-000002-V008",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.577Z"
+  },
+  {
+    "id": 18,
+    "product_id": 2,
+    "sku": "SKU-000002-V009",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.581Z"
+  },
+  {
+    "id": 19,
+    "product_id": 2,
+    "sku": "SKU-000002-V010",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.586Z"
+  },
+  {
+    "id": 20,
+    "product_id": 2,
+    "sku": "SKU-000002-V011",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.591Z"
+  },
+  {
+    "id": 21,
+    "product_id": 2,
+    "sku": "SKU-000002-V012",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.597Z"
+  },
+  {
+    "id": 22,
+    "product_id": 2,
+    "sku": "SKU-000002-V013",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.602Z"
+  },
+  {
+    "id": 23,
+    "product_id": 2,
+    "sku": "SKU-000002-V014",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.608Z"
+  },
+  {
+    "id": 24,
+    "product_id": 2,
+    "sku": "SKU-000002-V015",
+    "price": 5000,
+    "stock": 5,
+    "active": true,
+    "createdAt": "2025-12-28T05:11:30.614Z"
+  }
+]

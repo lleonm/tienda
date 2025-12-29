@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "attribute_id": 1,
+    "value": "XS",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "attribute_id": 1,
+    "value": "S",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "attribute_id": 1,
+    "value": "M",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "attribute_id": 1,
+    "value": "L",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "attribute_id": 1,
+    "value": "XL",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "attribute_id": 1,
+    "value": "XXL",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "attribute_id": 2,
+    "value": "Rojo",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "attribute_id": 2,
+    "value": "Azul",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "attribute_id": 2,
+    "value": "Verde",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "attribute_id": 2,
+    "value": "Negro",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 11,
+    "attribute_id": 2,
+    "value": "Blanco",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "attribute_id": 2,
+    "value": "Amarillo",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 13,
+    "attribute_id": 3,
+    "value": "Algodón",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 14,
+    "attribute_id": 3,
+    "value": "Poliéster",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  },
+  {
+    "id": 15,
+    "attribute_id": 3,
+    "value": "Mezclilla",
+    "createdAt": "2025-12-28T00:00:00.000Z"
+  }
+]
