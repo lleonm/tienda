@@ -666,7 +666,7 @@
       "product_id": 1,
       "sku": "SKU-000001-V002",
       "price": 25000,
-      "stock": 30,
+      "stock": 28,
       "active": true,
       "createdAt": "2025-12-28T05:10:08.996Z"
     },
@@ -837,7 +837,7 @@
       "product_id": 2,
       "sku": "SKU-000002-V012",
       "price": 5000,
-      "stock": 5,
+      "stock": 3,
       "active": true,
       "createdAt": "2025-12-28T05:11:30.597Z"
     },
@@ -1330,6 +1330,76 @@
       "createdAt": "2024-01-01T00:00:00.000Z"
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "id": "1766973138835",
+      "orderNumber": "ORD-0001",
+      "customerId": "2",
+      "customerName": "Carlos Fernández Mora",
+      "shippingAddress": {
+        "id": "4aebae7d-6c18-4e4b-8766-e700e54788e5",
+        "label": "Principal",
+        "provinciaCodigo": "2",
+        "cantonCodigo": "201",
+        "distritoCodigo": "20101",
+        "direccionExacta": "Frente al Parque Central, edificio amarillo",
+        "codigoPostal": "20101",
+        "isDefault": true
+      },
+      "products": [
+        {
+          "productId": "2",
+          "productName": "Camisa ML",
+          "productSku": "SKU-000001-V002",
+          "quantity": 2,
+          "price": 25000,
+          "subtotal": 50000
+        }
+      ],
+      "subtotal": 50000,
+      "tax": 6500,
+      "total": 56500,
+      "status": "processing",
+      "notes": "",
+      "createdBy": "admin",
+      "createdAt": "2025-12-29T01:52:18.835Z",
+      "updatedAt": "2025-12-29T01:53:56.846Z",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1766973559809",
+      "orderNumber": "ORD-0002",
+      "customerId": "3",
+      "customerName": "Ana López Jiménez",
+      "shippingAddress": {
+        "id": "63bd43be-e436-4b32-b84e-d4f391d8f0ba",
+        "label": "Principal",
+        "provinciaCodigo": "3",
+        "cantonCodigo": "301",
+        "distritoCodigo": "30101",
+        "direccionExacta": "200 metros oeste del supermercado",
+        "codigoPostal": "30101",
+        "isDefault": true
+      },
+      "products": [
+        {
+          "productId": "21",
+          "productName": "Medias",
+          "productSku": "SKU-000002-V012",
+          "quantity": 2,
+          "price": 5000,
+          "subtotal": 10000
+        }
+      ],
+      "subtotal": 10000,
+      "tax": 1300,
+      "total": 11300,
+      "status": "pending",
+      "notes": "",
+      "createdBy": "admin",
+      "createdAt": "2025-12-29T01:59:19.809Z",
+      "updatedAt": "2025-12-29T01:59:19.809Z"
+    }
+  ],
   "invoices": []
 }

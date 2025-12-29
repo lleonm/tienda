@@ -191,9 +191,7 @@ export default function NewOrderPage() {
   const viewProductVariants = (product: Product) => {
     // Obtener variantes del producto que tengan stock y estén activas
     const variants = productVariants.filter(v => 
-      v.product_id === product.id && 
-      v.stock > 0 && 
-      v.active
+      Number(v.product_id) === Number(product.id) && v.stock > 0 && v.active
     );
     
     setSelectedProduct(product);
@@ -214,20 +212,20 @@ export default function NewOrderPage() {
     if (variantsOfProduct.length === 0) return [];
     
     // Obtener todos los attribute_value_ids de las variantes
-    const variantIds = variantsOfProduct.map(v => v.id);
+    const variantIds = variantsOfProduct.map(v => Number(v.id));
     const variantAttrs = variantAttributeValues.filter(va => 
-      variantIds.includes(va.variant_id)
+      variantIds.includes(Number(va.variant_id))
     );
     
     // Obtener attribute_ids únicos
-    const attributeValueIds = [...new Set(variantAttrs.map(va => va.attribute_value_id))];
+    const attributeValueIds = [...new Set(variantAttrs.map(va => Number(va.attribute_value_id)))];
     const attrValues = productAttributeValues.filter(av => 
-      attributeValueIds.includes(av.id)
+      attributeValueIds.includes(Number(av.id))
     );
-    const attributeIds = [...new Set(attrValues.map(av => av.attribute_id))];
+    const attributeIds = [...new Set(attrValues.map(av => Number(av.attribute_id)))];
     
     // Obtener los atributos
-    return productAttributes.filter(a => attributeIds.includes(a.id));
+    return productAttributes.filter(a => attributeIds.includes(Number(a.id)));
   };
   
   // Obtener valores disponibles para un atributo dado las selecciones actuales
@@ -236,28 +234,28 @@ export default function NewOrderPage() {
     let filteredVariants = [...variantsOfProduct];
     
     for (const [selectedAttrId, selectedValueId] of Object.entries(selectedAttributes)) {
-      if (Number(selectedAttrId) === attributeId) continue; // No filtrar por el atributo actual
+      if (Number(selectedAttrId) === Number(attributeId)) continue; // No filtrar por el atributo actual
       
       filteredVariants = filteredVariants.filter(variant => {
         // Verificar si esta variante tiene el valor seleccionado
         return variantAttributeValues.some(va => 
-          va.variant_id === variant.id && 
-          va.attribute_value_id === selectedValueId
+          Number(va.variant_id) === Number(variant.id) && 
+          Number(va.attribute_value_id) === Number(selectedValueId)
         );
       });
     }
     
     // Obtener todos los attribute_value_ids de estas variantes filtradas para este atributo
-    const variantIds = filteredVariants.map(v => v.id);
+    const variantIds = filteredVariants.map(v => Number(v.id));
     const relevantVarAttrs = variantAttributeValues.filter(va => 
-      variantIds.includes(va.variant_id)
+      variantIds.includes(Number(va.variant_id))
     );
-    const attributeValueIds = [...new Set(relevantVarAttrs.map(va => va.attribute_value_id))];
+    const attributeValueIds = [...new Set(relevantVarAttrs.map(va => Number(va.attribute_value_id)))];
     
     // Filtrar por el atributo específico
     return productAttributeValues.filter(av => 
-      av.attribute_id === attributeId && 
-      attributeValueIds.includes(av.id)
+      Number(av.attribute_id) === Number(attributeId) && 
+      attributeValueIds.includes(Number(av.id))
     );
   };
   
@@ -273,12 +271,12 @@ export default function NewOrderPage() {
     // Buscar la variante que tenga exactamente todos los valores seleccionados
     return variantsOfProduct.find(variant => {
       const variantAttrValues = variantAttributeValues
-        .filter(va => va.variant_id === variant.id)
-        .map(va => va.attribute_value_id);
+        .filter(va => Number(va.variant_id) === Number(variant.id))
+        .map(va => Number(va.attribute_value_id));
       
       // Verificar que tenga todos los valores seleccionados
       return Object.values(selectedAttributes).every(valueId => 
-        variantAttrValues.includes(valueId)
+        variantAttrValues.includes(Number(valueId))
       ) && variantAttrValues.length === Object.keys(selectedAttributes).length;
     }) || null;
   };
@@ -440,15 +438,17 @@ export default function NewOrderPage() {
   });
   
   // Filtro defensivo: solo productos padre (no variantes)
-  const variantProductIds = new Set(productVariants.map(v => v.product_id));
+  const variantProductIds = new Set(productVariants.map(v => Number(v.product_id)));
+  
   const filteredProducts = products.filter(p => {
     // Excluir cualquier objeto que tenga propiedades de variante (sku, price, stock)
     const isNotVariant = !('sku' in p && 'price' in p && 'stock' in p);
     // Solo incluir productos que tienen variantes asociadas
-    const hasVariants = variantProductIds.has(p.id);
+    const hasVariants = variantProductIds.has(Number(p.id));
     const matchesSearch = p.name.toLowerCase().includes(productSearch.toLowerCase()) ||
                          (p.baseSku && p.baseSku.toLowerCase().includes(productSearch.toLowerCase()));
     const matchesCategory = categoryFilter === 'all' || (p.catalogNodeId && p.catalogNodeId.toString() === categoryFilter);
+    
     return isNotVariant && hasVariants && matchesSearch && matchesCategory;
   });
 
