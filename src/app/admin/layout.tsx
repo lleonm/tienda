@@ -50,6 +50,28 @@ export default function AdminLayout({
             </Link>
             
             <Link
+              href="/admin/statistics"
+              className={`block px-4 py-2 rounded-lg transition-colors ${
+                isActive('/admin/statistics')
+                  ? 'bg-blue-50 text-blue-700 font-medium'
+                  : 'text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              📈 Estadísticas
+            </Link>
+            
+            <Link
+              href="/admin/reports"
+              className={`block px-4 py-2 rounded-lg transition-colors ${
+                isActive('/admin/reports')
+                  ? 'bg-blue-50 text-blue-700 font-medium'
+                  : 'text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              📄 Reportes
+            </Link>
+            
+            <Link
               href="/admin/catalogo"
               className={`block px-4 py-2 rounded-lg transition-colors ${
                 isActive('/admin/catalogo')

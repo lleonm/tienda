@@ -153,7 +153,10 @@ export default function AdminDashboard() {
           </Link>
 
           {/* Card: Reportes */}
-          <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <Link
+            href="/admin/reports"
+            className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow cursor-pointer"
+          >
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-semibold text-gray-800">Reportes</h2>
               <div className="bg-red-100 p-3 rounded-full">
@@ -162,9 +165,8 @@ export default function AdminDashboard() {
                 </svg>
               </div>
             </div>
-            <p className="text-gray-600">Estadísticas y análisis</p>
-            <span className="inline-block mt-2 text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Próximamente</span>
-          </div>
+            <p className="text-gray-600">Reportes imprimibles de ventas</p>
+          </Link>
 
           {/* Card: Configuración */}
           <Link
