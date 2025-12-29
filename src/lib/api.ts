@@ -201,3 +201,24 @@ export const variantAttributeValuesAPI = {
       method: 'DELETE',
     }),
 };
+
+// Product Catalog Nodes API (relación many-to-many: productos <-> nodos de catálogo)
+export const productCatalogNodesAPI = {
+  getAll: () => fetchAPI<any[]>('/productCatalogNodes'),
+  getById: (id: number) => fetchAPI<any>(`/productCatalogNodes/${id}`),
+  getByProductId: (productId: number) => 
+    fetchAPI<any[]>(`/productCatalogNodes?product_id=${productId}`),
+  getByCatalogNodeId: (catalogNodeId: number) => 
+    fetchAPI<any[]>(`/productCatalogNodes?catalog_node_id=${catalogNodeId}`),
+  create: (data: any) => fetchAPI<any>('/productCatalogNodes', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  }),
+  update: (id: number, data: any) => fetchAPI<any>(`/productCatalogNodes/${id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(data),
+  }),
+  delete: (id: number) => fetchAPI<void>(`/productCatalogNodes/${id}`, {
+    method: 'DELETE',
+  }),
+};

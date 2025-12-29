@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { catalogAPI, productsAPI } from '@/lib/api';
-import { CatalogNode, CatalogNodeWithChildren } from '@/types';
+import { catalogAPI, productsAPI, productCatalogNodesAPI } from '@/lib/api';
+import { CatalogNode, CatalogNodeWithChildren, ProductCatalogNode } from '@/types';
 import Modal, { ModalType } from '@/components/Modal';
 import ProductSelectorModal from '@/components/ProductSelectorModal';
 
@@ -15,6 +15,7 @@ export default function CatalogoPage() {
   const [expandedNodes, setExpandedNodes] = useState<Set<number>>(new Set());
   const [products, setProducts] = useState<any[]>([]);
   const [associatedProducts, setAssociatedProducts] = useState<any[]>([]);
+  const [productCatalogNodes, setProductCatalogNodes] = useState<ProductCatalogNode[]>([]);
   const [showProductSelector, setShowProductSelector] = useState(false);
   
   const [modal, setModal] = useState<{
@@ -49,9 +50,27 @@ export default function CatalogoPage() {
 
   const loadAssociatedProducts = async (nodeId: number) => {
     try {
+      // Obtener relaciones producto-nodo para este nodo
+      const relations = await productCatalogNodesAPI.getByCatalogNodeId(nodeId);
+      
+      // Obtener todos los productos
       const allProducts = await productsAPI.getAll();
-      const associated = allProducts.filter((p: any) => p.catalogNodeId === nodeId);
-      setAssociatedProducts(associated);
+      
+      // Filtrar productos que están asociados a este nodo
+      const productIds = relations.map((r: ProductCatalogNode) => r.product_id);
+      const associated = allProducts.filter((p: any) => productIds.includes(Number(p.id)));
+      
+      // Agregar información de si es primario
+      const associatedWithInfo = associated.map((p: any) => {
+        const relation = relations.find((r: ProductCatalogNode) => Number(r.product_id) === Number(p.id));
+        return {
+          ...p,
+          isPrimary: relation?.isPrimary || false,
+          relationId: relation?.id
+        };
+      });
+      
+      setAssociatedProducts(associatedWithInfo);
     } catch (error) {
       console.error('Error cargando productos asociados:', error);
     }
@@ -61,7 +80,27 @@ export default function CatalogoPage() {
     if (!selectedNode) return;
     
     try {
-      await productsAPI.update(productId, { catalogNodeId: selectedNode.id });
+      // Verificar si ya existe la relación
+      const existing = await productCatalogNodesAPI.getByProductId(productId);
+      const alreadyAssociated = existing.some((r: ProductCatalogNode) => 
+        Number(r.catalog_node_id) === Number(selectedNode.id)
+      );
+      
+      if (alreadyAssociated) {
+        showModal('warning', 'Ya asociado', 'Este producto ya está asociado a este nodo');
+        return;
+      }
+      
+      // Verificar si el producto ya tiene un nodo primario
+      const hasPrimary = existing.some((r: ProductCatalogNode) => r.isPrimary);
+      
+      await productCatalogNodesAPI.create({
+        product_id: productId,
+        catalog_node_id: selectedNode.id,
+        isPrimary: !hasPrimary, // Si no tiene primario, este será el primario
+        createdAt: new Date().toISOString(),
+      });
+      
       showModal('success', '¡Asociado!', 'El producto se asoció correctamente al nodo');
       loadData();
       loadAssociatedProducts(selectedNode.id);
@@ -76,9 +115,30 @@ export default function CatalogoPage() {
     
     try {
       // Asociar todos los productos seleccionados
-      await Promise.all(
-        productIds.map(id => productsAPI.update(id, { catalogNodeId: selectedNode.id }))
-      );
+      const allRelations = await productCatalogNodesAPI.getAll();
+      
+      for (const productId of productIds) {
+        // Verificar si ya existe la relación
+        const alreadyAssociated = allRelations.some((r: ProductCatalogNode) => 
+          Number(r.product_id) === Number(productId) && 
+          Number(r.catalog_node_id) === Number(selectedNode.id)
+        );
+        
+        if (!alreadyAssociated) {
+          // Verificar si el producto ya tiene un nodo primario
+          const productRelations = allRelations.filter((r: ProductCatalogNode) => 
+            Number(r.product_id) === Number(productId)
+          );
+          const hasPrimary = productRelations.some((r: ProductCatalogNode) => r.isPrimary);
+          
+          await productCatalogNodesAPI.create({
+            product_id: productId,
+            catalog_node_id: selectedNode.id,
+            isPrimary: !hasPrimary,
+            createdAt: new Date().toISOString(),
+          });
+        }
+      }
       
       showModal('success', '¡Asociados!', `${productIds.length} producto(s) asociado(s) correctamente`);
       setShowProductSelector(false);
@@ -93,17 +153,41 @@ export default function CatalogoPage() {
   const handleDisassociateProduct = async (product: any) => {
     showModal('confirm', '¿Desasociar producto?', `¿Deseas quitar "${product.name}" de este nodo?`, async () => {
       try {
-        await productsAPI.update(product.id, { catalogNodeId: null });
-        showModal('success', '¡Desasociado!', 'El producto se desasoció correctamente');
-        if (selectedNode) {
-          loadData();
-          loadAssociatedProducts(selectedNode.id);
+        // Eliminar la relación usando el relationId
+        if (product.relationId) {
+          await productCatalogNodesAPI.delete(product.relationId);
+          showModal('success', '¡Desasociado!', 'El producto se desasoció correctamente');
+          if (selectedNode) {
+            loadData();
+            loadAssociatedProducts(selectedNode.id);
+          }
         }
       } catch (error) {
         console.error('Error desasociando producto:', error);
         showModal('error', 'Error', 'No se pudo desasociar el producto');
       }
     });
+  };
+
+  const handleTogglePrimary = async (product: any) => {
+    if (!product.relationId) return;
+    
+    try {
+      await productCatalogNodesAPI.update(product.relationId, {
+        isPrimary: !product.isPrimary
+      });
+      
+      showModal('success', '¡Actualizado!', 
+        product.isPrimary ? 'Ya no es el nodo principal' : 'Marcado como nodo principal'
+      );
+      
+      if (selectedNode) {
+        loadAssociatedProducts(selectedNode.id);
+      }
+    } catch (error) {
+      console.error('Error actualizando relación:', error);
+      showModal('error', 'Error', 'No se pudo actualizar');
+    }
   };
 
   useEffect(() => {
@@ -131,9 +215,10 @@ export default function CatalogoPage() {
   const loadData = async () => {
     try {
       setLoading(true);
-      const [nodesData, productsData] = await Promise.all([
+      const [nodesData, productsData, relationsData] = await Promise.all([
         catalogAPI.getAll(),
-        productsAPI.getAll()
+        productsAPI.getAll(),
+        productCatalogNodesAPI.getAll()
       ]);
       
       // Normalizar IDs y parentIds a números
@@ -144,15 +229,16 @@ export default function CatalogoPage() {
       }));
       
       setNodes(normalizedNodes);
+      setProductCatalogNodes(relationsData);
       
       // Expandir todos los nodos por defecto
       setExpandedNodes(new Set(normalizedNodes.map((n: CatalogNode) => n.id)));
       
+      // Contar productos por nodo usando la nueva tabla de relaciones
       const counts: Record<number, number> = {};
-      productsData.forEach((product: any) => {
-        if (product.catalogNodeId) {
-          counts[product.catalogNodeId] = (counts[product.catalogNodeId] || 0) + 1;
-        }
+      relationsData.forEach((relation: ProductCatalogNode) => {
+        const nodeId = Number(relation.catalog_node_id);
+        counts[nodeId] = (counts[nodeId] || 0) + 1;
       });
       setProductCounts(counts);
     } catch (error) {
@@ -623,11 +709,19 @@ export default function CatalogoPage() {
                     <button
                       onClick={async () => {
                         const allProducts = await productsAPI.getAll();
-                        // Filtrar solo productos regulares y padres (no variantes)
+                        const allRelations = await productCatalogNodesAPI.getAll();
+                        
+                        // Obtener IDs de productos ya asociados a ESTE nodo específicamente
+                        const associatedToThisNode = allRelations
+                          .filter((r: ProductCatalogNode) => Number(r.catalog_node_id) === Number(selectedNode.id))
+                          .map((r: ProductCatalogNode) => Number(r.product_id));
+                        
+                        // Filtrar productos regulares y padres (no variantes), excluyendo los ya asociados a este nodo
                         const available = allProducts.filter((p: any) => 
-                          (!p.catalogNodeId || p.catalogNodeId === selectedNode.id) && // No asociados o asociados a este nodo
+                          !associatedToThisNode.includes(Number(p.id)) && // No asociado a este nodo
                           (!p.parentId) // Excluir variantes (productos con parentId)
                         );
+                        
                         setProducts(available);
                         setShowProductSelector(true);
                       }}
@@ -654,6 +748,11 @@ export default function CatalogoPage() {
                           <div className="flex-1">
                             <div className="flex items-center gap-2">
                               <p className="font-semibold text-gray-800">{product.name || 'Sin nombre'}</p>
+                              {product.isPrimary && (
+                                <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-medium">
+                                  ⭐ Nodo Principal
+                                </span>
+                              )}
                               {product.isParent && (
                                 <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded">
                                   Producto con variantes
@@ -668,12 +767,25 @@ export default function CatalogoPage() {
                               <span>Estado: <strong className={product.isActive ? 'text-green-600' : 'text-gray-400'}>{product.isActive ? 'Activo' : 'Inactivo'}</strong></span>
                             </div>
                           </div>
-                          <button
-                            onClick={() => handleDisassociateProduct(product)}
-                            className="ml-4 px-4 py-2 bg-red-100 text-red-700 rounded hover:bg-red-200 text-sm font-medium"
-                          >
-                            🗑️ Quitar
-                          </button>
+                          <div className="flex gap-2 ml-4">
+                            <button
+                              onClick={() => handleTogglePrimary(product)}
+                              className={`px-4 py-2 rounded text-sm font-medium ${
+                                product.isPrimary 
+                                  ? 'bg-blue-100 text-blue-700 hover:bg-blue-200' 
+                                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                              }`}
+                              title={product.isPrimary ? 'Marcar como secundario' : 'Marcar como principal'}
+                            >
+                              ⭐ {product.isPrimary ? 'Principal' : 'Secundario'}
+                            </button>
+                            <button
+                              onClick={() => handleDisassociateProduct(product)}
+                              className="px-4 py-2 bg-red-100 text-red-700 rounded hover:bg-red-200 text-sm font-medium"
+                            >
+                              🗑️ Quitar
+                            </button>
+                          </div>
                         </div>
                       ))}
                     </div>

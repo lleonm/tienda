@@ -657,7 +657,7 @@
       "product_id": 1,
       "sku": "SKU-000001-V001",
       "price": 25000,
-      "stock": 13,
+      "stock": 25,
       "active": true,
       "createdAt": "2025-12-28T05:10:08.986Z"
     },
@@ -666,7 +666,7 @@
       "product_id": 1,
       "sku": "SKU-000001-V002",
       "price": 25000,
-      "stock": 28,
+      "stock": 20,
       "active": true,
       "createdAt": "2025-12-28T05:10:08.996Z"
     },
@@ -675,7 +675,7 @@
       "product_id": 1,
       "sku": "SKU-000001-V003",
       "price": 25000,
-      "stock": 5,
+      "stock": 15,
       "active": true,
       "createdAt": "2025-12-28T05:10:09.005Z"
     },
@@ -837,7 +837,7 @@
       "product_id": 2,
       "sku": "SKU-000002-V012",
       "price": 5000,
-      "stock": 3,
+      "stock": 5,
       "active": true,
       "createdAt": "2025-12-28T05:11:30.597Z"
     },
@@ -867,33 +867,6 @@
       "stock": 5,
       "active": true,
       "createdAt": "2025-12-28T05:11:30.614Z"
-    },
-    {
-      "id": "51c3",
-      "product_id": 1,
-      "sku": "SKU-000001-V013",
-      "price": 6000,
-      "stock": 10,
-      "active": true,
-      "createdAt": "2025-12-29T01:13:02.228Z"
-    },
-    {
-      "id": "c9fa",
-      "product_id": 1,
-      "sku": "SKU-000001-V017",
-      "price": 6000,
-      "stock": 15,
-      "active": true,
-      "createdAt": "2025-12-29T01:13:02.290Z"
-    },
-    {
-      "id": "60e1",
-      "product_id": 1,
-      "sku": "SKU-000001-V021",
-      "price": 6000,
-      "stock": 20,
-      "active": true,
-      "createdAt": "2025-12-29T01:13:02.308Z"
     }
   ],
   "variantAttributeValues": [
@@ -1136,36 +1109,6 @@
       "variant_id": 24,
       "attribute_value_id": 11,
       "id": "48"
-    },
-    {
-      "id": "29aa",
-      "variant_id": "51c3",
-      "attribute_value_id": 1
-    },
-    {
-      "id": "f102",
-      "variant_id": "51c3",
-      "attribute_value_id": 11
-    },
-    {
-      "id": "b8e3",
-      "variant_id": "c9fa",
-      "attribute_value_id": 3
-    },
-    {
-      "id": "3b8f",
-      "variant_id": "c9fa",
-      "attribute_value_id": 11
-    },
-    {
-      "id": "a5d7",
-      "variant_id": "60e1",
-      "attribute_value_id": 5
-    },
-    {
-      "id": "0bb8",
-      "variant_id": "60e1",
-      "attribute_value_id": 11
     }
   ],
   "variantConfigs": [
@@ -1217,6 +1160,7 @@
       "level": 0,
       "order": 0,
       "isActive": true,
+      "isFinal": false,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1227,6 +1171,7 @@
       "level": 1,
       "order": 0,
       "isActive": true,
+      "isFinal": false,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1237,6 +1182,7 @@
       "level": 1,
       "order": 1,
       "isActive": true,
+      "isFinal": false,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1247,6 +1193,7 @@
       "level": 2,
       "order": 0,
       "isActive": true,
+      "isFinal": true,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1257,6 +1204,7 @@
       "level": 2,
       "order": 1,
       "isActive": true,
+      "isFinal": true,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1267,6 +1215,7 @@
       "level": 2,
       "order": 0,
       "isActive": true,
+      "isFinal": true,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1277,6 +1226,7 @@
       "level": 2,
       "order": 1,
       "isActive": true,
+      "isFinal": true,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1287,6 +1237,7 @@
       "level": 0,
       "order": 1,
       "isActive": true,
+      "isFinal": false,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1297,6 +1248,7 @@
       "level": 1,
       "order": 0,
       "isActive": true,
+      "isFinal": false,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1307,6 +1259,7 @@
       "level": 1,
       "order": 1,
       "isActive": true,
+      "isFinal": false,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1317,6 +1270,7 @@
       "level": 2,
       "order": 0,
       "isActive": true,
+      "isFinal": true,
       "createdAt": "2024-01-01T00:00:00.000Z"
     },
     {
@@ -1327,79 +1281,40 @@
       "level": 2,
       "order": 1,
       "isActive": true,
+      "isFinal": true,
       "createdAt": "2024-01-01T00:00:00.000Z"
     }
   ],
-  "orders": [
+  "productCatalogNodes": [
     {
-      "id": "1766973138835",
-      "orderNumber": "ORD-0001",
-      "customerId": "2",
-      "customerName": "Carlos Fernández Mora",
-      "shippingAddress": {
-        "id": "4aebae7d-6c18-4e4b-8766-e700e54788e5",
-        "label": "Principal",
-        "provinciaCodigo": "2",
-        "cantonCodigo": "201",
-        "distritoCodigo": "20101",
-        "direccionExacta": "Frente al Parque Central, edificio amarillo",
-        "codigoPostal": "20101",
-        "isDefault": true
-      },
-      "products": [
-        {
-          "productId": "2",
-          "productName": "Camisa ML",
-          "productSku": "SKU-000001-V002",
-          "quantity": 2,
-          "price": 25000,
-          "subtotal": 50000
-        }
-      ],
-      "subtotal": 50000,
-      "tax": 6500,
-      "total": 56500,
-      "status": "processing",
-      "notes": "",
-      "createdBy": "admin",
-      "createdAt": "2025-12-29T01:52:18.835Z",
-      "updatedAt": "2025-12-29T01:53:56.846Z",
-      "updatedBy": "admin"
+      "id": "1",
+      "product_id": 1,
+      "catalog_node_id": 4,
+      "isPrimary": true,
+      "createdAt": "2025-12-28T10:00:00.000Z"
     },
     {
-      "id": "1766973559809",
-      "orderNumber": "ORD-0002",
-      "customerId": "3",
-      "customerName": "Ana López Jiménez",
-      "shippingAddress": {
-        "id": "63bd43be-e436-4b32-b84e-d4f391d8f0ba",
-        "label": "Principal",
-        "provinciaCodigo": "3",
-        "cantonCodigo": "301",
-        "distritoCodigo": "30101",
-        "direccionExacta": "200 metros oeste del supermercado",
-        "codigoPostal": "30101",
-        "isDefault": true
-      },
-      "products": [
-        {
-          "productId": "21",
-          "productName": "Medias",
-          "productSku": "SKU-000002-V012",
-          "quantity": 2,
-          "price": 5000,
-          "subtotal": 10000
-        }
-      ],
-      "subtotal": 10000,
-      "tax": 1300,
-      "total": 11300,
-      "status": "pending",
-      "notes": "",
-      "createdBy": "admin",
-      "createdAt": "2025-12-29T01:59:19.809Z",
-      "updatedAt": "2025-12-29T01:59:19.809Z"
+      "id": "2",
+      "product_id": 2,
+      "catalog_node_id": 4,
+      "isPrimary": true,
+      "createdAt": "2025-12-28T10:01:00.000Z"
+    },
+    {
+      "id": "83e2",
+      "product_id": "1",
+      "catalog_node_id": 5,
+      "isPrimary": false,
+      "createdAt": "2025-12-29T03:54:20.519Z"
+    },
+    {
+      "id": "c484",
+      "product_id": "2",
+      "catalog_node_id": 5,
+      "isPrimary": false,
+      "createdAt": "2025-12-29T03:54:20.531Z"
     }
   ],
+  "orders": [],
   "invoices": []
 }

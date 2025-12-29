@@ -126,6 +126,15 @@ export interface VariantAttributeValue {
   attribute_value_id: number;
 }
 
+// Relación many-to-many: Producto <-> Nodo de Catálogo
+export interface ProductCatalogNode {
+  id: number;
+  product_id: number;
+  catalog_node_id: number;
+  isPrimary: boolean; // true para el nodo principal/preferido
+  createdAt: string;
+}
+
 // Tipos extendidos para trabajar con joins
 export interface ProductVariantWithDetails extends ProductVariant {
   attributes?: Array<{

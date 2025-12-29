@@ -15,6 +15,7 @@ const db = {
   variantAttributeValues: JSON.parse(fs.readFileSync(path.join(dataDir, 'variantAttributeValues.json'), 'utf8')),
   variantConfigs: JSON.parse(fs.readFileSync(path.join(dataDir, 'variantConfigs.json'), 'utf8')),
   catalogNodes: JSON.parse(fs.readFileSync(path.join(dataDir, 'catalogNodes.json'), 'utf8')),
+  productCatalogNodes: JSON.parse(fs.readFileSync(path.join(dataDir, 'productCatalogNodes.json'), 'utf8')),
   orders: JSON.parse(fs.readFileSync(path.join(dataDir, 'orders.json'), 'utf8')),
   invoices: JSON.parse(fs.readFileSync(path.join(dataDir, 'invoices.json'), 'utf8')),
 };
