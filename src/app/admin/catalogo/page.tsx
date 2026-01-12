@@ -34,6 +34,7 @@ export default function CatalogoPage() {
   const [formData, setFormData] = useState({
     name: '',
     description: '',
+    imageUrl: '',
     parentId: null as number | null,
     order: 0,
     isActive: true,
@@ -283,6 +284,27 @@ export default function CatalogoPage() {
     return tree;
   };
 
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    // Verificar que sea una imagen
+    if (!file.type.startsWith('image/')) {
+      showModal('error', 'Archivo inválido', 'Por favor selecciona un archivo de imagen válido');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setFormData(prev => ({ ...prev, imageUrl: reader.result as string }));
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const removeImage = () => {
+    setFormData(prev => ({ ...prev, imageUrl: '' }));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -306,10 +328,18 @@ export default function CatalogoPage() {
         createdAt: selectedNode ? selectedNode.createdAt : new Date().toISOString(),
       };
 
+      console.log('Guardando nodo:', {
+        isCreating,
+        selectedNodeId: selectedNode?.id,
+        data
+      });
+
       if (selectedNode && !isCreating) {
+        console.log('Actualizando nodo:', selectedNode.id);
         await catalogAPI.update(selectedNode.id, data);
         showModal('success', '¡Actualizado!', 'El nodo se actualizó correctamente');
       } else {
+        console.log('Creando nuevo nodo');
         const newNode = await catalogAPI.create(data);
         showModal('success', '¡Creado!', 'El nodo se creó exitosamente');
         setSelectedNode(newNode);
@@ -329,6 +359,7 @@ export default function CatalogoPage() {
     setFormData({
       name: node.name,
       description: node.description || '',
+      imageUrl: node.imageUrl || '',
       parentId: node.parentId,
       order: node.order,
       isActive: node.isActive,
@@ -358,6 +389,7 @@ export default function CatalogoPage() {
     setFormData({
       name: '',
       description: '',
+      imageUrl: '',
       parentId: parentId,
       order: parentId ? nodes.filter(n => n.parentId === parentId).length : nodes.filter(n => n.parentId === null).length,
       isActive: true,
@@ -396,6 +428,7 @@ export default function CatalogoPage() {
     setFormData({
       name: '',
       description: '',
+      imageUrl: '',
       parentId: null,
       order: 0,
       isActive: true,
@@ -434,9 +467,18 @@ export default function CatalogoPage() {
             <span className="w-4" />
           )}
           
-          <span className="text-lg">
-            {node.isFinal ? '📦' : (hasChildren && isExpanded ? '📂' : hasChildren ? '📁' : '📄')}
-          </span>
+          {/* Imagen o emoji */}
+          {node.imageUrl ? (
+            <img 
+              src={node.imageUrl} 
+              alt={node.name}
+              className="w-6 h-6 object-cover rounded border border-gray-300"
+            />
+          ) : (
+            <span className="text-lg">
+              {node.isFinal ? '📦' : (hasChildren && isExpanded ? '📂' : hasChildren ? '📁' : '📄')}
+            </span>
+          )}
           
           <span className={`flex-1 truncate ${isSelected ? 'font-semibold' : ''}`}>
             {node.name}
@@ -617,6 +659,62 @@ export default function CatalogoPage() {
                       placeholder="Descripción opcional"
                       rows={3}
                     />
+                  </div>
+
+                  {/* Campo de Imagen */}
+                  <div>
+                    <label className="block text-sm font-semibold mb-2">
+                      🖼️ Imagen <span className="text-xs text-gray-500 font-normal">(Opcional)</span>
+                    </label>
+                    
+                    {!formData.imageUrl ? (
+                      <label className="cursor-pointer block">
+                        <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 transition-colors">
+                          <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                          <p className="mt-2 text-sm text-gray-600">Haz clic para seleccionar una imagen</p>
+                          <p className="text-xs text-gray-500 mt-1">PNG, JPG, GIF</p>
+                        </div>
+                        <input
+                          type="file"
+                          accept="image/*"
+                          onChange={handleImageUpload}
+                          className="hidden"
+                        />
+                      </label>
+                    ) : (
+                      <div className="flex items-start gap-3">
+                        <div className="relative">
+                          <img 
+                            src={formData.imageUrl} 
+                            alt="Preview"
+                            className="w-24 h-24 object-cover rounded-lg border-2 border-gray-300"
+                          />
+                          <button
+                            type="button"
+                            onClick={removeImage}
+                            className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 shadow-lg"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                          </button>
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-sm text-gray-600 mb-2">Imagen cargada</p>
+                          <label className="cursor-pointer inline-flex items-center px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                            Cambiar imagen
+                            <input
+                              type="file"
+                              accept="image/*"
+                              onChange={handleImageUpload}
+                              className="hidden"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">

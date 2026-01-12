@@ -73,6 +73,7 @@ export interface CatalogNode {
   id: number;
   name: string;
   description?: string;
+  imageUrl?: string; // Imagen opcional para la categoría
   parentId: number | null; // null si es raíz
   level: number; // 0 para raíz, 1 para primer nivel, etc.
   order: number; // Para ordenar nodos al mismo nivel
@@ -93,6 +94,7 @@ export interface Product {
   description?: string;
   catalogNodeId?: number;
   baseSku?: string;
+  imageUrls?: string[]; // Array de URLs de imágenes
   createdAt: string;
   updatedAt?: string;
 }

@@ -18,7 +18,7 @@ interface VariantCombination {
   price: string;
   stock: string;
   sku: string;
-  imageUrl?: string;
+  imageUrls?: string[];
 }
 
 export default function ProductsPage() {
@@ -41,7 +41,7 @@ export default function ProductsPage() {
     price: "",
     stock: "",
     sku: "",
-    imageUrl: "",
+    imageUrls: [] as string[],
     hasVariants: false,
   });
 
@@ -108,11 +108,13 @@ export default function ProductsPage() {
       // Encontrar el SKU más alto
       let maxSKU = 0;
       allProducts.forEach((product: Product) => {
-        const skuMatch = product.sku.match(/^SKU-(\d+)/);
-        if (skuMatch) {
-          const skuNum = parseInt(skuMatch[1]);
-          if (skuNum > maxSKU) {
-            maxSKU = skuNum;
+        if (product.baseSku) {
+          const skuMatch = product.baseSku.match(/^SKU-(\d+)/);
+          if (skuMatch) {
+            const skuNum = parseInt(skuMatch[1]);
+            if (skuNum > maxSKU) {
+              maxSKU = skuNum;
+            }
           }
         }
       });
@@ -211,7 +213,7 @@ export default function ProductsPage() {
         price: parseFloat(formData.price),
         stock: 0,
         sku: formData.sku,
-        imageUrl: formData.imageUrl,
+        imageUrls: formData.imageUrls,
         isParent: true,
         parentId: null,
         variantType: null,
@@ -234,7 +236,7 @@ export default function ProductsPage() {
           price: parseFloat(combo.price),
           stock: parseInt(combo.stock),
           sku: combo.sku,
-          imageUrl: formData.imageUrl,
+          imageUrls: formData.imageUrls,
           isParent: false,
           parentId: parentProduct.id,
           isActive: true,
@@ -264,7 +266,7 @@ export default function ProductsPage() {
       price: (product.price || 0).toString(),
       stock: (product.stock || 0).toString(),
       sku: product.sku || '',
-      imageUrl: product.imageUrl || "",
+      imageUrls: product.imageUrls || [],
       hasVariants: product.isParent || false,
     });
     setShowModal(true);
@@ -311,7 +313,7 @@ export default function ProductsPage() {
       price: "",
       stock: "",
       sku: "",
-      imageUrl: "",
+      imageUrls: [],
       hasVariants: false,
     });
     setSelectedVariants([]);
@@ -326,30 +328,42 @@ export default function ProductsPage() {
   };
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+
+    const newImages: string[] = [];
+    let processedFiles = 0;
+
+    Array.from(files).forEach((file) => {
       // Verificar que sea una imagen
       if (!file.type.startsWith('image/')) {
-        alert('Por favor selecciona un archivo de imagen válido');
-        return;
-      }
-      
-      // Verificar tamaño (máximo 2MB)
-      if (file.size > 2 * 1024 * 1024) {
-        alert('La imagen es muy grande. Máximo 2MB');
+        alert(`${file.name} no es una imagen válida`);
+        processedFiles++;
         return;
       }
 
       const reader = new FileReader();
       reader.onloadend = () => {
-        setFormData({ ...formData, imageUrl: reader.result as string });
+        newImages.push(reader.result as string);
+        processedFiles++;
+        
+        // Cuando todas las imágenes se hayan procesado
+        if (processedFiles === files.length) {
+          setFormData(prev => ({
+            ...prev,
+            imageUrls: [...prev.imageUrls, ...newImages]
+          }));
+        }
       };
       reader.readAsDataURL(file);
-    }
+    });
   };
 
-  const removeImage = () => {
-    setFormData({ ...formData, imageUrl: '' });
+  const removeImage = (index: number) => {
+    setFormData(prev => ({
+      ...prev,
+      imageUrls: prev.imageUrls.filter((_, i) => i !== index)
+    }));
   };
 
   const getTotalStock = (product: ProductWithVariants): number => {
@@ -414,7 +428,7 @@ export default function ProductsPage() {
     }));
   };
 
-  const updateCombinationValue = (index: number, field: 'price' | 'stock' | 'sku' | 'imageUrl', value: string) => {
+  const updateCombinationValue = (index: number, field: 'price' | 'stock' | 'sku', value: string) => {
     const updated = [...variantCombinations];
     updated[index] = { ...updated[index], [field]: value };
     setVariantCombinations(updated);
@@ -525,7 +539,7 @@ export default function ProductsPage() {
           price: parseFloat(combo.price),
           stock: parseInt(combo.stock),
           sku: combo.sku,
-          imageUrl: editingParent.imageUrl || "",
+          imageUrls: editingParent.imageUrls || [],
           isParent: false,
           parentId: editingParent.id,
           variantType: combo.combinations.map(c => c.type).join('_'),
@@ -630,12 +644,19 @@ export default function ProductsPage() {
                     </div>
                   </div>
                   <div className="col-span-1">
-                    {product.imageUrl ? (
-                      <img 
-                        src={product.imageUrl} 
-                        alt={product.name}
-                        className="w-12 h-12 object-cover rounded-lg border border-gray-200"
-                      />
+                    {product.imageUrls && product.imageUrls.length > 0 ? (
+                      <div className="relative">
+                        <img 
+                          src={product.imageUrls[0]} 
+                          alt={product.name}
+                          className="w-12 h-12 object-cover rounded-lg border border-gray-200"
+                        />
+                        {product.imageUrls.length > 1 && (
+                          <span className="absolute -top-1 -right-1 bg-indigo-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-semibold">
+                            +{product.imageUrls.length - 1}
+                          </span>
+                        )}
+                      </div>
                     ) : (
                       <div className="w-12 h-12 bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center">
                         <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -731,14 +752,14 @@ export default function ProductsPage() {
                           <p className="text-xs text-gray-500">{variant.sku}</p>
                         </div>
                         <div className="col-span-1">
-                          {(variant.imageUrl || product.imageUrl) ? (
+                          {(variant.imageUrls && variant.imageUrls.length > 0) || (product.imageUrls && product.imageUrls.length > 0) ? (
                             <div className="relative">
                               <img 
-                                src={variant.imageUrl || product.imageUrl || ''} 
+                                src={(variant.imageUrls && variant.imageUrls[0]) || (product.imageUrls && product.imageUrls[0]) || ''} 
                                 alt={variant.variantValue || ''}
                                 className="w-12 h-12 object-cover rounded-lg border border-gray-200"
                               />
-                              {variant.imageUrl && (
+                              {variant.imageUrls && variant.imageUrls.length > 0 && (
                                 <span className="absolute -top-1 -right-1 bg-blue-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">
                                   ✓
                                 </span>
@@ -944,62 +965,62 @@ export default function ProductsPage() {
                   )}
                 </div>
 
-                {/* Campo de Imagen */}
+                {/* Campo de Imágenes Múltiples */}
                 <div className="border-t pt-4 mt-4">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Imagen del Producto
+                    Imágenes del Producto <span className="text-xs text-gray-500">(Puedes agregar múltiples)</span>
                   </label>
                   
-                  {!formData.imageUrl ? (
-                    <div className="flex items-center gap-4">
-                      <label className="flex-1 cursor-pointer">
-                        <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-indigo-500 transition-colors">
-                          <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
-                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                          <p className="mt-2 text-sm text-gray-600">Haz clic para seleccionar una imagen</p>
-                          <p className="text-xs text-gray-500 mt-1">PNG, JPG, GIF hasta 2MB</p>
-                        </div>
-                        <input
-                          type="file"
-                          accept="image/*"
-                          onChange={handleImageUpload}
-                          className="hidden"
-                        />
-                      </label>
-                    </div>
-                  ) : (
-                    <div className="flex items-start gap-4">
-                      <div className="relative">
-                        <img 
-                          src={formData.imageUrl} 
-                          alt="Preview"
-                          className="w-32 h-32 object-cover rounded-lg border-2 border-gray-300"
-                        />
-                        <button
-                          type="button"
-                          onClick={removeImage}
-                          className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 shadow-lg"
-                        >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                          </svg>
-                        </button>
-                      </div>
-                      <div className="flex-1">
-                        <p className="text-sm text-gray-600 mb-2">Imagen cargada correctamente</p>
-                        <label className="cursor-pointer inline-flex items-center px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
-                          Cambiar imagen
-                          <input
-                            type="file"
-                            accept="image/*"
-                            onChange={handleImageUpload}
-                            className="hidden"
+                  {/* Grid de imágenes existentes */}
+                  {formData.imageUrls.length > 0 && (
+                    <div className="grid grid-cols-4 gap-3 mb-3">
+                      {formData.imageUrls.map((url, index) => (
+                        <div key={index} className="relative group">
+                          <img 
+                            src={url} 
+                            alt={`Imagen ${index + 1}`}
+                            className="w-full h-24 object-cover rounded-lg border-2 border-gray-300"
                           />
-                        </label>
-                      </div>
+                          <button
+                            type="button"
+                            onClick={() => removeImage(index)}
+                            className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                          </button>
+                          {index === 0 && (
+                            <span className="absolute top-1 left-1 bg-indigo-600 text-white text-xs px-2 py-0.5 rounded">
+                              Principal
+                            </span>
+                          )}
+                        </div>
+                      ))}
                     </div>
                   )}
+                  
+                  {/* Botón para agregar más imágenes */}
+                  <label className="cursor-pointer block">
+                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-indigo-500 transition-colors">
+                      <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                        <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <p className="mt-2 text-sm text-gray-600">
+                        {formData.imageUrls.length === 0 
+                          ? 'Haz clic para seleccionar imágenes' 
+                          : 'Agregar más imágenes'}
+                      </p>
+                      <p className="text-xs text-gray-500 mt-1">PNG, JPG, GIF. Puedes seleccionar múltiples archivos.</p>
+                    </div>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      multiple
+                      onChange={handleImageUpload}
+                      className="hidden"
+                    />
+                  </label>
                 </div>
 
                 <div className="flex gap-3 pt-4">

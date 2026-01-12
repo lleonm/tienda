@@ -10,7 +10,15 @@ export async function fetchAPI<T>(endpoint: string, options?: RequestInit): Prom
   });
 
   if (!response.ok) {
-    throw new Error(`API error: ${response.statusText}`);
+    const errorText = await response.text();
+    console.error('API Error:', {
+      endpoint,
+      status: response.status,
+      statusText: response.statusText,
+      error: errorText,
+      body: options?.body
+    });
+    throw new Error(`API error: ${response.statusText} - ${errorText}`);
   }
 
   return response.json();
